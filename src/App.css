@@ -5,7 +5,6 @@ body {
 }
 
 header {
-  background-color: rgb(30 41 59);
   padding: 20px;
 }
 
@@ -31,28 +30,9 @@ label {
   color: rgb(226 232 240);
 }
 
-h2 {
-  color: white;
-}
-
-#about h2, p {
-  color: white;
-}
-
-#contact {
-  background-color: rgb(30 41 59); 
-}
-
 #profile-pic {
   background-color: rgb(226 232 240);
   border-width: 5px;
   border-color: rgb(30 41 59);
 }
 
-footer {
-  background-color: rgb(30 41 59);
-}
-
-footer p {
-  color: rgb(226 232 240);
-}

@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="p-5">
+    <section id="contact" className="bg-gray-800 text-white p-5 ">
       <h2 className="text-2xl font-semibold">Contact</h2>
       <form onSubmit={handleSubmit} className="mt-2 space-y-4">
         <div>
