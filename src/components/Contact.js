@@ -8,6 +8,8 @@ const Contact = () => {
     message: ''
   });
 
+  const [isFormVisible, setIsFormVisible] = useState(false);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -38,44 +40,55 @@ const Contact = () => {
     });
   };
 
+  const toggleFormVisibility = () => {
+    setIsFormVisible(!isFormVisible);
+  };
+
   return (
     <section id="contact" className="bg-gray-900 text-slate-200 p-10">
-      <h2 className="mb-4 text-2xl font-semibold">Contact</h2>
-      <form onSubmit={handleSubmit} className="mt-2 space-y-4">
-        <div>
-          <label className="text-slate-200 block">Name:</label>
-          <input 
-            type="text" 
-            name="name" 
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full p-2 border rounded" 
-            required 
-          />
-        </div>
-        <div>
-          <label className="text-slate-200 block">Email:</label>
-          <input 
-            type="email" 
-            name="email" 
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full p-2 border rounded" 
-            required 
-          />
-        </div>
-        <div>
-          <label className="text-slate-200 block">Message:</label>
-          <textarea 
-            name="message" 
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full p-2 border rounded" 
-            required
-          ></textarea>
-        </div>
-        <button type="submit" className="bg-blue-700 hover:bg-blue-700 text-slate-100 font-semibold py-2 px-4 rounded-full">Send</button>
-      </form>
+      <button
+        onClick={toggleFormVisibility}
+        className="text-slate-200 text-2xl font-semibold mb-4"
+      >
+        {isFormVisible ? <h2 className="text-2xl font-semibold">Contact</h2> : <h2 className="text-2xl font-semibold">Contact</h2>}
+      </button>
+      {isFormVisible && (
+        <form onSubmit={handleSubmit} className="mt-4 space-y-4">
+          <div>
+            <label className="text-slate-200 block">Name:</label>
+            <input 
+              type="text" 
+              name="name" 
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full p-2 border border-gray-300 rounded bg-gray-700 text-slate-100" 
+              required 
+            />
+          </div>
+          <div>
+            <label className="text-slate-200 block">Email:</label>
+            <input 
+              type="email" 
+              name="email" 
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full p-2 border border-gray-300 rounded bg-gray-700 text-slate-100" 
+              required 
+            />
+          </div>
+          <div>
+            <label className="text-slate-200 block">Message:</label>
+            <textarea 
+              name="message" 
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full p-2 border border-gray-300 rounded bg-gray-700 text-slate-100" 
+              required
+            ></textarea>
+          </div>
+          <button type="submit" className="bg-blue-700 hover:bg-blue-600 text-slate-100 font-semibold py-2 px-4 rounded-full">Send</button>
+        </form>
+      )}
     </section>
   );
 };
