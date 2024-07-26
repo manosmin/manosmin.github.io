@@ -39,8 +39,8 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-gray-800 text-white p-5">
-      <h2 className="text-2xl font-semibold">Contact</h2>
+    <section id="contact" className="bg-gray-800 text-white p-10">
+      <h2 className="mb-4 text-2xl font-semibold">Contact</h2>
       <form onSubmit={handleSubmit} className="mt-2 space-y-4">
         <div>
           <label className="block">Name:</label>
