@@ -1,5 +1,5 @@
 
 # manosmin.github.io
 
-My personal website created using React.js and Tailwind CSS.
+My personal web page created using React.js and Tailwind CSS.
 
