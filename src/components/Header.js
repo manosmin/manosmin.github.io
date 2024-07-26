@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaFilePdf, FaDiscord } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 text-white p-5">
+    <header className="sticky top-0 bg-gray-800 text-white p-5">
     <h2 class="text-4xl font-bold dark:text-white">Manos Minadakis<small class="ms-2 font-semibold text-gray-500 dark:text-gray-400">Computer Engineer</small></h2>
     <nav>
         <ul className="flex mt-3 list-none">
