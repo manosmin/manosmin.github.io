@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-gray-800 text-white p-5 ">
+    <section id="contact" className="bg-gray-800 text-white p-5">
       <h2 className="text-2xl font-semibold">Contact</h2>
       <form onSubmit={handleSubmit} className="mt-2 space-y-4">
         <div>
@@ -74,7 +74,7 @@ const Contact = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="bg-blue-500 text-white p-2 rounded">Send</button>
+        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Send</button>
       </form>
     </section>
   );

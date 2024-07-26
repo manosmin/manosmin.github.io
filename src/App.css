@@ -26,10 +26,6 @@ section {
   margin: 20px 0;
 }
 
-label {
-  color: rgb(226 232 240);
-}
-
 #profile-pic {
   background-color: rgb(226 232 240);
   border-width: 5px;
