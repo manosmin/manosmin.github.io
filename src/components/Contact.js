@@ -45,48 +45,48 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-gray-900 text-slate-200 p-10">
+    <section id="contact" className="bg-gray-900 text-gray-200 p-10">
       <button
         onClick={toggleFormVisibility}
-        className="text-slate-200 text-2xl font-semibold mb-4"
+        className="text-gray-200 text-2xl font-semibold mb-4"
       >
         {isFormVisible ? <h2 className="text-2xl font-semibold">Contact</h2> : <h2 className="text-2xl font-semibold">Contact</h2>}
       </button>
       {isFormVisible && (
         <form onSubmit={handleSubmit} className="mt-4 space-y-4">
           <div>
-            <label className="text-slate-200 block">Name:</label>
+            <label className="text-gray-200 block">Name:</label>
             <input 
               type="text" 
               name="name" 
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-600 rounded bg-gray-800 text-slate-100" 
+              className="w-full p-2 border border-gray-600 rounded bg-gray-800 text-gray-100" 
               required 
             />
           </div>
           <div>
-            <label className="text-slate-200 block">Email:</label>
+            <label className="text-gray-200 block">Email:</label>
             <input 
               type="email" 
               name="email" 
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-600 rounded bg-slate-800 text-slate-100" 
+              className="w-full p-2 border border-gray-600 rounded bg-gray-800 text-gray-100" 
               required 
             />
           </div>
           <div>
-            <label className="text-slate-200 block">Message:</label>
+            <label className="text-gray-200 block">Message:</label>
             <textarea 
               name="message" 
               value={formData.message}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-600 rounded bg-slate-800 text-slate-100" 
+              className="w-full p-2 border border-gray-600 rounded bg-gray-800 text-gray-100" 
               required
             ></textarea>
           </div>
-          <button type="submit" className="bg-blue-700 hover:bg-blue-600 text-slate-100 font-semibold py-2 px-4 rounded-full">Send</button>
+          <button type="submit" className="bg-blue-700 hover:bg-blue-600 text-gray-100 font-semibold py-2 px-4 rounded-full">Send</button>
         </form>
       )}
     </section>

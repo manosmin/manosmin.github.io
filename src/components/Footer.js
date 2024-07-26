@@ -2,8 +2,11 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-slate-200 p-5">
+    <footer className="bg-gray-900 text-gray-200 p-5">
       <p>&copy; 2024 Manos Minadakis</p>
+      <p>My personal web page was created using <a rel="noopener noreferrer" href="https://www.react.dev/" target="_blank"
+      className="text-gray-200 hover:underline">React.js</a> and <a rel="noopener noreferrer" href="https://tailwindcss.com/" target="_blank"
+      className="text-gray-200 hover:underline">Tailwind CSS</a>.</p>
     </footer>
   );
 };
