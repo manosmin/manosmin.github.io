@@ -26,6 +26,10 @@ section {
   margin: 20px 0;
 }
 
+input, textarea{
+  color: black;
+}
+
 #profile-pic {
   background-color: rgb(226 232 240);
   border-width: 5px;
