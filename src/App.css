@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(30 41 59);
+  padding: 20px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+label {
+  color: rgb(226 232 240);
+}
+
+h2 {
+  color: white;
+}
+
+#about h2, p {
+  color: rgb(30 41 59);
+}
+
+#contact {
+  background-color: rgb(30 41 59); 
+}
+
+#profile-pic {
+  background-color: rgb(226 232 240);
+  border-width: 5px;
+  border-color: rgb(30 41 59);
+}
+
+footer {
+  background-color: rgb(30 41 59);
+}
+
+footer p {
+  color: rgb(226 232 240);
+}
