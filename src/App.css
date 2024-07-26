@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(71 85 105)
+  background-color: rgb(31 41 55);
 }
 
 header {
@@ -33,6 +33,6 @@ input, textarea{
 #profile-pic {
   background-color: rgb(226 232 240);
   border-width: 5px;
-  border-color: rgb(30 41 59);
+  border-color: white;
 }
 

@@ -39,11 +39,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-gray-800 text-white p-10">
+    <section id="contact" className="bg-gray-900 text-slate-200 p-10">
       <h2 className="mb-4 text-2xl font-semibold">Contact</h2>
       <form onSubmit={handleSubmit} className="mt-2 space-y-4">
         <div>
-          <label className="block">Name:</label>
+          <label className="text-slate-200 block">Name:</label>
           <input 
             type="text" 
             name="name" 
@@ -54,7 +54,7 @@ const Contact = () => {
           />
         </div>
         <div>
-          <label className="block">Email:</label>
+          <label className="text-slate-200 block">Email:</label>
           <input 
             type="email" 
             name="email" 
@@ -65,7 +65,7 @@ const Contact = () => {
           />
         </div>
         <div>
-          <label className="block">Message:</label>
+          <label className="text-slate-200 block">Message:</label>
           <textarea 
             name="message" 
             value={formData.message}
@@ -74,7 +74,7 @@ const Contact = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Send</button>
+        <button type="submit" className="bg-blue-700 hover:bg-blue-700 text-slate-100 font-semibold py-2 px-4 rounded-full">Send</button>
       </form>
     </section>
   );
