@@ -10,7 +10,7 @@ function Projects() {
     };
 
 
-    const ProjectInfo1 = {
+    const ProjectInfo2 = {
       Title: 'Movie Picker Web App',
       Used: 'React.js, Bootstrap 5',
       Description: 'A web application that uses a REST API to provide a search engine for movies, games, series etc.',
@@ -18,7 +18,7 @@ function Projects() {
       Date: '02/2024'
     }
 
-    const ProjectInfo2 = {
+    const ProjectInfo1 = {
       Title: 'Virus Contact Tracing Website',
       Used: 'Node.js, Express.js, Passport.js, Leaflet.js, Chart.js, Bootstrap 3, MongoDB',
       Description: 'A website that helps users track and manage their potential exposure to virus carriers by crowd-sourcing data about their visits to various places in Patras, Greece.',
@@ -43,9 +43,9 @@ function Projects() {
         <MdComputer className='inline'/> Projects
       </button>
       {isOpen && (<div>
-        <ProjectItem myInfo={ProjectInfo1}></ProjectItem>
-        <ProjectItem myInfo={ProjectInfo2}></ProjectItem>
         <ProjectItem myInfo={ProjectInfo3}></ProjectItem>
+        <ProjectItem myInfo={ProjectInfo2}></ProjectItem>
+        <ProjectItem myInfo={ProjectInfo1}></ProjectItem>
         </div>
         )}
     </section>
