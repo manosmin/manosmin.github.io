@@ -5,10 +5,10 @@ import { MdAlternateEmail } from "react-icons/md";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 bg-gray-900 text-white p-5 mb-4">
-    <h2 class="text-4xl font-bold dark:text-gray-100">Manos Minadakis <small class="inline-block font-semibold text-gray-500 dark:text-gray-400">Computer Engineer</small></h2>
+    <header className="sticky top-0 bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-5 mb-4">
+    <h2 class="text-4xl font-bold">Manos Minadakis <small class="inline-block font-semibold text-gray-500">Computer Engineer</small></h2>
     <nav>
-        <ul className="flex text-gray-100 mt-3 list-none">
+        <ul className="flex mt-3 list-none">
           <li><a rel="noopener noreferrer" href="https://www.github.com/manosmin" alt="github" target="_blank"><FaGithub size={25}/></a></li>
           <li><a rel="noopener noreferrer" href="https://www.linkedin.com/in/manosmin" target="_blank" alt="linkedin"
       ><FaLinkedin size={25}/></a></li>

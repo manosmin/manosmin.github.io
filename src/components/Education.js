@@ -9,10 +9,10 @@ const Education = () => {
   };
 
   return (
-    <section id="education" className="bg-gray-900 text-gray-200 p-10">
+    <section id="education" className="bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10">
       <button
         onClick={toggleAccordion}
-        className="text-gray-200 text-2xl font-semibold mb-4"
+        className="text-2xl font-semibold mb-4"
       >
         <FiBookOpen className='inline'/> Education
       </button>
@@ -23,14 +23,14 @@ const Education = () => {
             rel="noopener noreferrer"
             href="https://www.ceid.upatras.gr"
             target="_blank"
-            className="font-medium text-gray-200 hover:underline"
+            className="font-medium hover:underline"
           >
             University of Patras | MEng, Computer Engineering and Informatics
           </a> 🧑‍🎓</li>
           <li><p>09/2014 &ndash; 07/2024</p></li>
-          <li><p className="text-gray-200 inline font-medium">Grade: </p>
-          <p className="text-gray-200 inline">6.57/10.0</p></li>
-          <li><p className="text-gray-200 inline font-medium">Thesis: </p>
+          <li><p className="inline font-medium">Grade: </p>
+          <p className="inline">6.57/10.0</p></li>
+          <li><p className="inline font-medium">Thesis: </p>
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -39,7 +39,7 @@ const Education = () => {
           >
             "Process mining on cyber-physical systems: Liqueur Plant case study"
           </a>&nbsp;
-          <p className="text-gray-200 italic inline">
+          <p className="italic inline">
           (Integration of a data-driven methodology named "process mining" on a liqueur production system in order to reveal, analyze and find ways to improve the production process)
           </p></li>
           </ul>

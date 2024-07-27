@@ -10,10 +10,10 @@ function Facts() {
     };
 
   return (
-    <section id="facts" className="bg-gray-900 text-gray-200 p-10">
+    <section id="facts" className="bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10">
         <button
         onClick={toggleAccordion}
-        className="text-gray-200 text-2xl font-semibold mb-4"
+        className="text-2xl font-semibold mb-4"
       >
         <FaRegGrinStars className='inline'/> Fun Facts
       </button>

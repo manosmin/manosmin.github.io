@@ -47,10 +47,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="mb-10 bg-gray-900 text-gray-200 p-10">
+    <section id="contact" className="mb-10 bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10">
       <button
         onClick={toggleFormVisibility}
-        className="text-gray-200 text-2xl font-semibold mb-4"
+        className="text-2xl font-semibold mb-4"
       >
         <FaRegEnvelope className='inline'/> Contact
       </button>
@@ -59,34 +59,34 @@ const Contact = () => {
         <form onSubmit={handleSubmit} className="mt-4 space-y-4">
           <p>Don't hesitate to send me a message. Yes, this contact form actually works! 😂</p>
           <div>
-            <label className="text-gray-200 block">Name:</label>
+            <label className="block">Name:</label>
             <input 
               type="text" 
               name="name" 
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-600 rounded bg-gray-800 text-gray-100" 
+              className="w-full p-2 border border-gray-600 rounded bg-gray-400" 
               required 
             />
           </div>
           <div>
-            <label className="text-gray-200 block">Email:</label>
+            <label className="block">Email:</label>
             <input 
               type="email" 
               name="email" 
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-600 rounded bg-gray-800 text-gray-100" 
+              className="w-full p-2 border border-gray-600 rounded bg-gray-400" 
               required 
             />
           </div>
           <div>
-            <label className="text-gray-200 block">Message:</label>
+            <label className="block">Message:</label>
             <textarea 
               name="message" 
               value={formData.message}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-600 rounded bg-gray-800 text-gray-100" 
+              className="w-full p-2 border border-gray-600 rounded bg-gray-400" 
               required
             ></textarea>
           </div>

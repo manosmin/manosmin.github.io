@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="bg-gray-800 dark:bg-gray-400 flex flex-col min-h-screen">
       <Header />
       <About />
       <Education />
