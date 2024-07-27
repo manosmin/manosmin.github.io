@@ -14,7 +14,7 @@ const Header = () => {
       ><FaLinkedin size={25}/></a></li>
         <li><a rel="noopener noreferrer" href="https://www.discordapp.com/users/270397164209963009" target="_blank" alt="discord"><FaDiscord size={25}/></a></li>
           <li><a rel="noopener noreferrer" href="https://1drv.ms/b/s!AvPPFklWx5YlgcE97gVFyWQmI8Caww?e=hDOobR" target="_blank" alt="CV"><FaFilePdf size={25}/></a></li>
-          <li><a rel="noopener noreferrer" href="mailto:manosmin@hotmail.com" alt="email"><MdAlternateEmail size={25}/></a></li>
+          <li><a  href="mailto:manosmin@hotmail.com" alt="email"><MdAlternateEmail size={25}/></a></li>
         </ul>
       </nav>
     </header>

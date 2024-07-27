@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaFaceGrinStars } from "react-icons/fa6";
+import { FaRegGrinStars } from "react-icons/fa";
 
 
 function Facts() {
@@ -15,7 +15,7 @@ function Facts() {
         onClick={toggleAccordion}
         className="text-gray-200 text-2xl font-semibold mb-4"
       >
-        <FaFaceGrinStars className='inline'/> Fun Facts
+        <FaRegGrinStars className='inline'/> Fun Facts
       </button>
       {isOpen && (
         <ul class="list-disc">

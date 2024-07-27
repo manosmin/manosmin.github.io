@@ -24,7 +24,7 @@ const Education = () => {
             target="_blank"
             className="font-medium text-gray-200 hover:underline"
           >
-            🎓 Computer Engineering and Informatics Department, University of Patras
+            🎓 MEng &ndash; Computer Engineering and Informatics Department, University of Patras
           </a>
           <p>09/2014 &ndash; 07/2024</p>
           <p className="text-gray-200 inline font-medium">Grade: </p>
