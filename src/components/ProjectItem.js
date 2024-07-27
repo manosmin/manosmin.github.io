@@ -8,7 +8,7 @@ function ProjectItem(props) {
         href={props.myInfo.Link}
         className="font-semibold hover:underline">{props.myInfo.Title}</a></li>
         <li >{props.myInfo.Date}</li>
-        <li className='italic'>{props.myInfo.Description}</li>
+        <li className=''>{props.myInfo.Description}</li>
         <li className='italic'>Used {props.myInfo.Used}</li>
     </ul>
   )
