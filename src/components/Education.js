@@ -18,19 +18,19 @@ const Education = () => {
       </button>
       {isOpen && (
         <div>
-          <a
+          <ul className='list-none'>
+          <li><a
             rel="noopener noreferrer"
             href="https://www.ceid.upatras.gr"
             target="_blank"
             className="font-medium text-gray-200 hover:underline"
           >
             🎓 MEng &ndash; Computer Engineering and Informatics Department, University of Patras
-          </a>
-          <p>09/2014 &ndash; 07/2024</p>
-          <p className="text-gray-200 inline font-medium">Grade: </p>
-          <p className="text-gray-200 inline">6.57/10.0</p>
-          <br />
-          <p className="text-gray-200 inline font-medium">Thesis: </p>
+          </a></li>
+          <li><p>09/2014 &ndash; 07/2024</p></li>
+          <li><p className="text-gray-200 inline font-medium">Grade: </p>
+          <p className="text-gray-200 inline">6.57/10.0</p></li>
+          <li><p className="text-gray-200 inline font-medium">Thesis: </p>
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -41,7 +41,8 @@ const Education = () => {
           </a>
           <p className="text-gray-200 italic inline">
           (Integration of a data-driven methodology named "process mining" on a liqueur production system in order to reveal, analyze and find ways to improve the production process)
-          </p>
+          </p></li>
+          </ul>
         </div>
       )}
     </section>
