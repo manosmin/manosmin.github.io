@@ -5,7 +5,7 @@ import { MdAlternateEmail } from "react-icons/md";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 bg-gray-900 text-white p-5">
+    <header className="sticky top-0 bg-gray-900 text-white p-5 mb-4">
     <h2 class="text-4xl font-bold dark:text-gray-100">Manos Minadakis <small class="inline-block font-semibold text-gray-500 dark:text-gray-400">Computer Engineer</small></h2>
     <nav>
         <ul className="flex text-gray-100 mt-3 list-none">

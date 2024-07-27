@@ -47,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-gray-900 text-gray-200 p-10">
+    <section id="contact" className="mb-10 bg-gray-900 text-gray-200 p-10">
       <button
         onClick={toggleFormVisibility}
         className="text-gray-200 text-2xl font-semibold mb-4"
