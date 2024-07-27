@@ -25,8 +25,8 @@ const Education = () => {
             target="_blank"
             className="font-medium text-gray-200 hover:underline"
           >
-            🎓 MEng &ndash; Computer Engineering and Informatics Department, University of Patras
-          </a></li>
+            University of Patras | MEng, Computer Engineering and Informatics
+          </a> 🧑‍🎓</li>
           <li><p>09/2014 &ndash; 07/2024</p></li>
           <li><p className="text-gray-200 inline font-medium">Grade: </p>
           <p className="text-gray-200 inline">6.57/10.0</p></li>
@@ -37,8 +37,8 @@ const Education = () => {
             href="https://nemertes.library.upatras.gr/items/b24439d5-3bd7-4de0-b9f6-8f67c0ddf3aa"
             className="hover:underline inline"
           >
-            "Process mining on cyber-physical systems: Liqueur Plant case study"&nbsp;
-          </a>
+            "Process mining on cyber-physical systems: Liqueur Plant case study"
+          </a>&nbsp;
           <p className="text-gray-200 italic inline">
           (Integration of a data-driven methodology named "process mining" on a liqueur production system in order to reveal, analyze and find ways to improve the production process)
           </p></li>
