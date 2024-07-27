@@ -65,7 +65,7 @@ const Contact = () => {
               name="name" 
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-600 rounded bg-gray-400" 
+              className="w-full p-2 border border-gray-600 rounded bg-gray-800 dark:bg-gray-400" 
               required 
             />
           </div>
@@ -76,7 +76,7 @@ const Contact = () => {
               name="email" 
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-600 rounded bg-gray-400" 
+              className="w-full p-2 border border-gray-600 rounded bg-gray-800 dark:bg-gray-400" 
               required 
             />
           </div>
@@ -86,7 +86,7 @@ const Contact = () => {
               name="message" 
               value={formData.message}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-600 rounded bg-gray-400" 
+              className="w-full p-2 border border-gray-600 rounded bg-gray-800 dark:bg-gray-400" 
               required
             ></textarea>
           </div>
