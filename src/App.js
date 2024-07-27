@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="flex flex-col min-h-screen">
       <Header />
       <About />
       <Education />
