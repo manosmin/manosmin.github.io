@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { MdComputer } from "react-icons/md";
+
 
 function Projects() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +15,7 @@ function Projects() {
         onClick={toggleAccordion}
         className="text-gray-200 text-2xl font-semibold mb-4"
       >
-        <h2 className="text-2xl font-semibold">Projects</h2>
+        <MdComputer className='inline'/> Projects
       </button>
       {isOpen && (
         <p>Check my profile on <a rel="noopener noreferrer"

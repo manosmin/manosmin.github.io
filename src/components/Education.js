@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FiBookOpen } from "react-icons/fi";
 
 const Education = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const Education = () => {
         onClick={toggleAccordion}
         className="text-gray-200 text-2xl font-semibold mb-4"
       >
-        <h2 className="text-2xl font-semibold">Education</h2>
+        <FiBookOpen className='inline'/> Education
       </button>
       {isOpen && (
         <div>

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FiInfo } from "react-icons/fi";
+
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +15,7 @@ const About = () => {
         onClick={toggleAccordion}
         className="text-gray-200 text-2xl font-semibold mb-4"
       >
-        {'About Me'}
+        <FiInfo className='inline'/> About Me
       </button>
       {isOpen && (
         <div className="w-full flex flex-col items-center">

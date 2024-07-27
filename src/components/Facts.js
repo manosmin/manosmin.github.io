@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FaFaceGrinStars } from "react-icons/fa6";
+
 
 function Facts() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +15,7 @@ function Facts() {
         onClick={toggleAccordion}
         className="text-gray-200 text-2xl font-semibold mb-4"
       >
-        <h2 className="text-2xl font-semibold">Fun Facts</h2>
+        <FaFaceGrinStars className='inline'/> Fun Facts
       </button>
       {isOpen && (
         <ul class="list-disc">

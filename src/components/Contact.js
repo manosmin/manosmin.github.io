@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { FaRegEnvelope } from "react-icons/fa";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -50,12 +52,12 @@ const Contact = () => {
         onClick={toggleFormVisibility}
         className="text-gray-200 text-2xl font-semibold mb-4"
       >
-        <h2 className="text-2xl font-semibold">Contact</h2>
+        <FaRegEnvelope className='inline'/> Contact
       </button>
       {isFormVisible && (
         
         <form onSubmit={handleSubmit} className="mt-4 space-y-4">
-          <p>Feel free to contact me for anything. Yes, this contact form actually works! 😂</p>
+          <p>Feel free to send me a message. Yes, this contact form actually works! 😂</p>
           <div>
             <label className="text-gray-200 block">Name:</label>
             <input 
