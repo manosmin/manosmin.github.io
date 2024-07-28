@@ -19,16 +19,20 @@ const About = () => {
       </button>
       {isOpen && (
         <div className="w-full flex flex-col items-center">
-          <img src="/profile.png" id="profile-pic" alt="Profile" className="border-gray-100 dark:border-gray-900 w-48 h-48 rounded-full shadow-lg" />
+          <img src="/profile.png" id="profile-pic" alt="Profile" className="mt-6 border-gray-100 dark:border-gray-900 w-48 h-48 rounded-full shadow-lg" />
           <p className="mt-6 text-center">
-          Hello 🙋‍♂️ I'm <span className='font-medium'>Manos</span>, I live in Heraklion, Crete and I'm 28 years old. I'm a recent computer engineering graduate with a balanced knowledge in both hardware and software 🧑‍💻.
+          🙋‍♂️ My name is <span className='font-medium'>Manos</span>, I live in Heraklion, Greece, I'm 28 years old and I'm a recent Computer Engineering graduate 🧑‍💻.
           </p>
           <p className="mt-2 text-center">
-            I received my integrated masters' degree from Computer Engineering & Informatics Department at University of Patras, and I'm on the lookout for my first professional experience in the tech field, seeking to apply my skills and grow within a dynamic team 🌼.
+            I received my masters' degree from Computer Engineering & Informatics Department at University of Patras. During my studies, I've built a strong foundation in both hardware and softare. 
           </p>
           <p className="mt-2 text-center">
-            I'm eager to contribute to real-world projects and make a meaningful impact, so feel free to contact me 🌍.
+            My degree courses focused mainly on algorithms and data structures, while my thesis's focus was on data mining and process modeling.
           </p>
+          <p className="mt-2 text-center">
+            Nowadays, I'm on the lookout for my first professional experience in the tech field, seeking to apply my skills and grow within a dynamic team 🌼.
+          </p>
+          <p className='mt-2 text-center'>I'm eager to contribute to real-world projects and make a meaningful impact, so feel free to <a className="underline" href="mailto:manosmin@hotmail.com">contact</a> me for any opportunities 🌍.</p>
         </div>
       )}
     </section>

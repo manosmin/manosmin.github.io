@@ -57,7 +57,7 @@ const Contact = () => {
       {isFormVisible && (
         
         <form onSubmit={handleSubmit} className="mt-4 space-y-4">
-          <p>Don't hesitate to send me a message. Yes, this contact form actually works! 😂</p>
+          <p>Here you can send me a message. Yes, this contact form actually works! 😂</p>
           <div>
             <label className="block">Name:</label>
             <input 
