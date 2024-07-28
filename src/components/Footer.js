@@ -1,15 +1,6 @@
 import React from 'react';
-import { IoMoon, IoSunny } from "react-icons/io5";
 
 const Footer = () => {
-
-  const [dark, setDark] = React.useState(false);
-
-    const darkModeHandler = () => {
-        setDark(!dark);
-        document.body.classList.toggle("dark");
-    }
-
 
   return (
     <footer className="mt-auto flex justify-between bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-5 ">
