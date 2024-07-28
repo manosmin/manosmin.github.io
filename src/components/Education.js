@@ -29,8 +29,7 @@ const Education = () => {
           </a> 🎓</li>
           <li className='mt-1'>University  of Patras</li>
           <li className='mt-1'><p>09/2014 &ndash; 07/2024</p></li>
-          <li className='mt-1'><p className="inline font-medium">Grade: </p>
-          <p className="inline">6.57/10.0</p></li>
+          <li className='mt-1'><p className="inline font-medium">Grade: </p> <p className="inline">6.57/10.0</p></li>
           <li className='mt-1'><p className="inline font-medium">Thesis: </p>
           <a
             rel="noopener noreferrer"

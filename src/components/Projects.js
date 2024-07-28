@@ -42,7 +42,7 @@ function Projects() {
     const ProjectInfo4 = {
       Title: 'Decentralized Systems Implementation',
       Used: 'Python',
-      Description: 'Implementation of chord and pastry distributed hashing table algorithms (DHTs) and experimental evaluation using real data sets scraped from the web.',
+      Description: 'Implementation of Chord and Pastry distributed hashing table algorithms (DHTs) and experimental evaluation using real data sets scraped from the web.',
       Link: 'https://github.com/CPP-Bot-78/Decentralized-Systems-Technologies',
       Date: '12/2023',
       Icon: <FaUniversity className='inline' />
@@ -67,7 +67,7 @@ function Projects() {
         <MdComputer className='inline'/> Projects
       </button>
       {isOpen && (<>
-        <p className='mt-4'> During my university years, I've implemented several different projects together with my fellow students. From data science, machine learning and algorithm implementations, to full stack web development and microcontrollers programming. Below you can see some major projects from my studies and some personal ones. </p>
+        <p className='mt-4'> During my university years, I've implemented several different projects together with my fellow students 👬. From machine learning and routing algorithms implementations, to full stack web development, microcontroller programming and DBMS design. Below you can see some major projects from my studies and some personal ones. </p>
         <ProjectItem myInfo={ProjectInfo3}></ProjectItem>
         <ProjectItem myInfo={ProjectInfo2}></ProjectItem>
         <ProjectItem myInfo={ProjectInfo4}></ProjectItem>

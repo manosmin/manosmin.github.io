@@ -17,7 +17,8 @@ const Header = () => {
     <header className="sticky top-0 bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-5 mb-4">
     <h2 class="text-4xl font-bold">Manos Minadakis <small class="inline-block font-semibold text-gray-400 dark:text-gray-600">Computer Engineer</small></h2>
     <nav>
-        <ul className="flex mt-3 list-none">
+        <ul className="flex justify-between mt-3 list-none">
+          <div className='flex'>
           <li>
             <a rel="noopener noreferrer" href="https://www.github.com/manosmin" alt="github" target="_blank"><FaGithub size={25}/></a>
           </li>
@@ -32,7 +33,7 @@ const Header = () => {
           </li>
           <li>
             <a href="mailto:manosmin@hotmail.com" alt="email"><MdAlternateEmail size={25}/></a>
-          </li>
+          </li></div>
           <li>
               <button onClick={()=> darkModeHandler()}>
                 { !dark && <IoSunny size={25}/> }
