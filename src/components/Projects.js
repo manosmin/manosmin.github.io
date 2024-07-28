@@ -67,7 +67,7 @@ function Projects() {
         <MdComputer className='inline'/> Projects
       </button>
       {isOpen && (<>
-        <p className='mt-4'> During my university years, I've implemented several different projects together with my fellow students. From data science, machine learning and algorithm implementations in Python, to full stack web development in JavaScript, HTML, CSS and microcontrollers programming in Assembly and C++. Below you can see some major projects from my studies and some personal ones. </p>
+        <p className='mt-4'> During my university years, I've implemented several different projects together with my fellow students. From data science, machine learning and algorithm implementations, to full stack web development and microcontrollers programming. Below you can see some major projects from my studies and some personal ones. </p>
         <ProjectItem myInfo={ProjectInfo3}></ProjectItem>
         <ProjectItem myInfo={ProjectInfo2}></ProjectItem>
         <ProjectItem myInfo={ProjectInfo4}></ProjectItem>
