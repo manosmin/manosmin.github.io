@@ -2,8 +2,8 @@ import { React, useState } from 'react';
 import SkillItem from './SkillItem';
 import { GoGear } from "react-icons/go";
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaPython, FaHtml5, FaCss3Alt, FaJava, FaDatabase } from "react-icons/fa";
-import { SiKotlin, SiCplusplus, SiMongodb  } from "react-icons/si";
+import { FaPython, FaHtml5, FaCss3Alt, FaJava, FaDatabase, FaGitAlt  } from "react-icons/fa";
+import { SiKotlin, SiCplusplus, SiMongodb, SiGnubash   } from "react-icons/si";
 
 
 
@@ -31,6 +31,8 @@ function Skills() {
         <SkillItem myItem = {{Title: 'C++', Percentage: '60%', Icon: <SiCplusplus className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'Java', Percentage: '50%', Icon: <FaJava className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'Kotlin', Percentage: '40%', Icon: <SiKotlin className='mb-2 inline' size={25} />}}/>
+        <SkillItem myItem = {{Title: 'Git', Percentage: '80%', Icon: <FaGitAlt className='mb-2 inline' size={25} />}}/>
+        <SkillItem myItem = {{Title: 'Bash', Percentage: '50%', Icon: <SiGnubash className='mb-2 inline' size={25} />}}/>
         </>)}
     </section>
   )
