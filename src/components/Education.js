@@ -19,19 +19,19 @@ const Education = () => {
       {isOpen && (
         <div>
           <ul className='list-none'>
-          <li><a
+          <li className='mt-4'><a
             rel="noopener noreferrer"
             href="https://www.ceid.upatras.gr"
             target="_blank"
             className="font-medium hover:underline"
           >
-            MEng &ndash; Computer Engineering & Informatics
+            MEng, Computer Engineering & Informatics
           </a> 🎓</li>
-          <li>University  of Patras</li>
-          <li><p>09/2014 &ndash; 07/2024</p></li>
-          <li><p className="inline font-medium">Grade: </p>
+          <li className='mt-1'>University  of Patras</li>
+          <li className='mt-1'><p>09/2014 &ndash; 07/2024</p></li>
+          <li className='mt-1'><p className="inline font-medium">Grade: </p>
           <p className="inline">6.57/10.0</p></li>
-          <li><p className="inline font-medium">Thesis: </p>
+          <li className='mt-1'><p className="inline font-medium">Thesis: </p>
           <a
             rel="noopener noreferrer"
             target="_blank"
