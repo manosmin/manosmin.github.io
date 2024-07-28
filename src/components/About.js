@@ -27,7 +27,7 @@ const About = () => {
             I received my masters' degree from Computer Engineering & Informatics Department at University of Patras. During my studies, I've built a strong foundation in both hardware and softare. 
           </p>
           <p className="mt-2 text-center">
-            My degree courses focused mainly on algorithms and data structures, while my thesis's focus was on data mining and process modeling.
+            My degree courses focused mainly on algorithms and data structures, while my thesis' focus was process mining, a field between data mining and process modeling.
           </p>
           <p className="mt-2 text-center">
             Nowadays, I'm on the lookout for my first professional experience in the tech field, seeking to apply my skills and grow within a dynamic team 🌼.
