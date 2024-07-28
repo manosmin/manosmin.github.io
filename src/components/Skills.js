@@ -27,10 +27,10 @@ function Skills() {
         <SkillItem myItem = {{Title: 'CSS', Percentage: '70%', Icon: <FaCss3Alt className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'MongoDB', Percentage: '75%', Icon: <SiMongodb className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'SQL', Percentage: '90%', Icon: <FaDatabase className='mb-2 inline' size={25} />}}/>
-        <SkillItem myItem = {{Title: 'Python', Percentage: '80%', Icon: <FaPython className='mb-2 inline' size={25} />}}/>
+        <SkillItem myItem = {{Title: 'Python', Percentage: '90%', Icon: <FaPython className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'C++', Percentage: '60%', Icon: <SiCplusplus className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'Java', Percentage: '50%', Icon: <FaJava className='mb-2 inline' size={25} />}}/>
-        <SkillItem myItem = {{Title: 'Kotlin', Percentage: '40%', Icon: <SiKotlin className='mb-2 inline' size={25} />}}/>
+        <SkillItem myItem = {{Title: 'Kotlin', Percentage: '50%', Icon: <SiKotlin className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'Git', Percentage: '80%', Icon: <FaGitAlt className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'Bash', Percentage: '50%', Icon: <SiGnubash className='mb-2 inline' size={25} />}}/>
         </>)}
