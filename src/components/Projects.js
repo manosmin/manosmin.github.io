@@ -66,7 +66,7 @@ function Projects() {
         </h2>
       </div>
       {isOpen && (<div className='mt-8 cursor-normal space-y-4'>
-        <p> During my university years, I've implemented several different projects together with my fellow students 👬. From machine learning and routing algorithms implementations, to full stack web development, microcontroller programming and DBMS design. Below you can see some major projects from my studies and some personal ones. </p>
+        <p> During my university years, I've completed several different projects together with my fellow students 👬. From data science, machine learning and routing algorithm implementations, to full stack web development, microcontroller programming and database management systems design. Below you can see some major projects from my studies and some personal ones. </p>
         <ProjectItem myInfo={ProjectInfo3}></ProjectItem>
         <ProjectItem myInfo={ProjectInfo2}></ProjectItem>
         <ProjectItem myInfo={ProjectInfo4}></ProjectItem>

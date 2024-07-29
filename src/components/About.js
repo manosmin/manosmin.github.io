@@ -17,21 +17,21 @@ const About = () => {
         </h2>
       </div>
         {isOpen && (
-          <div className="w-full flex flex-col items-center text-center mt-8 cursor-normal">
-            <img src="/profile.png" id="profile-pic" alt="Profile" className="border-gray-100 dark:border-gray-900 w-48 h-48 rounded-full shadow-lg" />
-            <p className="mt-6">
+          <div className="w-full flex flex-col items-center text-center mt-8 cursor-normal space-y-2">
+            <img src="/profile.png" id="profile-pic" alt="Profile" className="mb-4 border-gray-100 dark:border-gray-900 w-48 h-48 rounded-full shadow-lg" />
+            <p>
             🙋‍♂️ My name is <span className='font-medium'>Manos</span>, I live in Heraklion, Greece, I'm 28 years old and I'm a recent Computer Engineering graduate 🧑‍🎓.
             </p>
-            <p className="mt-2">
+            <p>
               I received my masters' degree from <span className='font-medium'>Computer Engineering & Informatics Department at University of Patras</span>. During my studies, I've built a strong foundation in both hardware and software 👨‍💻. 
             </p>
-            <p className="mt-2">
+            <p>
               My degree courses focused mainly on algorithms and data structures, while my thesis' subject was process mining, a field between data mining and process science.
             </p>
-            <p className="mt-2">
+            <p>
               Nowadays, I'm on the lookout for my first professional experience in the tech field, seeking to apply my skills and grow within a dynamic team 🌼.
             </p>
-            <p className='mt-2'>I'm eager to contribute to real-world projects and make a meaningful impact, so feel free to <a className="underline" href="mailto:manosmin@hotmail.com">contact me</a> for any opportunities 🌍.</p>
+            <p>I'm eager to contribute to real-world projects and make a meaningful impact, so feel free to <a className="underline" href="mailto:manosmin@hotmail.com">contact me</a> for any opportunities 🌍.</p>
           </div>
         )}
       </div>
