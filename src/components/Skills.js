@@ -17,11 +17,13 @@ function Skills() {
     };
     
   return (
-    <section id="skills" className="bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10">
-        <button onClick={toggleAccordion} className="text-2xl font-semibold mb-4">
-            <GoGear className='inline'/> Skills
-        </button>
-      {isOpen && ( <>
+    <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
+      <div id="skills" onClick={toggleAccordion} className="cursor-pointer">
+        <h2 className="text-2xl font-semibold">
+          <GoGear className='inline'/> Skills
+        </h2>
+      </div>
+      {isOpen && ( <div className='mt-8 cursor-normal'>
         <SkillItem myItem = {{Title: 'JavaScript', Percentage: '90%', Icon: <IoLogoJavascript className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'HTML', Percentage: '75%', Icon: <FaHtml5 className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'CSS', Percentage: '70%', Icon: <FaCss3Alt className='mb-2 inline' size={25} />}}/>
@@ -33,8 +35,8 @@ function Skills() {
         <SkillItem myItem = {{Title: 'Kotlin', Percentage: '50%', Icon: <SiKotlin className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'Git', Percentage: '80%', Icon: <FaGitAlt className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'Bash', Percentage: '50%', Icon: <SiGnubash className='mb-2 inline' size={25} />}}/>
-        </>)}
-    </section>
+        </div>)}
+    </div>
   )
 }
 

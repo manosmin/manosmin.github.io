@@ -47,16 +47,15 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="mb-10 bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10">
-      <button
-        onClick={toggleFormVisibility}
-        className="text-2xl font-semibold mb-4"
-      >
+    <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
+      <div id="skills" onClick={toggleFormVisibility} className="cursor-pointer">
+        <h2 className="text-2xl font-semibold">
         <FaRegEnvelope className='inline'/> Contact
-      </button>
+        </h2>
+    </div>
       {isFormVisible && (
         
-        <form onSubmit={handleSubmit} className="mt-4 space-y-4">
+        <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4">
           <p>You can also send me a message through this form. Yes, it actually works! 😎</p>
           <div>
             <label className="block">Name:</label>
@@ -93,7 +92,7 @@ const Contact = () => {
           <button type="submit" className="bg-blue-700 hover:bg-blue-600 text-gray-100 font-semibold py-2 px-4 rounded-full">Send</button>
         </form>
       )}
-    </section>
+    </div>
   );
 };
 

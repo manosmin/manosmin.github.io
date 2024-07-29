@@ -9,17 +9,16 @@ const Education = () => {
   };
 
   return (
-    <section id="education" className="bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10">
-      <button
-        onClick={toggleAccordion}
-        className="text-2xl font-semibold mb-4"
-      >
-        <FiBookOpen className='inline'/> Education
-      </button>
+    <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
+      <div id="education" onClick={toggleAccordion} className="cursor-pointer">
+        <h2 className="text-2xl font-semibold">
+          <FiBookOpen className='inline'/> Education
+        </h2>
+      </div>
       {isOpen && (
-        <div>
+        <div className="mt-8 cursor-normal">
           <ul className='list-none'>
-          <li className='mt-4'><a
+          <li><a
             rel="noopener noreferrer"
             href="https://www.ceid.upatras.gr"
             target="_blank"
@@ -45,7 +44,7 @@ const Education = () => {
           </ul>
         </div>
       )}
-    </section>
+    </div>
   );
 };
 

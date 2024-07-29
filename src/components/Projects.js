@@ -59,23 +59,22 @@ function Projects() {
 
 
   return (
-    <section id="projects" className="bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10">
-        <button
-        onClick={toggleAccordion}
-        className="text-2xl font-semibold mb-4"
-      >
+    <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
+      <div id="skills" onClick={toggleAccordion} className="cursor-pointer">
+        <h2 className="text-2xl font-semibold">
         <MdComputer className='inline'/> Projects
-      </button>
-      {isOpen && (<>
-        <p className='mt-4'> During my university years, I've implemented several different projects together with my fellow students 👬. From machine learning and routing algorithms implementations, to full stack web development, microcontroller programming and DBMS design. Below you can see some major projects from my studies and some personal ones. </p>
+        </h2>
+      </div>
+      {isOpen && (<div className='mt-8 cursor-normal'>
+        <p> During my university years, I've implemented several different projects together with my fellow students 👬. From machine learning and routing algorithms implementations, to full stack web development, microcontroller programming and DBMS design. Below you can see some major projects from my studies and some personal ones. </p>
         <ProjectItem myInfo={ProjectInfo3}></ProjectItem>
         <ProjectItem myInfo={ProjectInfo2}></ProjectItem>
         <ProjectItem myInfo={ProjectInfo4}></ProjectItem>
         <ProjectItem myInfo={ProjectInfo1}></ProjectItem>
         <ProjectItem myInfo={ProjectInfo5}></ProjectItem>
-        </>
+        </div>
         )}
-    </section>
+    </div>
   )
 }
 
