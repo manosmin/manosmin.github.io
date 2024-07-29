@@ -17,7 +17,7 @@ const Education = () => {
       </div>
       {isOpen && (
         <div className="mt-8 cursor-normal">
-          <ul className='list-none'>
+          <ul className='list-none space-y-1'>
           <li><a
             rel="noopener noreferrer"
             href="https://www.ceid.upatras.gr"
@@ -26,10 +26,10 @@ const Education = () => {
           >
             MEng, Computer Engineering & Informatics
           </a> 🎓</li>
-          <li className='mt-1'>University  of Patras</li>
-          <li className='mt-1'><p>09/2014 &ndash; 07/2024</p></li>
-          <li className='mt-1'><p className="inline font-medium">Grade: </p> <p className="inline">6.57/10.0</p></li>
-          <li className='mt-1'><p className="inline font-medium">Thesis: </p>
+          <li>University  of Patras</li>
+          <li><p>09/2014 &ndash; 07/2024</p></li>
+          <li><p className="inline font-medium">Grade: </p> <p className="inline">6.57/10.0</p></li>
+          <li><p className="inline font-medium">Thesis: </p>
           <a
             rel="noopener noreferrer"
             target="_blank"

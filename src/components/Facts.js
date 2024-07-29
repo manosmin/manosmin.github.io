@@ -17,10 +17,10 @@ function Facts() {
       </h2>
     </div>
       {isOpen && (
-        <ul class="mt-4 cursor-normal list-inside list-disc">
-            <li className='mt-1'>I was trained to be a flight dispatcher and worked in the control tower of a small airport on a border island, as part of my military service. 👨🏻‍✈️✈️</li>
-            <li className='mt-1'>I used to play online poker and have won several tournaments at small stakes, the largest of which had 3600 participants. 🃏🏆</li>
-            <li className='mt-1'>In my teenage years, I played for a local basketball team as a shooting guard and participated in the juniors' local championship. ( っ'-')╮ =͟͟͞͞🏀 </li>
+        <ul class="mt-8 cursor-normal list-inside list-disc space-y-1">
+            <li>I was trained to be a flight dispatcher and worked in the control tower of a small airport on a border island, as part of my military service. 👨🏻‍✈️✈️</li>
+            <li>I used to play online poker and have won several tournaments at small stakes, the largest of which had 3600 participants. 🃏🏆</li>
+            <li>In my teenage years, I played for a local basketball team as a shooting guard and participated in the juniors' local championship. ( っ'-')╮ =͟͟͞͞🏀 </li>
         </ul>
         )}
     </div>
