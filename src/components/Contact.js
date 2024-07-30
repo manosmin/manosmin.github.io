@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { FaRegEnvelope } from "react-icons/fa";
+import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
 
 
 const Contact = () => {
@@ -11,6 +12,7 @@ const Contact = () => {
   });
 
   const [isFormVisible, setIsFormVisible] = useState(false);
+  const [isArrowDown, setIsArrowDown] = useState(true);
 
   const handleChange = (e) => {
     setFormData({
@@ -44,14 +46,17 @@ const Contact = () => {
 
   const toggleFormVisibility = () => {
     setIsFormVisible(!isFormVisible);
+    setIsArrowDown(!isArrowDown);
   };
+
 
   return (
     <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
-      <div id="contact" onClick={toggleFormVisibility} className="cursor-pointer">
+      <div id="contact" onClick={toggleFormVisibility} className="flex justify-between cursor-pointer">
         <h2 className="animate-slide-in opacity-0 text-2xl font-semibold" style={{ "--delay": 1.2 + "s" }}>
-        <FaRegEnvelope className='inline'/> Contact
+        <p className='flex justify-center items-center'><FaRegEnvelope className='mr-2'/> Contact</p>
         </h2>
+        {isArrowDown ? <IoIosArrowDown size={25}/> : <IoIosArrowUp size={25}/>}
     </div>
       {isFormVisible && (
         <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4" >

@@ -1,20 +1,25 @@
 import React, { useState } from 'react';
 import { FaRegGrinStars } from "react-icons/fa";
+import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
+
 
 
 function Facts() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isArrowDown, setIsArrowDown] = useState(true);
 
     const toggleAccordion = () => {
       setIsOpen(!isOpen);
+      setIsArrowDown(!isArrowDown);
     };
 
   return (
     <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
-    <div id="facts" onClick={toggleAccordion} className="cursor-pointer">
+    <div id="facts" onClick={toggleAccordion} className="flex justify-between cursor-pointer">
       <h2 className="animate-slide-in opacity-0 text-2xl font-semibold" style={{ "--delay": 1 + "s" }}>
-        <FaRegGrinStars className='inline'/> Fun Facts
+      <p className='flex justify-center items-center'><FaRegGrinStars className='mr-2'/> Fun Facts</p>
       </h2>
+      {isArrowDown ? <IoIosArrowDown size={25}/> : <IoIosArrowUp size={25}/>}
     </div>
       {isOpen && (
         <ul class="mt-8 cursor-normal list-inside list-disc space-y-2">

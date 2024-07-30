@@ -1,20 +1,25 @@
 import React, { useState } from 'react';
 import { FiInfo } from "react-icons/fi";
+import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
+
 
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isArrowDown, setIsArrowDown] = useState(true);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
+    setIsArrowDown(!isArrowDown);
   };
 
   return (
     <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
-      <div id="about" onClick={toggleAccordion} className="cursor-pointer">
+      <div id="about" onClick={toggleAccordion} className="flex justify-between cursor-pointer">
         <h2 className="animate-slide-in opacity-0 text-2xl font-semibold" style={{ "--delay": 0.2 + "s" }}>
-          <FiInfo className='inline'/> About Me 
+        <p className='flex justify-center items-center'><FiInfo className='mr-2'/> About Me </p>
         </h2>
+        {isArrowDown ? <IoIosArrowDown size={25}/> : <IoIosArrowUp size={25}/>}
       </div>
         {isOpen && ( 
           <div className="w-full flex flex-col items-center text-center mt-8 cursor-normal space-y-2"  >
@@ -22,13 +27,13 @@ const About = () => {
             <p className='animate-fade-in opacity-0' style={{ "--delay": 1.2 + "s" }}>
             Hello 🙋‍♂️ I'm <span className='font-medium'>Manos</span>, a Computer Engineer currently based in Heraklion, Greece 🇬🇷.
             </p>
-            <p className='animate-fade-in opacity-0' style={{ "--delay": 2.2 + "s" }}>
+            <p className='animate-fade-in opacity-0' style={{ "--delay": 1.6 + "s" }}>
               I recently completed my masters' degree in Computer Engineering and Informatics at University of Patras 🧑‍🎓. During my studies, I've built a strong foundation in both hardware and software 👨‍💻. 
             </p>
-            <p className='animate-fade-in opacity-0' style={{ "--delay": 3.2 + "s" }}>
+            <p className='animate-fade-in opacity-0' style={{ "--delay": 2 + "s" }}>
               At this moment, I'm on the lookout for my first professional experience in the tech field, with a particular interest in <span className='font-medium'>software and web development</span>, seeking to apply my skills and grow within a dynamic team 🌼.
             </p>
-            <p className='animate-fade-in opacity-0' style={{ "--delay": 4.2   + "s" }}>I'm eager to contribute to real-world projects and make a meaningful impact, so feel free to <a className="hover:underline" href="mailto:manosmin@hotmail.com">contact me</a> for related opportunities 🌍.</p>
+            <p className='animate-fade-in opacity-0' style={{ "--delay": 2.4   + "s" }}>I'm eager to contribute to real-world projects and make a meaningful impact, so feel free to <a className="hover:underline" href="mailto:manosmin@hotmail.com">contact me</a> for related opportunities 🌍.</p>
           </div>
         )}
       </div>

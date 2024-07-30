@@ -1,19 +1,24 @@
 import React, { useState } from 'react';
 import { FiBookOpen } from "react-icons/fi";
+import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
+
 
 const Education = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isArrowDown, setIsArrowDown] = useState(true);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
+    setIsArrowDown(!isArrowDown);
   };
 
   return (
     <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
-      <div id="education" onClick={toggleAccordion} className="cursor-pointer">
+      <div id="education" onClick={toggleAccordion} className="flex justify-between cursor-pointer">
         <h2 className="animate-slide-in opacity-0 text-2xl font-semibold" style={{ "--delay": 0.4 + "s" }}>
-          <FiBookOpen className='inline'/> Education
+        <p className='flex justify-center items-center'><FiBookOpen className='mr-2'/> Education</p>
         </h2>
+        {isArrowDown ? <IoIosArrowDown size={25}/> : <IoIosArrowUp size={25}/>}
       </div>
       {isOpen && (
         <div className="mt-8 cursor-normal animate-slide-in opacity-0" style={{ "--delay": 0.2 + "s" }}>
