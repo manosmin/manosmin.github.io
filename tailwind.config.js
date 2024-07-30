@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "drop-in": 'dropIn 0.5s ease-in-out 0.25s 1',
-        "fly-in-down": 'flyInDown 0.6s ease-in-out 0.25s 1',
+        "drop-in": 'dropIn 0.5s ease-in-out forwards var(--delay, 0)',
+        "fly-in-down": 'flyInDown 0.6s ease-in-out forwards var(--delay, 0)',
         "fade-in": 'fadeIn 1s ease-in-out forwards var(--delay, 0)',
         "slide-in": "slideIn .5s ease-in-out forwards var(--delay, 0)"
       },

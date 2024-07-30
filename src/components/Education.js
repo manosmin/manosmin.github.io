@@ -28,8 +28,8 @@ const Education = () => {
           </a> 🎓</li>
           <li className='font-medium animate-slide-in opacity-0' style={{ "--delay": 0.2 + "s" }}>University  of Patras</li>
           <li className='animate-slide-in opacity-0' style={{ "--delay": 0.4 + "s" }}><p>09/2014 &ndash; 07/2024</p></li>
-          <li className='animate-slide-in opacity-0' style={{ "--delay": 0.6 + "s" }}><p className="inline font-medium" >Grade: </p> <p className="inline">6.57/10.0 (2:2)</p></li>
-          <li className='animate-slide-in opacity-0' style={{ "--delay": 0.6 + "s" }}><p className="inline font-medium" >Thesis: </p>
+          <li className='animate-slide-in opacity-0' style={{ "--delay": 0.4 + "s" }}><p className="inline font-medium" >Grade: </p> <p className="inline">6.57/10.0 (2:2)</p></li>
+          <li className='animate-slide-in opacity-0' style={{ "--delay": 0.4 + "s" }}><p className="inline font-medium" >Thesis: </p>
           <a
             rel="noopener noreferrer"
             target="_blank"
