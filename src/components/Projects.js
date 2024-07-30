@@ -49,7 +49,7 @@ function Projects() {
   return (
     <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
       <div id="projects" onClick={toggleAccordion} className="flex justify-between cursor-pointer">
-        <h2 className="animate-slide-in opacity-0 text-2xl font-semibold" style={{ "--delay": 0.6 + "s" }}>
+        <h2 className="animate-slide-in-left opacity-0 text-2xl font-semibold" style={{ "--delay": 0.6 + "s" }}>
         <p className='flex justify-center items-center'><MdComputer className='mr-2'/> Projects</p>
         </h2>
         {isArrowDown ? <IoIosArrowDown size={25}/> : <IoIosArrowUp size={25}/>}
