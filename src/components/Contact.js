@@ -55,9 +55,9 @@ const Contact = () => {
     </div>
       {isFormVisible && (
         
-        <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4">
-          <p>You can also send me a message through this form. Yes, it actually works! 😎</p>
-          <div>
+        <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4" >
+          <p className='animate-slide-in opacity-0' style={{ "--delay":  0.2 + "s" }}>You can also send me a message through this form. Yes, it actually works! 😎</p>
+          <div className='animate-slide-in opacity-0' style={{ "--delay":  0.4 + "s" }}>
             <label className="block">Name:</label>
             <input 
               type="text" 
@@ -68,7 +68,7 @@ const Contact = () => {
               required 
             />
           </div>
-          <div>
+          <div className='animate-slide-in opacity-0' style={{ "--delay":  0.4 + "s" }}>
             <label className="block">Email:</label>
             <input 
               type="email" 
@@ -79,7 +79,7 @@ const Contact = () => {
               required 
             />
           </div>
-          <div>
+          <div className='animate-slide-in opacity-0' style={{ "--delay":  0.4 + "s" }}>
             <label className="block">Message:</label>
             <textarea 
               name="message" 
@@ -89,7 +89,7 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <button type="submit" className="bg-blue-700 hover:bg-blue-600 text-gray-100 font-semibold py-2 px-4 rounded-full">Send</button>
+          <button type="submit" className="animate-slide-in opacity-0 bg-blue-700 hover:bg-blue-600 text-gray-100 font-semibold py-2 px-4 rounded-full" style={{ "--delay":  1 + "s" }}>Send</button>
         </form>
       )}
     </div>

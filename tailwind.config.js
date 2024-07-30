@@ -8,7 +8,8 @@ module.exports = {
       animation: {
         "drop-in": 'dropIn 0.5s ease-in-out 0.25s 1',
         "fly-in-down": 'flyInDown 0.6s ease-in-out 0.25s 1',
-        "fade-in": 'fadeIn 2s ease-in-out 0.25s 1'
+        "fade-in": 'fadeIn 1s ease-in-out forwards var(--delay, 0)',
+        "slide-in": "slideIn .5s ease-in-out forwards var(--delay, 0)"
       },
       keyframes: {
         dropIn: {
@@ -24,32 +25,42 @@ module.exports = {
         },
         flyInDown: {
           "0%": {
-              opacity: "0",
-              transform: "translate3d(0, -1500px, 0)",
-              transitionTimingFunction: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+            opacity: "0",
+            transform: "translate3d(0, -1500px, 0)",
+            transitionTimingFunction: "cubic-bezier(0.215, 0.61, 0.355, 1)",
           },
           "60%": {
-              opacity: "1",
-              transform: "translate3d(0, 25px, 0)"
+            opacity: "1",
+            transform: "translate3d(0, 25px, 0)"
           },
           "75%": {
-              transform: "translate3d(0, -10px, 0)"
+            transform: "translate3d(0, -10px, 0)"
           },
           "90%": {
-              transform: "translate3d(0, 5px, 0)"
+            transform: "translate3d(0, 5px, 0)"
           },
           "100%": {
-              transform: "none"
+            transform: "none"
           },
-      },
-      fadeIn: {
-                    "0%": {
-                        opacity: 0
-                    },
-                    "100%": {
-                        opacity: 1
-                    },
-                },
+        },
+        fadeIn: {
+          "0%": {
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 1
+          },
+        },
+        slideIn: {
+          "0%": {
+            opacity: 0,
+            transform: "translateX(100%)"
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateX(0)"
+          }
+        }
       },
     },
   },

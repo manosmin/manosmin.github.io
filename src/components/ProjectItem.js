@@ -4,7 +4,7 @@ import { FiExternalLink } from "react-icons/fi";
 
 function ProjectItem(props) {
   return (
-    <ul className='mt-4 list-none'>
+    <ul className='animate-slide-in opacity-0 mt-4 list-none' style={{ "--delay": props.myInfo.i * 0.2 + "s" }}>
         <li>{props.myInfo.Icon}&nbsp;<FiExternalLink className='inline'/>&nbsp;
         <a rel="noopener noreferrer"
         target="_blank"

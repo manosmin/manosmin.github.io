@@ -18,7 +18,8 @@ function Projects() {
       Description: 'A web application that uses a REST API to provide a search engine for movies, games, series etc.',
       Link: 'https://github.com/manosmin/movie-picker-app',
       Date: '02/2024',
-      Icon: <MdPerson className='inline' />
+      Icon: <MdPerson className='inline'/>,
+      i: 2 
     }
 
     const ProjectInfo1 = {
@@ -27,7 +28,8 @@ function Projects() {
       Description: 'A website that helps users track and manage their potential exposure to virus carriers by crowd-sourcing data about their visits to various places in Patras, Greece.',
       Link: 'https://github.com/manosmin/ceid-web',
       Date: '05/2022',
-      Icon: <FaUniversity className='inline' />
+      Icon: <FaUniversity className='inline' />,
+      i: 3
     }
 
     const ProjectInfo3 = {
@@ -36,7 +38,8 @@ function Projects() {
       Description: 'A fully responsive web page used as a personal portfolio, in order to showcase my education, experience, projects etc.',
       Link: 'https://github.com/manosmin/manosmin.github.io',
       Date: '07/2024',
-      Icon: <MdPerson className='inline' />
+      Icon: <MdPerson className='inline' />,
+      i: 1 
     }
 
   return (
