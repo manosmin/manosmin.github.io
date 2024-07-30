@@ -40,7 +40,8 @@ module.exports = {
             transform: "translate3d(0, 5px, 0)"
           },
           "100%": {
-            transform: "none"
+            transform: "none",
+            opacity: 1
           },
         },
         fadeIn: {

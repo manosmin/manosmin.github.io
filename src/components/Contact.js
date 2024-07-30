@@ -49,14 +49,14 @@ const Contact = () => {
   return (
     <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
       <div id="contact" onClick={toggleFormVisibility} className="cursor-pointer">
-        <h2 className="text-2xl font-semibold">
+        <h2 className="animate-slide-in opacity-0 text-2xl font-semibold" style={{ "--delay": 1.2 + "s" }}>
         <FaRegEnvelope className='inline'/> Contact
         </h2>
     </div>
       {isFormVisible && (
-        <form onSubmit={handleSubmit} style={{ "--delay":  0.2 + "s" }} className="animate-slide-in opacity-0 mt-8 cursor-normal space-y-4" >
-          <p>You can also send me a message through this form. Yes, it actually works! 😎</p>
-          <div>
+        <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4" >
+          <p className='animate-fade-in opacity-0' style={{ "--delay":  0.2 + "s" }}>You can also send me a message through this form. Yes, it actually works! 😎</p>
+          <div className='animate-slide-in opacity-0' style={{ "--delay":  0.6 + "s" }}>
             <label className="block">Name:</label>
             <input 
               type="text" 
@@ -67,7 +67,7 @@ const Contact = () => {
               required 
             />
           </div>
-          <div>
+          <div className='animate-slide-in opacity-0' style={{ "--delay":  1 + "s" }}>
             <label className="block">Email:</label>
             <input 
               type="email" 
@@ -78,7 +78,7 @@ const Contact = () => {
               required 
             />
           </div>
-          <div>
+          <div className='animate-slide-in opacity-0' style={{ "--delay":  1.4 + "s" }}>
             <label className="block">Message:</label>
             <textarea 
               name="message" 
@@ -88,7 +88,7 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <button type="submit" className="bg-blue-700 hover:bg-blue-600 text-gray-100 font-semibold py-2 px-4 rounded-full">Send</button>
+          <button type="submit" style={{ "--delay":  1.8 + "s" }} className="animate-fade-in opacity-0 bg-blue-700 hover:bg-blue-600 text-gray-100 font-semibold py-2 px-4 rounded-full">Send</button>
         </form>
       )}
     </div>

@@ -19,7 +19,7 @@ function Skills() {
   return (
     <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
       <div id="skills" onClick={toggleAccordion} className="cursor-pointer">
-        <h2 className="text-2xl font-semibold">
+        <h2 className="animate-slide-in opacity-0 text-2xl font-semibold" style={{ "--delay": 0.6 + "s" }}>
           <GoGear className='inline'/> Skills
         </h2>
       </div>
