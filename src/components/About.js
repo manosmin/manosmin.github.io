@@ -22,13 +22,13 @@ const About = () => {
             <p className='animate-slide-in opacity-0' style={{ "--delay": 0.6 + "s" }}>
             Hello 🙋‍♂️, my name is <span className='font-medium'>Manos</span> and I'm a computer engineer, currently based in Heraklion, Greece 🇬🇷.
             </p>
-            <p className='animate-slide-in opacity-0' style={{ "--delay": 1.4 + "s" }}>
+            <p className='animate-slide-in-left opacity-0' style={{ "--delay": 1.4 + "s" }}>
               I recently completed my masters' degree in Computer Engineering and Informatics at University of Patras 🧑‍🎓. During my studies, I've built a strong foundation in both hardware and software 👨‍💻. 
             </p>
             <p className='animate-slide-in opacity-0' style={{ "--delay": 2.2 + "s" }}>
               My degree courses focused mainly on algorithms and data structures, while my diploma thesis' subject was process mining, a field between data mining and process science.
             </p>
-            <p className='animate-slide-in opacity-0' style={{ "--delay": 3 + "s" }}>
+            <p className='animate-slide-in-left opacity-0' style={{ "--delay": 3 + "s" }}>
               Nowadays, I'm on the lookout for my first professional experience in the tech field, with a particular interest in <span className='font-medium'>software development</span>, seeking to apply my skills and grow within a dynamic team 🌼.
             </p>
             <p className='animate-slide-in opacity-0' style={{ "--delay": 3.8 + "s" }}>I'm eager to contribute to real-world projects and make a meaningful impact, so feel free to <a className="hover:underline" href="mailto:manosmin@hotmail.com">contact me</a> for related opportunities 💬.</p>
