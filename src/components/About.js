@@ -20,13 +20,13 @@ const About = () => {
           <div className="w-full flex flex-col items-center text-center mt-8 cursor-normal space-y-2">
             <img src="/profile.png" id="profile-pic" alt="Profile" className="mb-4 border-gray-100 dark:border-gray-900 w-48 h-48 rounded-full shadow-lg"  />
             <p>
-            🙋‍♂️ My name is <span className='font-medium'>Manos</span>. I'm a Computer Engineer, currently located in Heraklion, 🇬🇷.
+            Hello 🙋‍♂️. My name is <span className='font-medium'>Manos</span> and I'm a computer engineer, currently based in Heraklion, Greece 🇬🇷.
             </p>
             <p>
               I recently completed my masters' degree in Computer Engineering and Informatics at University of Patras. During my studies, I've built a strong foundation in both hardware and software 👨‍💻. 
             </p>
             <p>
-              My degree courses focused mainly on algorithms and data structures, while my thesis' subject was process mining, a field between data mining and process science 🧑‍🎓.
+              My elective courses focused mainly on algorithms and data structures, while my thesis' subject was process mining, a field between data mining and process science 🧑‍🎓.
             </p>
             <p>
               Nowadays, I'm on the lookout for my first professional experience in the tech field, seeking to apply my skills and grow within a dynamic team 🌼.

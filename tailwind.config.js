@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       animation: {
         "drop-in": 'dropIn 0.5s ease-in-out 0.25s 1',
-        "fly-in-down": 'flyInDown 0.6s ease-in-out 0.25s 1'
+        "fly-in-down": 'flyInDown 0.6s ease-in-out 0.25s 1',
+        "fade-in": 'fadeIn 2s ease-in-out 0.25s 1'
       },
       keyframes: {
         dropIn: {
@@ -41,6 +42,14 @@ module.exports = {
               transform: "none"
           },
       },
+      fadeIn: {
+                    "0%": {
+                        opacity: 0
+                    },
+                    "100%": {
+                        opacity: 1
+                    },
+                },
       },
     },
   },

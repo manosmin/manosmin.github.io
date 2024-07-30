@@ -17,18 +17,18 @@ const Education = () => {
       </div>
       {isOpen && (
         <div className="mt-8 cursor-normal">
-          <ul className='list-none space-y-1'>
+          <ul className='list-none space-y-2'>
           <li><a
             rel="noopener noreferrer"
             href="https://www.ceid.upatras.gr"
             target="_blank"
             className="font-medium hover:underline"
           >
-            MEng, Computer Engineering & Informatics
+            MEng &ndash; Computer Engineering and Informatics Department (CEID)
           </a> 🎓</li>
-          <li>University  of Patras</li>
+          <li className='font-medium'>University  of Patras</li>
           <li><p>09/2014 &ndash; 07/2024</p></li>
-          <li><p className="inline font-medium">Grade: </p> <p className="inline">6.57/10.0</p></li>
+          <li><p className="inline font-medium">Grade: </p> <p className="inline">6.57/10.0 (2:2)</p></li>
           <li><p className="inline font-medium">Thesis: </p>
           <a
             rel="noopener noreferrer"
