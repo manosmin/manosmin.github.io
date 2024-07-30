@@ -18,20 +18,17 @@ const About = () => {
       </div>
         {isOpen && ( 
           <div className="w-full flex flex-col items-center text-center mt-8 cursor-normal space-y-2"  >
-            <img src="/profile.png" id="profile-pic" alt="Profile" className="border-2 bg-gray-800 dark:bg-gray-300 animate-fly-in-down opacity-0 mb-4 border-gray-100 dark:border-gray-900 w-48 h-48 rounded-full shadow-lg" style={{ "--delay": 0.2 + "s" }}  />
+            <img src="/profile.png" id="profile-pic" alt="Profile" className="border-2 bg-gray-800 dark:bg-gray-300 animate-fade-in-down opacity-0 mb-4 border-gray-100 dark:border-gray-900 w-48 h-48 rounded-full shadow-lg" style={{ "--delay": 0.2 + "s" }}  />
             <p className='animate-fade-in opacity-0' style={{ "--delay": 1.2 + "s" }}>
-            Hello 🙋‍♂️, my name is <span className='font-medium'>Manos</span> and I'm a Computer Engineer, currently based in Heraklion, Greece 🇬🇷.
+            Hello 🙋‍♂️ I'm <span className='font-medium'>Manos</span>, a Computer Engineer currently based in Heraklion, Greece 🇬🇷.
             </p>
-            <p className='animate-fade-in opacity-0' style={{ "--delay": 2.8 + "s" }}>
+            <p className='animate-fade-in opacity-0' style={{ "--delay": 2.2 + "s" }}>
               I recently completed my masters' degree in Computer Engineering and Informatics at University of Patras 🧑‍🎓. During my studies, I've built a strong foundation in both hardware and software 👨‍💻. 
             </p>
-            <p className='animate-fade-in opacity-0' style={{ "--delay": 4.4 + "s" }}>
-              My degree courses focused mainly on algorithms and data structures, while my diploma thesis' subject was process mining, a field between data mining and process science.
+            <p className='animate-fade-in opacity-0' style={{ "--delay": 3.2 + "s" }}>
+              At this moment, I'm on the lookout for my first professional experience in the tech field, with a particular interest in <span className='font-medium'>software and web development</span>, seeking to apply my skills and grow within a dynamic team 🌼.
             </p>
-            <p className='animate-fade-in opacity-0' style={{ "--delay": 6 + "s" }}>
-              Nowadays, I'm on the lookout for my first professional experience in the tech field, with a particular interest in <span className='font-medium'>software and web development</span>, seeking to apply my skills and grow within a dynamic team 🌼.
-            </p>
-            <p className='animate-fade-in opacity-0' style={{ "--delay": 7.6 + "s" }}>I'm eager to contribute to real-world projects and make a meaningful impact, so feel free to <a className="hover:underline" href="mailto:manosmin@hotmail.com">contact me</a> for related opportunities 💬.</p>
+            <p className='animate-fade-in opacity-0' style={{ "--delay": 4.2   + "s" }}>I'm eager to contribute to real-world projects and make a meaningful impact, so feel free to <a className="hover:underline" href="mailto:manosmin@hotmail.com">contact me</a> for related opportunities 🌍.</p>
           </div>
         )}
       </div>

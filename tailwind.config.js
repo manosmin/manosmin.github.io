@@ -9,6 +9,7 @@ module.exports = {
         "drop-in": 'dropIn 0.5s ease-in-out forwards var(--delay, 0)',
         "fly-in-down": 'flyInDown 0.6s ease-in-out forwards var(--delay, 0)',
         "fade-in": 'fadeIn 1s ease-in-out forwards var(--delay, 0)',
+        "fade-in-down": 'fadeInDown 1s ease-in-out forwards var(--delay, 0)',
         "slide-in": "slideIn .5s ease-in-out forwards var(--delay, 0)",
         "slide-in-left": "slideInLeft .5s ease-in-out forwards var(--delay, 0)"
       },
@@ -51,6 +52,16 @@ module.exports = {
           },
           "100%": {
             opacity: 1
+          },
+        },
+        fadeInDown: {
+          "0%": {
+            opacity: 0,
+            transform: "translate3d(0, -100%, 0)"
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)"
           },
         },
         slideIn: {
