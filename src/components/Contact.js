@@ -67,7 +67,7 @@ const Contact = () => {
               required 
             />
           </div>
-          <div className='animate-slide-in opacity-0' style={{ "--delay":  1 + "s" }}>
+          <div className='animate-slide-in-left opacity-0' style={{ "--delay":  1 + "s" }}>
             <label className="block">Email:</label>
             <input 
               type="email" 

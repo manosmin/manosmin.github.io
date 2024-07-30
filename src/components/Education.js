@@ -11,7 +11,7 @@ const Education = () => {
   return (
     <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
       <div id="education" onClick={toggleAccordion} className="cursor-pointer">
-        <h2 className="animate-slide-in opacity-0 text-2xl font-semibold" style={{ "--delay": 0.4 + "s" }}>
+        <h2 className="animate-slide-in opacity-0 text-2xl font-semibold" style={{ "--delay": 0.2 + "s" }}>
           <FiBookOpen className='inline'/> Education
         </h2>
       </div>
@@ -24,12 +24,12 @@ const Education = () => {
             target="_blank"
             className="font-medium hover:underline"
           >
-            MEng &ndash; Computer Engineering and Informatics Department (CEID)
+            MEng, Computer Engineering and Informatics Department (CEID)
           </a> 🎓</li>
           <li className='font-medium animate-slide-in opacity-0' style={{ "--delay": 0.2 + "s" }}>University  of Patras</li>
-          <li className='animate-slide-in opacity-0' style={{ "--delay": 0.4 + "s" }}><p>09/2014 &ndash; 07/2024</p></li>
-          <li className='animate-slide-in opacity-0' style={{ "--delay": 0.4 + "s" }}><p className="inline font-medium" >Grade: </p> <p className="inline">6.57/10.0 (2:2)</p></li>
-          <li className='animate-slide-in opacity-0' style={{ "--delay": 0.4 + "s" }}><p className="inline font-medium" >Thesis: </p>
+          <li className='animate-slide-in opacity-0' style={{ "--delay": 0.2 + "s" }}><p>09/2014 &ndash; 07/2024</p></li>
+          <li className='animate-slide-in-left opacity-0' style={{ "--delay": 0.6 + "s" }}><p className="inline font-medium" >Grade: </p> <p className="inline">6.57/10.0 (2:2)</p></li>
+          <li className='animate-slide-in-left opacity-0' style={{ "--delay": 0.6 + "s" }}><p className="inline font-medium" >Thesis: </p>
           <a
             rel="noopener noreferrer"
             target="_blank"
