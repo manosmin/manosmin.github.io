@@ -39,25 +39,6 @@ function Projects() {
       Icon: <MdPerson className='inline' />
     }
 
-    const ProjectInfo4 = {
-      Title: 'Decentralized Systems Implementation',
-      Used: 'Python',
-      Description: 'Implementation of Chord and Pastry distributed hashing table algorithms (DHTs) and experimental evaluation using real data sets scraped from the web.',
-      Link: 'https://github.com/CPP-Bot-78/Decentralized-Systems-Technologies',
-      Date: '12/2023',
-      Icon: <FaUniversity className='inline' />
-    }
-
-    const ProjectInfo5 = {
-      Title: 'Advanced Microprocessors Programming',
-      Used: 'Assembly, C++',
-      Description: 'Programming of an 8-bit AVR microcontroller to operate various smart tasks as highway intersection traffic lights, household appliance moving in empty spaces and house alarm system.',
-      Link: 'https://github.com/manosmin/ceid-advanced-microprocessors',
-      Date: '05/2021',
-      Icon: <FaUniversity className='inline' />
-    }
-
-
   return (
     <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
       <div id="projects" onClick={toggleAccordion} className="cursor-pointer">
@@ -66,12 +47,9 @@ function Projects() {
         </h2>
       </div>
       {isOpen && (<div className='mt-8 cursor-normal space-y-4'>
-        <p> During my university years, I've completed several different projects together with my fellow students 👬. From data science, machine learning and routing algorithm implementations, to full stack web development, microcontroller programming and database management systems design. Below you can see some major projects from my studies and some personal ones. </p>
         <ProjectItem myInfo={ProjectInfo3}></ProjectItem>
         <ProjectItem myInfo={ProjectInfo2}></ProjectItem>
-        <ProjectItem myInfo={ProjectInfo4}></ProjectItem>
         <ProjectItem myInfo={ProjectInfo1}></ProjectItem>
-        <ProjectItem myInfo={ProjectInfo5}></ProjectItem>
         </div>
         )}
     </div>

@@ -26,7 +26,7 @@ function Skills() {
       {isOpen && ( <div className='mt-8 cursor-normal'>
         <SkillItem myItem = {{Title: 'JavaScript', Percentage: '90%', Icon: <IoLogoJavascript className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'HTML', Percentage: '75%', Icon: <FaHtml5 className='mb-2 inline' size={25} />}}/>
-        <SkillItem myItem = {{Title: 'CSS', Percentage: '70%', Icon: <FaCss3Alt className='mb-2 inline' size={25} />}}/>
+        <SkillItem myItem = {{Title: 'CSS', Percentage: '75%', Icon: <FaCss3Alt className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'MongoDB', Percentage: '75%', Icon: <SiMongodb className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'SQL', Percentage: '90%', Icon: <FaDatabase className='mb-2 inline' size={25} />}}/>
         <SkillItem myItem = {{Title: 'Python', Percentage: '90%', Icon: <FaPython className='mb-2 inline' size={25} />}}/>
