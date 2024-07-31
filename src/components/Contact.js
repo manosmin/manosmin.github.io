@@ -60,7 +60,7 @@ const Contact = () => {
     </div>
       {isFormVisible && (
         <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4" >
-          <p className='animate-fade-in opacity-0' style={{ "--delay":  0.2 + "s" }}>You can also send me a message through this form. Yes, it actually works! 😎</p>
+          <p className='animate-slide-in-left opacity-0' style={{ "--delay":  0.2 + "s" }}>You can also send me a message through this form. Yes, it actually works! 😎</p>
           <div className='animate-slide-in opacity-0' style={{ "--delay":  0.6 + "s" }}>
             <label className="block">Name:</label>
             <input 

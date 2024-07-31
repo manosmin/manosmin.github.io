@@ -5,6 +5,8 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { FaPython, FaHtml5, FaCss3Alt, FaJava, FaDatabase, FaGitAlt  } from "react-icons/fa";
 import { SiKotlin, SiCplusplus, SiMongodb, SiGnubash   } from "react-icons/si";
 import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
+import { BiLogoPhp } from "react-icons/bi";
+
 
 
 
@@ -31,14 +33,15 @@ function Skills() {
         <SkillItem myItem = {{Title: 'JavaScript', Percentage: '90%', Icon: <IoLogoJavascript className='mb-2 inline' size={25} />, i: 1}}/>
         <SkillItem myItem = {{Title: 'HTML', Percentage: '70%', Icon: <FaHtml5 className='mb-2 inline' size={25} />, i: 2}}/>
         <SkillItem myItem = {{Title: 'CSS', Percentage: '70%', Icon: <FaCss3Alt className='mb-2 inline' size={25} />, i: 3}}/>
-        <SkillItem myItem = {{Title: 'MongoDB', Percentage: '70%', Icon: <SiMongodb className='mb-2 inline' size={25} />, i: 4}}/>
-        <SkillItem myItem = {{Title: 'SQL', Percentage: '90%', Icon: <FaDatabase className='mb-2 inline' size={25} />, i: 5}}/>
-        <SkillItem myItem = {{Title: 'Python', Percentage: '90%', Icon: <FaPython className='mb-2 inline' size={25} />, i: 6}}/>
-        <SkillItem myItem = {{Title: 'C++', Percentage: '60%', Icon: <SiCplusplus className='mb-2 inline' size={25} />, i: 7}}/>
-        <SkillItem myItem = {{Title: 'Java', Percentage: '50%', Icon: <FaJava className='mb-2 inline' size={25} />, i: 8}}/>
-        <SkillItem myItem = {{Title: 'Kotlin', Percentage: '50%', Icon: <SiKotlin className='mb-2 inline' size={25} />, i: 9}}/>
-        <SkillItem myItem = {{Title: 'Git', Percentage: '80%', Icon: <FaGitAlt className='mb-2 inline' size={25} />, i: 10}}/>
-        <SkillItem myItem = {{Title: 'Bash', Percentage: '50%', Icon: <SiGnubash className='mb-2 inline' size={25} />, i: 11}}/>
+        <SkillItem myItem = {{Title: 'PHP', Percentage: '60%', Icon: <BiLogoPhp className='mb-2 inline' size={25} />, i: 4}}/>
+        <SkillItem myItem = {{Title: 'MongoDB', Percentage: '70%', Icon: <SiMongodb className='mb-2 inline' size={25} />, i: 5}}/>
+        <SkillItem myItem = {{Title: 'SQL', Percentage: '90%', Icon: <FaDatabase className='mb-2 inline' size={25} />, i: 6}}/>
+        <SkillItem myItem = {{Title: 'Python', Percentage: '90%', Icon: <FaPython className='mb-2 inline' size={25} />, i: 7}}/>
+        <SkillItem myItem = {{Title: 'C++', Percentage: '60%', Icon: <SiCplusplus className='mb-2 inline' size={25} />, i: 8}}/>
+        <SkillItem myItem = {{Title: 'Java', Percentage: '50%', Icon: <FaJava className='mb-2 inline' size={25} />, i: 9}}/>
+        <SkillItem myItem = {{Title: 'Kotlin', Percentage: '50%', Icon: <SiKotlin className='mb-2 inline' size={25} />, i: 10}}/>
+        <SkillItem myItem = {{Title: 'Git', Percentage: '80%', Icon: <FaGitAlt className='mb-2 inline' size={25} />, i: 11}}/>
+        <SkillItem myItem = {{Title: 'Bash', Percentage: '50%', Icon: <SiGnubash className='mb-2 inline' size={25} />, i: 12}}/>
         </div>)}
     </div>
   )
