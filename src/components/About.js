@@ -31,7 +31,7 @@ const About = () => {
               I recently completed my masters' degree in Computer Engineering and Informatics at University of Patras 🧑‍🎓. During my studies, I've built a strong foundation in both hardware and software 👨‍💻. 
             </p>
             <p className='animate-fade-in opacity-0' style={{ "--delay": 2 + "s" }}>
-              At this moment, I'm on the lookout for my first professional experience in the tech field, with a particular interest in <span className='font-medium'>software and web development</span>, seeking to apply my skills and grow within a dynamic team 🌼.
+              At this moment, I'm on the lookout for my first professional experience in the tech field, with a particular interest in <span className='font-medium'> web development</span>, seeking to apply my skills and grow within a dynamic team 🌼.
             </p>
             <p className='animate-fade-in opacity-0' style={{ "--delay": 2.4   + "s" }}>I'm eager to contribute to real-world projects and make a meaningful impact, so feel free to <a className="hover:underline" href="mailto:manosmin@hotmail.com">contact me</a> for related opportunities 🌍.</p>
           </div>

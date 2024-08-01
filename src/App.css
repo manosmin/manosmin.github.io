@@ -25,3 +25,7 @@ section {
   padding: 20px;
   margin: 20px 0;
 }
+
+img {
+  pointer-events: none
+}

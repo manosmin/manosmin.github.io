@@ -29,7 +29,7 @@ const Education = () => {
             target="_blank"
             className="font-medium hover:underline"
           >
-            MEng, Computer Engineering and Informatics Department (CEID)
+            MEng, Computer Engineering and Informatics 
           </a> 🎓</li>
           <li className='font-medium' >University  of Patras</li>
           <li><p>09/2014 &ndash; 07/2024</p></li>
