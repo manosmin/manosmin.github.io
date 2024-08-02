@@ -14,7 +14,7 @@ function Facts() {
     };
 
   return (
-    <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
+    <div className='bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-10 mb-10'>
     <div id="facts" onClick={toggleAccordion} className="flex justify-between cursor-pointer">
       <h2 className="animate-slide-in-left opacity-0 text-2xl font-semibold" style={{ "--delay": 1 + "s" }}>
       <p className='flex justify-center items-center'><FaRegGrinStars className='mr-2'/> Fun Facts</p>

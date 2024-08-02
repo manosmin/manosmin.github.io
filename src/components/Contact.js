@@ -51,7 +51,7 @@ const Contact = () => {
 
 
   return (
-    <div className='bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 p-10 mb-10'>
+    <div className='bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-10 mb-10'>
       <div id="contact" onClick={toggleFormVisibility} className="flex justify-between cursor-pointer">
         <h2 className="animate-slide-in-left opacity-0 text-2xl font-semibold" style={{ "--delay": 1.2 + "s" }}>
         <p className='flex justify-center items-center'><FaRegEnvelope className='mr-2'/> Contact</p>
@@ -68,7 +68,7 @@ const Contact = () => {
               name="name" 
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-700 rounded bg-gray-800 dark:bg-gray-300 dark:border-gray-400" 
+              className="w-full p-2 border border-gray-400 rounded bg-gray-300 dark:bg-gray-800 dark:border-gray-700" 
               required 
             />
           </div>
@@ -79,7 +79,7 @@ const Contact = () => {
               name="email" 
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-700 rounded bg-gray-800 dark:bg-gray-300 dark:border-gray-400" 
+              className="w-full p-2 border border-gray-400 rounded bg-gray-300 dark:bg-gray-800 dark:border-gray-700" 
               required 
             />
           </div>
@@ -89,7 +89,7 @@ const Contact = () => {
               name="message" 
               value={formData.message}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-700 rounded bg-gray-800 dark:bg-gray-300 dark:border-gray-400" 
+              className="w-full p-2 border border-gray-400 rounded bg-gray-300 dark:bg-gray-800 dark:border-gray-700" 
               required
             ></textarea>
           </div>
