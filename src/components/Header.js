@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaFilePdf, FaDiscord } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFilePdf, FaDiscord, FaPhone } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
 import { IoMoon, IoSunny } from "react-icons/io5";
 
@@ -37,6 +37,9 @@ const Header = () => {
           </li>
           <li>
             <a href="mailto:manosmin@hotmail.com" alt="email"><MdAlternateEmail size={25}/></a>
+          </li>
+          <li>
+            <a href="tel:+306947651098" alt="mobile"><FaPhone size={25}/></a>
           </li></div>
           <li>
               <button className='flex animate-drop-in opacity-0' style={{ "--delay": 0.8 + "s" }} onClick={()=> darkModeHandler()}>
