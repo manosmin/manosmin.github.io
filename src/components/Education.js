@@ -1,27 +1,23 @@
 import React, { useState } from 'react';
+import { useIsVisible } from '../App';
 import { FiBookOpen } from "react-icons/fi";
-import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
 
 
 const Education = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isArrowDown, setIsArrowDown] = useState(true);
 
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
-    setIsArrowDown(!isArrowDown);
-  };
+  const [ containerRef1, isVisible1] = useIsVisible({})
+
+  const [ containerRef2, isVisible2] = useIsVisible({})
+
 
   return (
     <div className='bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-10 mb-10'>
-      <div id="education" onClick={toggleAccordion} className="flex justify-between cursor-pointer">
-        <h2 className="animate-slide-in-left opacity-0 text-2xl font-semibold" style={{ "--delay": 0.4 + "s" }}>
+      <div id="education" className="flex justify-between cursor-pointer">
+        <h2 ref={containerRef1} className={`${isVisible1 && 'animate-slide-in-left'} opacity-0 text-2xl font-semibold`} style={{ "--delay": 0.2 + "s" }}>
         <p className='flex justify-center items-center'><FiBookOpen className='mr-2'/> Education</p>
         </h2>
-        {isArrowDown ? <IoIosArrowDown size={25}/> : <IoIosArrowUp size={25}/>}
       </div>
-      {isOpen && (
-        <div className="mt-8 cursor-normal animate-slide-in opacity-0" style={{ "--delay": 0.2 + "s" }}>
+      <div ref={containerRef2} className={`${isVisible2 && 'animate-slide-in'} mt-8 cursor-normal opacity-0`} style={{ "--delay": 0.2 + "s" }}>
           <ul className='list-none space-y-1'>
           <li><a
             rel="noopener noreferrer"
@@ -48,7 +44,6 @@ const Education = () => {
           </p></li>
           </ul>
         </div>
-      )}
     </div>
   );
 };

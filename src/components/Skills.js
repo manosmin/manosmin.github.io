@@ -1,10 +1,10 @@
-import { React, useState } from 'react';
+import { React, useRef } from 'react';
+import { useIsVisible } from '../App';
 import SkillItem from './SkillItem';
 import { GoGear } from "react-icons/go";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaPython, FaHtml5, FaCss3Alt, FaJava, FaDatabase, FaGitAlt  } from "react-icons/fa";
 import { SiKotlin, SiCplusplus, SiMongodb, SiGnubash, SiPhp } from "react-icons/si";
-import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
 
 
 
@@ -12,13 +12,8 @@ import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
 
 
 function Skills() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isArrowDown, setIsArrowDown] = useState(true);
 
-    const toggleAccordion = () => {
-      setIsOpen(!isOpen);
-      setIsArrowDown(!isArrowDown);
-    };
+    const [ containerRef1, isVisible1] = useIsVisible({})
 
     const Skill1 = {Title: 'JavaScript', Percentage: '90%', Icon: <IoLogoJavascript className='mb-2 inline' size={25} />}
     const Skill2 = {Title: 'HTML', Percentage: '80%', Icon: <FaHtml5 className='mb-2 inline' size={25} />}
@@ -36,15 +31,14 @@ function Skills() {
     
   return (
     <div className='bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-10 mb-10'>
-      <div id="skills" onClick={toggleAccordion} className="flex justify-between cursor-pointer">
-        <h2 className="animate-slide-in-left opacity-0 text-2xl font-semibold" style={{ "--delay": 0.8 + "s" }}>
+      <div id="skills"className="flex justify-between cursor-pointer">
+        <h2 ref={containerRef1} className={`${isVisible1 && 'animate-slide-in-left'} opacity-0 text-2xl font-semibold`} style={{ "--delay": 0.2 + "s" }}>
           <p className='flex justify-center items-center'><GoGear className='mr-2'/> Skills</p>
         </h2>
-        {isArrowDown ? <IoIosArrowDown size={25}/> : <IoIosArrowUp size={25}/>}
       </div>
-      {isOpen && ( <div className='mt-8 cursor-normal'>
+      <div className='mt-8 cursor-normal'>
         {Skills.sort((a, b) => b.Percentage.localeCompare(a.Percentage)).map((item, index) => (<SkillItem myItem={item} index={index+1} key={item.Title}/>))}
-        </div>)}
+      </div>
     </div>
   )
 }

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { FaRegEnvelope } from "react-icons/fa";
-import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
+import { useIsVisible } from '../App';
 
 
 const Contact = () => {
@@ -10,9 +10,6 @@ const Contact = () => {
     email: '',
     message: ''
   });
-
-  const [isFormVisible, setIsFormVisible] = useState(false);
-  const [isArrowDown, setIsArrowDown] = useState(true);
 
   const handleChange = (e) => {
     setFormData({
@@ -44,24 +41,29 @@ const Contact = () => {
     });
   };
 
-  const toggleFormVisibility = () => {
-    setIsFormVisible(!isFormVisible);
-    setIsArrowDown(!isArrowDown);
-  };
+  const [ containerRef1, isVisible1] = useIsVisible({})
+
+  const [ containerRef2, isVisible2] = useIsVisible({})
+
+  const [ containerRef3, isVisible3] = useIsVisible({})
+
+  const [ containerRef4, isVisible4] = useIsVisible({})
+
+  const [ containerRef5, isVisible5] = useIsVisible({})
+
+  const [ containerRef6, isVisible6] = useIsVisible({})
 
 
   return (
     <div className='bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-10 mb-10'>
-      <div id="contact" onClick={toggleFormVisibility} className="flex justify-between cursor-pointer">
-        <h2 className="animate-slide-in-left opacity-0 text-2xl font-semibold" style={{ "--delay": 1.2 + "s" }}>
+      <div id="contact" className="flex justify-between cursor-pointer">
+        <h2 ref={containerRef1} className={`opacity-0 text-2xl font-semibold ${isVisible1 && "animate-slide-in-left"}`} style={{ "--delay": 0.2 + "s" }}>
         <p className='flex justify-center items-center'><FaRegEnvelope className='mr-2'/> Contact</p>
         </h2>
-        {isArrowDown ? <IoIosArrowDown size={25}/> : <IoIosArrowUp size={25}/>}
     </div>
-      {isFormVisible && (
         <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4" >
-          <p className='animate-slide-in-left opacity-0' style={{ "--delay":  0.2 + "s" }}>You can also send me a message through this form. Yes, it actually works! 😎</p>
-          <div className='animate-slide-in opacity-0' style={{ "--delay":  0.6 + "s" }}>
+          <p ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-slide-in-left"}`} style={{ "--delay":  0.6 + "s" }}>You can also send me a message through this form. Yes, it actually works! 😎</p>
+          <div ref={containerRef3} className={`opacity-0 ${isVisible3 && "animate-slide-in"}`} style={{ "--delay":  1 + "s" }}>
             <label className="block">Name:</label>
             <input 
               type="text" 
@@ -72,7 +74,7 @@ const Contact = () => {
               required 
             />
           </div>
-          <div className='animate-slide-in-left opacity-0' style={{ "--delay":  1 + "s" }}>
+          <div ref={containerRef4} className={`opacity-0 ${isVisible4 && "animate-slide-in-left"}`} style={{ "--delay":  1.4 + "s" }}>
             <label className="block">Email:</label>
             <input 
               type="email" 
@@ -83,7 +85,7 @@ const Contact = () => {
               required 
             />
           </div>
-          <div className='animate-slide-in opacity-0' style={{ "--delay":  1.4 + "s" }}>
+          <div ref={containerRef5} className={`opacity-0 ${isVisible5 && "animate-slide-in"}`} style={{ "--delay":  1.8 + "s" }}>
             <label className="block">Message:</label>
             <textarea 
               name="message" 
@@ -93,9 +95,8 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <button type="submit" style={{ "--delay":  1.8 + "s" }} className="animate-fade-in opacity-0 bg-blue-700 hover:bg-blue-600 text-gray-100 font-semibold py-2 px-4 rounded-full">Send</button>
+          <button ref={containerRef6} type="submit" style={{ "--delay":  2.2 + "s" }} className={`${isVisible6 && "animate-fade-in"} opacity-0 bg-blue-700 hover:bg-blue-600 text-gray-100 font-semibold py-2 px-4 rounded-full`}>Send</button>
         </form>
-      )}
     </div>
   );
 };

@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
+import { useIsVisible } from '../App';
 import ProjectItem from './ProjectItem';
 import { MdComputer } from "react-icons/md";
-import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
 
 
 
 function Projects() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isArrowDown, setIsArrowDown] = useState(true);
 
-    const toggleAccordion = () => {
-      setIsOpen(!isOpen);
-      setIsArrowDown(!isArrowDown);
-    };
+  const [ containerRef1, isVisible1] = useIsVisible({})
+
 
 
     const ProjectInfo1 = {
@@ -43,16 +39,14 @@ function Projects() {
 
   return (
     <div className='bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-10 mb-10'>
-      <div id="projects" onClick={toggleAccordion} className="flex justify-between cursor-pointer">
-        <h2 className="animate-slide-in-left opacity-0 text-2xl font-semibold" style={{ "--delay": 0.6 + "s" }}>
+      <div id="projects" className="flex justify-between cursor-pointer">
+        <h2 ref={containerRef1} className={`${isVisible1 && 'animate-slide-in-left'} opacity-0 text-2xl font-semibold`} style={{ "--delay": 0.2 + "s" }}>
         <p className='flex justify-center items-center'><MdComputer className='mr-2'/> Projects</p>
         </h2>
-        {isArrowDown ? <IoIosArrowDown size={25}/> : <IoIosArrowUp size={25}/>}
       </div>
-      {isOpen && (<div className='mt-8 cursor-normal space-y-4'>
+      <div className='mt-8 cursor-normal space-y-4'>
         {Projects.map((item, index) => ( <ProjectItem myInfo={item} index={index + 1} key={item.Title} /> ))}
-        </div>
-        )}
+      </div>
     </div>
   )
 }
