@@ -6,12 +6,12 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "drop-in": 'dropIn 0.5s ease-in-out forwards var(--delay, 0)',
+        "drop-in": 'dropIn 0.6s ease-in-out forwards var(--delay, 0)',
         "fly-in-down": 'flyInDown 0.6s ease-in-out forwards var(--delay, 0)',
-        "fade-in": 'fadeIn 1s ease-in-out forwards var(--delay, 0)',
-        "fade-in-down": 'fadeInDown 1s ease-in-out forwards var(--delay, 0)',
-        "slide-in": "slideIn .5s ease-in-out forwards var(--delay, 0)",
-        "slide-in-left": "slideInLeft .5s ease-in-out forwards var(--delay, 0)"
+        "fade-in": 'fadeIn .6s ease-in-out forwards var(--delay, 0)',
+        "fade-in-down": 'fadeInDown .8s ease-in-out forwards var(--delay, 0)',
+        "slide-in": "slideIn .8s ease-in-out forwards var(--delay, 0)",
+        "slide-in-left": "slideInLeft .8s ease-in-out forwards var(--delay, 0)"
       },
       keyframes: {
         dropIn: {

@@ -9,7 +9,6 @@ function ProjectItem(props) {
 
   return (
     <ul ref={containerRef1} className={`${isVisible1 && (props.index % 2 !== 0 ? 'animate-slide-in' : 'animate-slide-in-left')} opacity-0 mt-4 list-none`} style={{ "--delay":  0.4 + "s" }}>
-      {console.log(props.index)}
         <li>{props.myInfo.Icon}&nbsp;<FiExternalLink className='inline'/>&nbsp;
         <a rel="noopener noreferrer"
         target="_blank"

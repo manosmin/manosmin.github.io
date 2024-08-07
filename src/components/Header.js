@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header className="z-40 sticky top-0 bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-5 mb-10">
-    <h2 class="text-4xl font-bold">Manos Minadakis <small class="inline-block font-semibold text-gray-600 dark:text-gray-400">Computer Engineer</small></h2>
+    <h2 className="text-4xl font-bold">Manos Minadakis <small className="inline-block font-semibold text-gray-600 dark:text-gray-400">Computer Engineer</small></h2>
     <nav>
         <ul className="flex justify-between mt-3 list-none">
           <div className='flex'>

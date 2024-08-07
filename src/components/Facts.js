@@ -21,7 +21,7 @@ function Facts() {
         <p className='flex justify-center items-center'><FaRegGrinStars className='mr-2'/> Fun Facts</p>
         </h2>
       </div>
-      <ul class="mt-8 cursor-normal list-inside list-disc space-y-2">
+      <ul className="mt-8 cursor-normal list-inside list-disc space-y-2">
           <li ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-slide-in"}`} style={{ "--delay": 0.4 + "s" }}>I've obtained a flight dispatchers' diploma and worked in the control tower of a small airport on a border island, as part of my military service. 👨🏻‍✈️✈️</li>
           <li ref={containerRef3} className={`opacity-0 ${isVisible3 && "animate-slide-in-left"}`} style={{ "--delay": 0.4 + "s" }}>In the past, I used to play online poker and had won several tournaments at small stakes, the largest of which had 3600 participants. 🃏🏆</li>
           <li ref={containerRef4} className={`opacity-0 ${isVisible4 && "animate-slide-in"}`} style={{ "--delay":  0.4 + "s" }}>In my teenage years, I played for a local basketball team and participated in the juniors' local championship. ( っ'-')╮ =͟͟͞͞🏀 </li>
