@@ -25,9 +25,8 @@ const Education = () => {
             target="_blank"
             className="font-medium hover:underline"
           >
-            MEng, Computer Engineering and Informatics 
-          </a> 🎓</li>
-          <li className='font-medium' >University  of Patras</li>
+            MEng in Computer Engineering and Informatics, University  of Patras
+          </a></li>
           <li><p>09/2014 &ndash; 07/2024</p></li>
           <li><p className="inline font-medium" >Grade: </p> <p className="inline">6.57/10.0 (2:2)</p></li>
           <li><p className="inline font-medium" >Thesis: </p>
