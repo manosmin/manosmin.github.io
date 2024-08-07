@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { FaRegEnvelope } from "react-icons/fa";
 import { useIsVisible } from '../App';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useIsVisible } from '../App';
 import ProjectItem from './ProjectItem';
 import { MdComputer } from "react-icons/md";

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useIsVisible } from '../App';
 import { FiBookOpen } from "react-icons/fi";
 

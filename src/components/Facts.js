@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { FaRegGrinStars } from "react-icons/fa";
 import { useIsVisible } from '../App';
 

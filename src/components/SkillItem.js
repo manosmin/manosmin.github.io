@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { useIsVisible } from '../App';
 
 function SkillItem(props) {
