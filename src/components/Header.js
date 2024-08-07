@@ -14,7 +14,7 @@ const Header = () => {
   }
 
   return (
-    <header className="z-40 sticky top-0 bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-5 mb-10">
+    <header className="z-40 sticky top-0 bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-5">
     <h2 className="text-4xl font-bold">
       <p className='inline-block animate-slide-in-left opacity-0' style={{ "--delay": 0.2 + "s" }}>Manos Minadakis</p>
       &nbsp;
@@ -43,8 +43,8 @@ const Header = () => {
           </li></div>
           <li>
               <button className='flex animate-drop-in opacity-0' style={{ "--delay": 0.8 + "s" }} onClick={()=> darkModeHandler()}>
-                { !dark && <IoSunny size={25}/> }
-                { dark && <IoMoon size={25}/> }
+                { !dark && <IoMoon size={25}/> }
+                { dark && <IoSunny size={25}/> }
               </button>
           </li>
         </ul>
