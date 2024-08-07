@@ -62,8 +62,8 @@ const Contact = () => {
         </h2>
     </div>
         <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4" >
-          <p ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-slide-in-left"}`} style={{ "--delay":  0.6 + "s" }}>You can also send me a message through this form. Yes, it actually works! 😎</p>
-          <div ref={containerRef3} className={`opacity-0 ${isVisible3 && "animate-slide-in"}`} style={{ "--delay":  1 + "s" }}>
+          <p ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-slide-in-left"}`} style={{ "--delay":  0.4 + "s" }}>You can also send me a message through this form. Yes, it actually works! 😎</p>
+          <div ref={containerRef3} className={`opacity-0 ${isVisible3 && "animate-slide-in"}`} style={{ "--delay":  0.4 + "s" }}>
             <label className="block">Name:</label>
             <input 
               type="text" 
@@ -74,7 +74,7 @@ const Contact = () => {
               required 
             />
           </div>
-          <div ref={containerRef4} className={`opacity-0 ${isVisible4 && "animate-slide-in-left"}`} style={{ "--delay":  1.4 + "s" }}>
+          <div ref={containerRef4} className={`opacity-0 ${isVisible4 && "animate-slide-in-left"}`} style={{ "--delay":  0.4 + "s" }}>
             <label className="block">Email:</label>
             <input 
               type="email" 
@@ -85,7 +85,7 @@ const Contact = () => {
               required 
             />
           </div>
-          <div ref={containerRef5} className={`opacity-0 ${isVisible5 && "animate-slide-in"}`} style={{ "--delay":  1.8 + "s" }}>
+          <div ref={containerRef5} className={`opacity-0 ${isVisible5 && "animate-slide-in"}`} style={{ "--delay":  0.4 + "s" }}>
             <label className="block">Message:</label>
             <textarea 
               name="message" 
@@ -95,7 +95,7 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <button ref={containerRef6} type="submit" style={{ "--delay":  2.2 + "s" }} className={`${isVisible6 && "animate-fade-in"} opacity-0 bg-blue-700 hover:bg-blue-600 text-gray-100 font-semibold py-2 px-4 rounded-full`}>Send</button>
+          <button ref={containerRef6} type="submit" style={{ "--delay":  0.6 + "s" }} className={`${isVisible6 && "animate-fade-in"} opacity-0 bg-blue-700 hover:bg-blue-600 text-gray-100 font-semibold py-2 px-4 rounded-full`}>Send</button>
         </form>
     </div>
   );
