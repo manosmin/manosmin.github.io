@@ -15,10 +15,14 @@ const Header = () => {
 
   return (
     <header className="z-40 sticky top-0 bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-5 mb-10">
-    <h2 className="text-4xl font-bold">Manos Minadakis <small className="inline-block font-semibold text-gray-600 dark:text-gray-400">Computer Engineer</small></h2>
+    <h2 className="text-4xl font-bold">
+      <p className='inline-block animate-slide-in-left opacity-0' style={{ "--delay": 0.2 + "s" }}>Manos Minadakis</p>
+      &nbsp;
+      <small className="inline-block animate-slide-in opacity-0 font-semibold text-gray-600 dark:text-gray-400" style={{ "--delay": 0.2 + "s" }}>Computer Engineer</small>
+    </h2>
     <nav>
         <ul className="flex justify-between mt-3 list-none">
-          <div className='flex'>
+          <div className='flex animate-drop-in opacity-0' style={{ "--delay": 0.8 + "s" }}>
           <li>
             <a rel="noopener noreferrer" href="https://www.github.com/manosmin" alt="github" target="_blank"><FaGithub size={25}/></a>
           </li>
@@ -35,7 +39,7 @@ const Header = () => {
             <a href="mailto:manosmin@hotmail.com" alt="email"><MdAlternateEmail size={25}/></a>
           </li></div>
           <li>
-              <button onClick={()=> darkModeHandler()}>
+              <button className='flex animate-drop-in opacity-0' style={{ "--delay": 0.8 + "s" }} onClick={()=> darkModeHandler()}>
                 { !dark && <IoSunny size={25}/> }
                 { dark && <IoMoon size={25}/> }
               </button>
