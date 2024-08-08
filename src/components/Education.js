@@ -23,12 +23,11 @@ const Education = () => {
             rel="noopener noreferrer"
             href="https://www.ceid.upatras.gr"
             target="_blank"
-            className="font-medium hover:underline"
+            className="font-semibold hover:underline"
           >
           MEng in Computer Engineering and Informatics, University of Patras
           </a></li>
           <li><p>09/2014 &ndash; 07/2024</p></li>
-          <li><p className='inline'>I've completed 39 compulsory courses, 14 elective courses and 1 diploma thesis, equivalent to 300 ECTS credits in total. My studies included a wide range of subjects including programming, algorithms, data structures, computer networks, and logic design.</p></li>
           <li><p className="inline font-medium" >Grade: </p> <p className="inline">6.57/10.0 (2:2)</p></li>
           <li><p className="inline font-medium" >Thesis: </p>
           <a
