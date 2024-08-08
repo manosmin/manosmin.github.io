@@ -25,7 +25,7 @@ const About = () => {
         <p className='flex justify-center items-center'><FiInfo className='mr-2'/> About Me </p>
         </h2>
       </div>
-        <div className="w-full flex flex-col items-center text-center mt-8 cursor-normal space-y-2"  >
+        <div className="w-full flex mx-auto max-w-screen-lg flex-col items-center text-center mt-8 cursor-normal space-y-2"  >
             <img ref={containerRef2} src="/profile.png" id="profile-pic" alt="Profile" className={`border-2 bg-gray-300 dark:bg-gray-800 ${isVisible2 && 'animate-fade-in-down'} opacity-0 mb-4 border-gray-900 dark:border-gray-100 w-56 h-56 rounded-full shadow-lg`} style={{ "--delay": 0.2 + "s" }}  /> 
               <p ref={containerRef3} className={`${isVisible3 && 'animate-fade-in'} opacity-0`} style={{ "--delay": 0.4 + "s" }}>
               Hello 🙋‍♂️ I'm <span className='font-medium'>Manos</span>, a Computer Engineer currently based in Heraklion, Greece 🇬🇷.
