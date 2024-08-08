@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaFilePdf, FaDiscord, FaPhone } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaDiscord, FaPhone } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
-import { IoMoon, IoSunny } from "react-icons/io5";
+import { IoMoon, IoSunny, IoDocument } from "react-icons/io5";
 
 
 const Header = () => {
@@ -24,28 +24,28 @@ const Header = () => {
         <ul className="flex justify-between mt-3 list-none">
           <div className='flex animate-drop-in opacity-0' style={{ "--delay": 0.8 + "s" }}>
             <li className="icon-container bg-gray-800 text-white dark:bg-gray-200 dark:text-gray-800 rounded-full p-2 mx-1">
-              <a rel="noopener noreferrer" href="https://www.github.com/manosmin" alt="github" target="_blank"><FaGithub size={25}/></a>
+              <a rel="noopener noreferrer" href="https://www.github.com/manosmin" alt="github" target="_blank"><FaGithub size={20}/></a>
             </li>
             <li className="icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1">
-              <a rel="noopener noreferrer" href="https://www.linkedin.com/in/manosmin" target="_blank" alt="linkedin"><FaLinkedin size={25}/></a>
+              <a rel="noopener noreferrer" href="https://www.linkedin.com/in/manosmin" target="_blank" alt="linkedin"><FaLinkedinIn size={20}/></a>
             </li>
             <li className="icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1">
-              <a rel="noopener noreferrer" href="https://www.discordapp.com/users/270397164209963009" target="_blank" alt="discord"><FaDiscord size={25}/></a>
+              <a rel="noopener noreferrer" href="https://www.discordapp.com/users/270397164209963009" target="_blank" alt="discord"><FaDiscord size={20}/></a>
             </li>
             <li className="icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1">
-              <a rel="noopener noreferrer" href="https://1drv.ms/b/s!AvPPFklWx5YlgcE97gVFyWQmI8Caww?e=hDOobR" target="_blank" alt="CV"><FaFilePdf size={25}/></a>
+              <a rel="noopener noreferrer" href="https://1drv.ms/b/s!AvPPFklWx5YlgcE97gVFyWQmI8Caww?e=hDOobR" target="_blank" alt="CV"><IoDocument size={20}/></a>
             </li>
             <li className="icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1">
-              <a href="mailto:manosmin@hotmail.com" alt="email"><MdAlternateEmail size={25}/></a>
+              <a href="mailto:manosmin@hotmail.com" alt="email"><MdAlternateEmail size={20}/></a>
             </li>
             <li className="icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1">
-              <a href="tel:+306947651098" alt="mobile"><FaPhone size={25}/></a>
+              <a href="tel:+306947651098" alt="mobile"><FaPhone size={20}/></a>
             </li>
           </div>
           <li className="flex animate-drop-in opacity-0 icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1" style={{ "--delay": 0.8 + "s" }}>
             <button onClick={()=> darkModeHandler()}>
-              { !dark && <IoMoon size={25}/> }
-              { dark && <IoSunny size={25}/> }
+              { !dark && <IoMoon size={20}/> }
+              { dark && <IoSunny size={20}/> }
             </button>
           </li>
         </ul>
