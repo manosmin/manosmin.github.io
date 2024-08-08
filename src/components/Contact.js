@@ -62,7 +62,7 @@ const Contact = () => {
         </h2>
     </div>
         <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4" >
-          <p ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-slide-in-left"}`} style={{ "--delay":  0.4 + "s" }}>You can also send me a message through this form. Yes, it actually works! 😎</p>
+          <p ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-slide-in-left"}`} style={{ "--delay":  0.4 + "s" }}>You can also send me a message through this form. Yes, it actually works!</p>
           <div ref={containerRef3} className={`opacity-0 ${isVisible3 && "animate-slide-in"}`} style={{ "--delay":  0.4 + "s" }}>
             <label className="block">Name:</label>
             <input 
