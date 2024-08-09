@@ -32,15 +32,13 @@ function App() {
     <div className="bg-gray-200 dark:bg-gray-900 flex flex-col min-h-screen">
       <Header />
       <div className="max-w-screen-xl mx-auto w-full">
-      
-      <LettersAnimation />
-      <About />
-      <Education />
-      <Projects />
-      <Skills />
-      <Facts />
-      <Contact />
-     
+        <LettersAnimation />
+        <About />
+        <Education />
+        <Projects />
+        <Skills />
+        <Facts />
+        <Contact />
       </div>
       <Footer />
     </div>
