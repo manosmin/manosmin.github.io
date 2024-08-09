@@ -57,13 +57,13 @@ const Header = () => {
             <li className="flex cursor-pointer icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1" onClick={()=> toggleDropdown()}>
               <IoMenu size={20} />
               {dropdownOpen && (
-                <ul className="absolute right-0 mt-10 text-gray-200 bg-gray-900 dark:bg-gray-200 dark:text-gray-900 shadow-lg rounded-lg z-50">
-                  <li className="block font-medium px-4 py-2" ><a href="#about">About Me</a></li>
-                  <li className="block font-medium px-4 py-2"><a href="#education">Education</a></li>
-                  <li className="block font-medium px-4 py-2"><a href="#projects">Projects</a></li>
-                  <li className="block font-medium px-4 py-2"><a href="#skills">Skills</a></li>
-                  <li className="block font-medium px-4 py-2"><a href="#facts">Fun Facts</a></li>
-                  <li className="block font-medium px-4 py-2"><a href="#contact">Contact</a></li>
+                <ul className="absolute right-0 mt-10 text-gray-200 bg-gray-900 dark:bg-gray-200 dark:text-gray-900 shadow-xl rounded-md z-50">
+                  <li className="block font-medium px-4 py-2 hover:bg-gray-700 hover:rounded-md dark:hover:bg-gray-100" ><a href="#about">About Me</a></li>
+                  <li className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100"><a href="#education">Education</a></li>
+                  <li className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100"><a href="#projects">Projects</a></li>
+                  <li className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100"><a href="#skills">Skills</a></li>
+                  <li className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100"><a href="#facts">Fun Facts</a></li>
+                  <li className="block font-medium px-4 py-2 hover:bg-gray-700 hover:rounded-md dark:hover:bg-gray-100"><a href="#contact">Contact</a></li>
                 </ul>
               )}
             </li>
