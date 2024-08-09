@@ -58,12 +58,12 @@ const Header = () => {
               <IoMenu size={20} />
               {dropdownOpen && (
                 <ul className="absolute right-0 mt-10 text-gray-200 bg-gray-900 dark:bg-gray-200 dark:text-gray-900 shadow-xl rounded-md z-50">
-                  <li className="block font-medium px-4 py-2 hover:bg-gray-700 hover:rounded-md dark:hover:bg-gray-100" ><a href="#about">About Me</a></li>
-                  <li className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100"><a href="#education">Education</a></li>
-                  <li className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100"><a href="#projects">Projects</a></li>
-                  <li className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100"><a href="#skills">Skills</a></li>
-                  <li className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100"><a href="#facts">Fun Facts</a></li>
-                  <li className="block font-medium px-4 py-2 hover:bg-gray-700 hover:rounded-md dark:hover:bg-gray-100"><a href="#contact">Contact</a></li>
+                  <a className="block font-medium px-4 py-2 hover:bg-gray-700 hover:rounded-md dark:hover:bg-gray-100" href="#about">About Me</a>
+                  <a className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100" href="#education">Education</a>
+                  <a className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100" href="#projects">Projects</a>
+                  <a className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100" href="#skills">Skills</a>
+                  <a className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100" href="#facts">Fun Facts</a>
+                  <a className="block font-medium px-4 py-2 hover:bg-gray-700 hover:rounded-md dark:hover:bg-gray-100" href="#contact">Contact</a>
                 </ul>
               )}
             </li>
