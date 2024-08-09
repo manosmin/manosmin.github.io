@@ -6,6 +6,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
+        "typewriter": "typewriter 2s steps(11) forwards",
+        "caret": 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
         "drop-in": 'dropIn .6s ease-in-out forwards var(--delay, 0)',
         "fly-in-down": 'flyInDown .6s ease-in-out forwards var(--delay, 0)',
         "fade-in": 'fadeIn .6s ease-in-out forwards var(--delay, 0)',
@@ -82,6 +84,27 @@ module.exports = {
           "100%": {
             opacity: 1,
             transform: "translate3d(0, 0, 0)",
+          },
+        },
+        typewriter: {
+          to: {
+            left: "100%" }
+        },
+        blink: {
+          '0%': {
+            opacity: '0',
+          },
+          '0.1%': {
+            opacity: '1',
+          },
+          '50%': {
+            opacity: '1',
+          },
+          '50.1%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '0',
           },
         },
       },

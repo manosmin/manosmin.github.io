@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
+import LettersAnimation from './components/LettersAnimation';
 import About from './components/About';
 import Education from './components/Education';
 import Skills from './components/Skills';
@@ -31,6 +32,7 @@ function App() {
     <div className="bg-gray-300 dark:bg-gray-800 flex flex-col min-h-screen">
       <div className="max-w-screen-xl mx-auto w-full">
       <Header />
+      <LettersAnimation />
       <About />
       <Education />
       <Projects />
