@@ -29,9 +29,10 @@ export function useIsVisible(options) {
 
 function App() {
   return (
-    <div className="bg-gray-300 dark:bg-gray-800 flex flex-col min-h-screen">
-      <div className="max-w-screen-xl mx-auto w-full">
+    <div className="bg-gray-200 dark:bg-gray-900 flex flex-col min-h-screen">
       <Header />
+      <div className="max-w-screen-xl mx-auto w-full">
+      
       <LettersAnimation />
       <About />
       <Education />
@@ -39,8 +40,9 @@ function App() {
       <Skills />
       <Facts />
       <Contact />
-      <Footer />
+     
       </div>
+      <Footer />
     </div>
   );
 }
