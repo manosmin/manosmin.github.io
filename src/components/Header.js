@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header className="z-40 sticky top-0 bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-5">
       <h2 className="text-4xl font-bold">
-        <p className='inline-block animate-slide-in-left opacity-0' style={{ "--delay": 0.2 + "s" }}>Manos Minadakis</p>
+        <a href="/#" className='inline-block animate-slide-in-left opacity-0' style={{ "--delay": 0.2 + "s" }}>Manos Minadakis</a>
         &nbsp;
         <small className="inline-block animate-slide-in opacity-0 font-semibold text-gray-600 dark:text-gray-400" style={{ "--delay": 0.2 + "s" }}>Computer Engineer</small>
       </h2>
