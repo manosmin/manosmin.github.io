@@ -11,8 +11,8 @@ const Education = () => {
 
 
   return (
-    <div className='bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-10'>
-      <div id="education" className="flex justify-between cursor-pointer">
+    <div id="education" className='bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-10 pt-48'>
+      <div className="flex justify-between cursor-pointer">
         <h2 ref={containerRef1} className={`${isVisible1 && 'animate-slide-in-left'} opacity-0 text-2xl font-semibold`} style={{ "--delay": 0.2 + "s" }}>
         <p className='flex justify-center items-center'><FiBookOpen className='mr-2'/> Education</p>
         </h2>

@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaGithub, FaLinkedinIn, FaDiscord, FaPhone } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
-import { IoMoon, IoSunny, IoDocument } from "react-icons/io5";
+import { IoMoon, IoSunny, IoDocument, IoMenu } from "react-icons/io5";
 
 
 const Header = () => {
 
   const [dark, setDark] = React.useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const darkModeHandler = () => {
       setDark(!dark);
       document.body.classList.toggle("dark");
   }
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
 
   return (
     <header className="z-40 sticky top-0 bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-5">
@@ -42,12 +47,27 @@ const Header = () => {
               <a href="tel:+306947651098" alt="mobile"><FaPhone size={20}/></a>
             </li>
           </div>
-          <li className="flex animate-drop-in opacity-0 icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1" style={{ "--delay": 0.8 + "s" }}>
-            <button onClick={()=> darkModeHandler()}>
-              { !dark && <IoMoon size={20}/> }
-              { dark && <IoSunny size={20}/> }
-            </button>
-          </li>
+          <div className='flex animate-drop-in opacity-0' style={{ "--delay": 0.8 + "s" }}>
+            <li className="flex icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1">
+              <button onClick={()=> darkModeHandler()}>
+                { !dark && <IoMoon size={20}/> }
+                { dark && <IoSunny size={20}/> }
+              </button>
+            </li>
+            <li className="flex cursor-pointer icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1" onClick={()=> toggleDropdown()}>
+              <IoMenu size={20} />
+              {dropdownOpen && (
+                <ul className="absolute right-0 mt-10 text-gray-200 bg-gray-900 dark:bg-gray-200 dark:text-gray-900 shadow-lg rounded-lg z-50">
+                  <li className="block font-medium px-4 py-2" ><a href="#about">About Me</a></li>
+                  <li className="block font-medium px-4 py-2"><a href="#education">Education</a></li>
+                  <li className="block font-medium px-4 py-2"><a href="#projects">Projects</a></li>
+                  <li className="block font-medium px-4 py-2"><a href="#skills">Skills</a></li>
+                  <li className="block font-medium px-4 py-2"><a href="#facts">Fun Facts</a></li>
+                  <li className="block font-medium px-4 py-2"><a href="#contact">Contact</a></li>
+                </ul>
+              )}
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
