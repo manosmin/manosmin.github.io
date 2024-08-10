@@ -41,6 +41,9 @@ const Education = () => {
           <p className="italic inline">
           (Integration of a data-driven methodology named "process mining" on a liqueur production system in order to reveal, analyze and find ways to improve the production process)
           </p></li>
+          <li><p className="inline font-medium" >Coursework: </p> <p className="inline">Logic Design, Computer Architecture, Circuit Design, Digital Electronics, Microprocessors, Signal
+Processing, Computer Networking, Shell Scripting, Object Oriented Programming, Data Structures, Numerical
+Analysis, Database Systems, Distributed Systems</p></li>
           </ul>
         </div>
     </div>

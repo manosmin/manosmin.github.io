@@ -39,9 +39,9 @@ function Projects() {
     }
 
     const ProjectInfo4 = {
-      Title: 'Decentralized System Implementation', 
+      Title: 'Decentralized Systems Implementation', 
       Used: 'Python',
-      Description: 'Implementation of a decentralized index based on distributed hashing and its experimental evaluation using real data sets scraped from the web. Utilized Chord DHT and Pastry DHT routing algorithms for the implementation of peer-to-peer DHTs.',
+      Description: 'Implementation of a decentralized index based on distributed hashing table and its experimental evaluation using real data sets scraped from the web.',
       Link: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies', 
       Date: '2023/12',
       Team: 'Yes'
@@ -50,27 +50,19 @@ function Projects() {
     const ProjectInfo5 = {
       Title: 'Multidimensional Data Structures Implementation', 
       Used: 'Python',
-      Description: 'Implementation of multidimensional data structures and their experimental evaluation in various operations, including inserting, deleting, updating and searching queries, using real data sets scraped from the web. Comparison of the following methods: K-D trees + LSH, Quad trees + LSH, Range trees + LSH, R-trees + LSH',
+      Description: 'Implementation of multidimensional data structures (K-D, Range, Quad and R trees) and their experimental evaluation with locality-sensitive hashing method in various operations, including inserting, deleting, updating and searching queries, using real data sets scraped from the web.',
       Link: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies', 
       Date: '2023/09',
       Team: 'Yes'
     }
 
-    const ProjectInfo6 = {
-      Title: 'Simulation of a Jungle Ecosystem', 
-      Used: 'Java SE 8',
-      Description: 'A console-based simulation of a jungle ecosystem using Java\'s object-oriented programming features. The simulation involves various types of flora and fauna within the jungle, and are modeled as objects with defined behaviors and characteristics.',
-      Link: 'https://github.com/manosmin/ceid-oop', 
-      Date: '-',
-      Team: 'No'
-    }
 
     const ProjectInfo7 = {
       Title: 'Publishing House Database Management System', 
-      Used: 'SQL, Java Swing',
-      Description: 'Design and implementation of a MySQL database system to efficiently manage the operations of a publishing house. It enables the publishing house to handle authors, books, sales, inventory, and other related aspects of their business effectively.',
+      Used: 'MySQL, Java Swing',
+      Description: 'Design and implementation of a database management system to efficiently manage the operations of a publishing house. It enables the publishing house to handle authors, books, sales, inventory, and other related aspects of the business effectively.',
       Link: 'https://github.com/manosmin/ceid-dblab', 
-      Date: '-',
+      Date: '2020/02',
       Team: 'No'
     }
 
@@ -83,7 +75,7 @@ function Projects() {
       Team: 'Yes'
     }
 
-    const Projects = [ProjectInfo3, ProjectInfo2, ProjectInfo1, ProjectInfo4, ProjectInfo5, ProjectInfo8, ProjectInfo6, ProjectInfo7]
+    const Projects = [ProjectInfo3, ProjectInfo2, ProjectInfo1, ProjectInfo4, ProjectInfo5, ProjectInfo8, ProjectInfo7]
 
   return (
     <div id="projects" className='bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-10 py-48'>
