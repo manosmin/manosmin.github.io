@@ -1,6 +1,7 @@
 import React from 'react';
 import { useIsVisible } from '../App';
 import { FiExternalLink } from "react-icons/fi";
+import { BsFillPeopleFill, BsPersonFill  } from "react-icons/bs";
 
 
 function ProjectItem(props) {
@@ -9,8 +10,9 @@ function ProjectItem(props) {
 
   return (
     <ul ref={containerRef1} className={`${isVisible1 && (props.index % 2 !== 0 ? 'animate-slide-in' : 'animate-slide-in-left')} opacity-0 mt-4 list-none`} style={{ "--delay":  0.4 + "s" }}>
-        <li>{props.myInfo.Icon}&nbsp;<FiExternalLink className='inline'/>&nbsp;
-        <a rel="noopener noreferrer"
+        <li className='inline'>{props.myInfo.Icon}<FiExternalLink className='inline'/>&nbsp;</li>
+        <li className='inline'>{props.myInfo.Team === 'Yes' ? <BsFillPeopleFill className='inline'/> : <BsPersonFill className='inline'/>}</li>
+        <li><a rel="noopener noreferrer"
         target="_blank"
         href={props.myInfo.Link}
         className="font-semibold hover:underline">{props.myInfo.Title}</a></li>

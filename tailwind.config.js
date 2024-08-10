@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "typewriter": "typewriter 3s steps(11) forwards",
-        "caret": 'typewriter 3s steps(11) forwards, blink 1s steps(11) infinite 3s',
+        "typewriter": "typewriter 2s steps(11) forwards",
+        "caret": 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
         "drop-in": 'dropIn .6s ease-in-out forwards var(--delay, 0)',
         "fly-in-down": 'flyInDown .6s ease-in-out forwards var(--delay, 0)',
         "fade-in": 'fadeIn .6s ease-in-out forwards var(--delay, 0)',

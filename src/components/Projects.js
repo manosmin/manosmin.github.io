@@ -16,7 +16,8 @@ function Projects() {
       Used: 'Node.js, Express.js, Passport.js, Leaflet.js, Chart.js, JavaScript, HTML, Bootstrap 4, MongoDB',
       Description: 'A website that helps users track and manage their potential exposure to virus carriers by crowd-sourcing data about their visits to various places in Patras, Greece.',
       Link: 'https://github.com/manosmin/ceid-web',
-      Date: '05/2022'
+      Date: '05/2022',
+      Team: 'Yes'
     }
 
     const ProjectInfo2 = {
@@ -24,7 +25,8 @@ function Projects() {
       Used: 'React.js, HTML, Bootstrap 5',
       Description: 'A web application that uses a REST API to provide a search engine for movies, games, series etc.',
       Link: 'https://github.com/manosmin/movie-picker-app',
-      Date: '02/2024'
+      Date: '02/2024',
+      Team: 'No'
     }
 
     const ProjectInfo3 = {
@@ -32,10 +34,56 @@ function Projects() {
       Used: 'React.js, HTML, Tailwind CSS',
       Description: 'A fully responsive web page used as a personal portfolio, in order to showcase my education, experience, projects etc.',
       Link: 'https://github.com/manosmin/manosmin.github.io',
-      Date: '07/2024'
+      Date: '07/2024',
+      Team: 'No'
     }
 
-    const Projects = [ProjectInfo3, ProjectInfo2, ProjectInfo1]
+    const ProjectInfo4 = {
+      Title: 'Decentralized System Implementation', 
+      Used: 'Python',
+      Description: 'Implementation of a decentralized index based on distributed hashing and its experimental evaluation using real data sets scraped from the web. Utilized Chord DHT and Pastry DHT routing algorithms for the implementation of peer-to-peer DHTs.',
+      Link: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies', 
+      Date: '12/2023',
+      Team: 'Yes'
+    }
+
+    const ProjectInfo5 = {
+      Title: 'Multidimensional Data Structures Implementation', 
+      Used: 'Python',
+      Description: 'Implementation of multidimensional data structures and their experimental evaluation in various operations, including inserting, deleting, updating and searching queries, using real data sets scraped from the web. Comparison of the following methods: K-D trees + LSH, Quad trees + LSH, Range trees + LSH, R-trees + LSH',
+      Link: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies', 
+      Date: '09/2023',
+      Team: 'Yes'
+    }
+
+    const ProjectInfo6 = {
+      Title: 'Simulation of a Jungle Ecosystem', 
+      Used: 'Java SE 8',
+      Description: 'A console-based simulation of a jungle ecosystem using Java\'s object-oriented programming features. The simulation involves various types of flora and fauna within the jungle, and are modeled as objects with defined behaviors and characteristics.',
+      Link: 'https://github.com/manosmin/ceid-oop', 
+      Date: '-',
+      Team: 'No'
+    }
+
+    const ProjectInfo7 = {
+      Title: 'Publishing House Database Management System', 
+      Used: 'SQL, Java Swing',
+      Description: 'Design and implementation of a MySQL database system to efficiently manage the operations of a publishing house. It enables the publishing house to handle authors, books, sales, inventory, and other related aspects of their business effectively.',
+      Link: 'https://github.com/manosmin/ceid-dblab', 
+      Date: '-',
+      Team: 'No'
+    }
+
+    const ProjectInfo8 = {
+      Title: 'Smart Tasks Programming', 
+      Used: 'Assembly, C++, Microchip Studio',
+      Description: 'Programming of an 8-bit AVR microcontroller to operate various smart tasks as highway intersection traffic lights, household appliance moving in empty spaces and house alarm system.',
+      Link: 'https://github.com/manosmin/ceid-advanced-microprocessors', 
+      Date: '05/2021',
+      Team: 'Yes'
+    }
+
+    const Projects = [ProjectInfo3, ProjectInfo2, ProjectInfo1, ProjectInfo4, ProjectInfo5, ProjectInfo8, ProjectInfo6, ProjectInfo7]
 
   return (
     <div id="projects" className='bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 p-10 py-48'>
