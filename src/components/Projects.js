@@ -16,25 +16,25 @@ function Projects() {
       Used: 'Node.js, Express.js, Passport.js, Leaflet.js, Chart.js, JavaScript, HTML, Bootstrap 4, MongoDB',
       Description: 'A website that helps users track and manage their potential exposure to virus carriers by crowd-sourcing data about their visits to various places in Patras, Greece.',
       Link: 'https://github.com/manosmin/ceid-web',
-      Date: '05/2022',
+      Date: '2022/05',
       Team: 'Yes'
     }
 
     const ProjectInfo2 = {
       Title: 'Movie Picker Web App',
-      Used: 'React.js, HTML, Bootstrap 5',
+      Used: 'React.js, Bootstrap 5',
       Description: 'A web application that uses a REST API to provide a search engine for movies, games, series etc.',
       Link: 'https://github.com/manosmin/movie-picker-app',
-      Date: '02/2024',
+      Date: '2024/02',
       Team: 'No'
     }
 
     const ProjectInfo3 = {
       Title: 'manosmin.github.io',
-      Used: 'React.js, HTML, Tailwind CSS',
+      Used: 'React.js, Tailwind CSS',
       Description: 'A fully responsive web page used as a personal portfolio, in order to showcase my education, experience, projects etc.',
       Link: 'https://github.com/manosmin/manosmin.github.io',
-      Date: '07/2024',
+      Date: '2024/07',
       Team: 'No'
     }
 
@@ -43,7 +43,7 @@ function Projects() {
       Used: 'Python',
       Description: 'Implementation of a decentralized index based on distributed hashing and its experimental evaluation using real data sets scraped from the web. Utilized Chord DHT and Pastry DHT routing algorithms for the implementation of peer-to-peer DHTs.',
       Link: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies', 
-      Date: '12/2023',
+      Date: '2023/12',
       Team: 'Yes'
     }
 
@@ -52,7 +52,7 @@ function Projects() {
       Used: 'Python',
       Description: 'Implementation of multidimensional data structures and their experimental evaluation in various operations, including inserting, deleting, updating and searching queries, using real data sets scraped from the web. Comparison of the following methods: K-D trees + LSH, Quad trees + LSH, Range trees + LSH, R-trees + LSH',
       Link: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies', 
-      Date: '09/2023',
+      Date: '2023/09',
       Team: 'Yes'
     }
 
@@ -79,7 +79,7 @@ function Projects() {
       Used: 'Assembly, C++, Microchip Studio',
       Description: 'Programming of an 8-bit AVR microcontroller to operate various smart tasks as highway intersection traffic lights, household appliance moving in empty spaces and house alarm system.',
       Link: 'https://github.com/manosmin/ceid-advanced-microprocessors', 
-      Date: '05/2021',
+      Date: '2021/05',
       Team: 'Yes'
     }
 
@@ -93,7 +93,7 @@ function Projects() {
         </h2>
       </div>
       <div className='mt-8 cursor-normal space-y-4'>
-        {Projects.map((item, index) => ( <ProjectItem myInfo={item} index={index + 1} key={item.Title} /> ))}
+        {Projects.sort((a, b) => b.Date.localeCompare(a.Date)).map((item, index) => ( <ProjectItem myInfo={item} index={index + 1} key={item.Title} /> ))}
       </div>
     </div>
   )
