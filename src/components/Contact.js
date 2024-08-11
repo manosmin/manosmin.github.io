@@ -64,34 +64,40 @@ const Contact = () => {
         <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4" >
           <p ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-slide-in-left"}`} style={{ "--delay":  0.4 + "s" }}>You can also send me a message through this form. Yes, it actually works!</p>
           <div ref={containerRef3} className={`opacity-0 ${isVisible3 && "animate-slide-in"}`} style={{ "--delay":  0.4 + "s" }}>
-            <label className="block">Name:</label>
+            <label htmlFor='name' className="block">Name:</label>
             <input 
+              id='name'
               type="text" 
               name="name" 
               value={formData.name}
               onChange={handleChange}
               className="w-full p-2 border border-gray-400 rounded bg-gray-300 dark:bg-gray-800 dark:border-gray-700" 
+              placeholder="Your name"
               required 
             />
           </div>
           <div ref={containerRef4} className={`opacity-0 ${isVisible4 && "animate-slide-in-left"}`} style={{ "--delay":  0.4 + "s" }}>
-            <label className="block">Email:</label>
+            <label htmlFor='email' className="block">Email:</label>
             <input 
+              id='email'
               type="email" 
               name="email" 
               value={formData.email}
               onChange={handleChange}
               className="w-full p-2 border border-gray-400 rounded bg-gray-300 dark:bg-gray-800 dark:border-gray-700" 
+              placeholder='Your email'
               required 
             />
           </div>
           <div ref={containerRef5} className={`opacity-0 ${isVisible5 && "animate-slide-in"}`} style={{ "--delay":  0.4 + "s" }}>
-            <label className="block">Message:</label>
+            <label htmlFor='message' className="block">Message:</label>
             <textarea 
+              id="message"
               name="message" 
               value={formData.message}
               onChange={handleChange}
               className="w-full p-2 border border-gray-400 rounded bg-gray-300 dark:bg-gray-800 dark:border-gray-700" 
+              placeholder='Your web page is amazing!'
               required
             ></textarea>
           </div>

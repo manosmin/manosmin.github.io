@@ -41,7 +41,7 @@ function Projects() {
     const ProjectInfo4 = {
       Title: 'Decentralized Systems Implementation', 
       Used: 'Python',
-      Description: 'Implementation of a decentralized index based on distributed hashing tables (Chord DHT and Pastry DHT) and their experimental evaluation using real data sets scraped from the web.',
+      Description: 'Implementation of a decentralized index based on distributed hashing tables (Chord and Pastry DHTs) and its experimental evaluation in lookup operations, using real data sets scraped from the web.',
       Link: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies', 
       Date: '2023/12',
       Team: 'Yes'
@@ -50,7 +50,7 @@ function Projects() {
     const ProjectInfo5 = {
       Title: 'Multidimensional Data Structures Implementation', 
       Used: 'Python',
-      Description: 'Implementation of multidimensional data structures (K-D, Range, Quad and R trees) and their experimental evaluation with locality-sensitive hashing method in various operations, including inserting, deleting, updating and searching queries, using real data sets scraped from the web.',
+      Description: 'Implementation of several multidimensional data structures (K-D, Range, Quad and R trees) and their experimental evaluation with locality-sensitive hashing method in inserting, deleting, updating and searching operations, using real data sets scraped from the web.',
       Link: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies', 
       Date: '2023/09',
       Team: 'Yes'

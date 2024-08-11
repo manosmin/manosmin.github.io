@@ -18,12 +18,12 @@ function Skills() {
     const Skill1 = {Title: 'JavaScript', Percentage: '90%', Icon: <IoLogoJavascript className='mb-2 inline' size={25} />}
     const Skill2 = {Title: 'HTML', Percentage: '80%', Icon: <FaHtml5 className='mb-2 inline' size={25} />}
     const Skill3 = {Title: 'CSS', Percentage: '80%', Icon: <FaCss3Alt className='mb-2 inline' size={25} />}
-    const Skill4 = {Title: 'PHP', Percentage: '60%', Icon: <SiPhp className='mb-2 inline' size={25} />}
+    const Skill4 = {Title: 'PHP', Percentage: '65%', Icon: <SiPhp className='mb-2 inline' size={25} />}
     const Skill5 = {Title: 'MongoDB', Percentage: '75%', Icon: <SiMongodb className='mb-2 inline' size={25} />}
     const Skill6 = {Title: 'SQL', Percentage: '75%', Icon: <FaDatabase className='mb-2 inline' size={25} />}
     const Skill7 = {Title: 'Python', Percentage: '75%', Icon: <FaPython className='mb-2 inline' size={25} />}
-    const Skill8 = {Title: 'C++', Percentage: '65%', Icon: <SiCplusplus className='mb-2 inline' size={25} />}
-    const Skill9 = {Title: 'Java', Percentage: '50%', Icon: <FaJava className='mb-2 inline' size={25} />}
+    const Skill8 = {Title: 'C++', Percentage: '60%', Icon: <SiCplusplus className='mb-2 inline' size={25} />}
+    const Skill9 = {Title: 'Java', Percentage: '60%', Icon: <FaJava className='mb-2 inline' size={25} />}
     const Skill10 = {Title: 'Kotlin', Percentage: '50%', Icon: <SiKotlin className='mb-2 inline' size={25} />}
     const Skill11 = {Title: 'Git', Percentage: '75%', Icon: <FaGitAlt className='mb-2 inline' size={25} />}
     const Skill12 = {Title: 'Bash', Percentage: '65%', Icon: <SiGnubash className='mb-2 inline' size={25} />}

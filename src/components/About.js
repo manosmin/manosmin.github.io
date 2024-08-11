@@ -36,7 +36,7 @@ const About = () => {
               <p ref={containerRef5} className={`${isVisible5 && 'animate-fade-in'} opacity-0`} style={{ "--delay": 0.4 + "s" }}>
                 At this moment, I'm excited to take the next step in my journey by diving into the professional world. I'm particularly interested in software engineering and web development, and I'm eager to bring my skills to a dynamic team where I can continue to learn and grow.
               </p>
-              <p ref={containerRef6} className={`${isVisible6 && 'animate-fade-in'} opacity-0`} style={{ "--delay": 0.4 + "s" }}>I’m ready to roll up my sleeves and contribute to real-world projects that make a difference. If you’re looking for someone who’s not just skilled, but also passionate about technology, I’d love to <a className="underline" href="mailto:manosmin@hotmail.com">connect</a> and explore opportunities together!</p>
+              <p ref={containerRef6} className={`${isVisible6 && 'animate-fade-in'} opacity-0`} style={{ "--delay": 0.4 + "s" }}>I’m ready to roll up my sleeves and contribute to real-world projects that make a difference. If you’re looking for someone who's not just skilled, but also passionate about technology, I'd love to <a className="hover:underline" href="mailto:manosmin@hotmail.com">connect</a> and explore opportunities together!</p>
         </div>
       </div>
   );
