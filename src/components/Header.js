@@ -58,12 +58,12 @@ const Header = () => {
               <IoMenu size={20} />
               {dropdownOpen && (
                 <ul className="absolute right-0 mt-10 text-gray-200 bg-gray-900 dark:bg-gray-200 dark:text-gray-900 shadow-xl rounded-lg z-50">
-                  <a className="block font-medium px-4 py-2 hover:bg-gray-700 hover:rounded-lg dark:hover:bg-gray-100" href="#about">About Me</a>
+                  <a className="block font-medium px-4 py-2 hover:bg-gray-700 hover:rounded-t-lg dark:hover:bg-gray-100" href="#about">About Me</a>
                   <a className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100" href="#education">Education</a>
                   <a className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100" href="#projects">Projects</a>
                   <a className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100" href="#skills">Skills</a>
                   <a className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100" href="#facts">Fun Facts</a>
-                  <a className="block font-medium px-4 py-2 hover:bg-gray-700 hover:rounded-lg dark:hover:bg-gray-100" href="#contact">Contact</a>
+                  <a className="block font-medium px-4 py-2 hover:bg-gray-700 hover:rounded-b-lg dark:hover:bg-gray-100" href="#contact">Contact</a>
                 </ul>
               )}
             </li>

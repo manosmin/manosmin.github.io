@@ -41,7 +41,7 @@ function Projects() {
     const ProjectInfo4 = {
       Title: 'Decentralized Systems Implementation', 
       Used: 'Python',
-      Description: 'Implementation of a decentralized index based on distributed hashing table and its experimental evaluation using real data sets scraped from the web.',
+      Description: 'Implementation of a decentralized index based on distributed hashing tables (Chord DHT and Pastry DHT) and their experimental evaluation using real data sets scraped from the web.',
       Link: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies', 
       Date: '2023/12',
       Team: 'Yes'
