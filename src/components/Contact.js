@@ -62,7 +62,7 @@ const Contact = () => {
         </h2>
     </div>
         <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4" >
-          <p ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-slide-in-left"}`} style={{ "--delay":  0.4 + "s" }}>You can also send me a message through this form. Yes, it actually works!</p>
+          <p ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-slide-in-left"}`} style={{ "--delay":  0.4 + "s" }}>You can also send me a message through this form.</p>
           <div ref={containerRef3} className={`opacity-0 ${isVisible3 && "animate-slide-in"}`} style={{ "--delay":  0.4 + "s" }}>
             <label htmlFor='name' className="block">Name:</label>
             <input 
@@ -72,7 +72,6 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               className="w-full p-2 border border-gray-400 rounded bg-gray-300 dark:bg-gray-800 dark:border-gray-700" 
-              placeholder="Your name"
               required 
             />
           </div>
@@ -85,7 +84,6 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               className="w-full p-2 border border-gray-400 rounded bg-gray-300 dark:bg-gray-800 dark:border-gray-700" 
-              placeholder='Your email'
               required 
             />
           </div>
@@ -97,11 +95,10 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               className="w-full p-2 border border-gray-400 rounded bg-gray-300 dark:bg-gray-800 dark:border-gray-700" 
-              placeholder='Your web page is amazing!'
               required
             ></textarea>
           </div>
-          <button ref={containerRef6} type="submit" style={{ "--delay":  0.6 + "s" }} className={`${isVisible6 && "animate-fade-in"} opacity-0 bg-blue-700 hover:bg-blue-600 text-gray-100 font-semibold py-2 px-4 rounded-full`}>Send</button>
+          <button ref={containerRef6} type="submit" style={{ "--delay":  0.6 + "s" }} className={`${isVisible6 && "animate-fade-in"} opacity-0 bg-blue-700 hover:bg-blue-600 text-gray-100 py-2 px-4 rounded-full`}>Send</button>
         </form>
     </div>
   );

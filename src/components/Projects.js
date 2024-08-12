@@ -13,7 +13,7 @@ function Projects() {
 
     const ProjectInfo1 = {
       Title: 'Virus Contact Tracing Website',
-      Used: 'Node.js, Express.js, Passport.js, Leaflet.js, Chart.js, JavaScript, HTML, Bootstrap 4, MongoDB',
+      Used: ['Node.js', 'Express.js', 'Passport.js', 'Leaflet.js', 'Chart.js', 'JavaScript', 'HTML', 'Bootstrap 4', 'MongoDB'],
       Description: 'A website that helps users track and manage their potential exposure to virus carriers by crowd-sourcing data about their visits to various places in Patras, Greece.',
       Link: 'https://github.com/manosmin/ceid-web',
       Date: '2022/05',
@@ -22,7 +22,7 @@ function Projects() {
 
     const ProjectInfo2 = {
       Title: 'Movie Picker Web App',
-      Used: 'React.js, Bootstrap 5',
+      Used: ['React.js', 'Bootstrap 5'],
       Description: 'A web application that uses a REST API to provide a search engine for movies, games, series etc.',
       Link: 'https://github.com/manosmin/movie-picker-app',
       Date: '2024/02',
@@ -31,7 +31,7 @@ function Projects() {
 
     const ProjectInfo3 = {
       Title: 'manosmin.github.io',
-      Used: 'React.js, Tailwind CSS',
+      Used: ['React.js', 'Tailwind CSS'],
       Description: 'A fully responsive web page used as a personal portfolio, in order to showcase my education, experience, projects etc.',
       Link: 'https://github.com/manosmin/manosmin.github.io',
       Date: '2024/07',
@@ -40,7 +40,7 @@ function Projects() {
 
     const ProjectInfo4 = {
       Title: 'Decentralized Systems Implementation', 
-      Used: 'Python',
+      Used: ['Python'],
       Description: 'Implementation of a decentralized index based on distributed hashing tables (Chord and Pastry DHTs) and its experimental evaluation in lookup operations, using real data sets scraped from the web.',
       Link: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies', 
       Date: '2023/12',
@@ -49,7 +49,7 @@ function Projects() {
 
     const ProjectInfo5 = {
       Title: 'Multidimensional Data Structures Implementation', 
-      Used: 'Python',
+      Used: ['Python'],
       Description: 'Implementation of several multidimensional data structures (K-D, Range, Quad and R trees) and their experimental evaluation with locality-sensitive hashing method in inserting, deleting, updating and searching operations, using real data sets scraped from the web.',
       Link: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies', 
       Date: '2023/09',
@@ -59,8 +59,8 @@ function Projects() {
 
     const ProjectInfo7 = {
       Title: 'Publishing House Database Management System', 
-      Used: 'MySQL, Java Swing',
-      Description: 'Design and implementation of a database management system to efficiently manage the operations of a publishing house. It enables the publishing house to handle authors, books, sales, inventory, and other related aspects of the business effectively.',
+      Used: ['MySQL'],
+      Description: 'Design and implementation of a database system to efficiently manage the operations of a publishing house. It enables the publishing house to handle authors, books, sales, inventory, and other related aspects of the business effectively.',
       Link: 'https://github.com/manosmin/ceid-dblab', 
       Date: '2020/02',
       Team: 'No'
@@ -68,7 +68,7 @@ function Projects() {
 
     const ProjectInfo8 = {
       Title: 'Smart Tasks Programming', 
-      Used: 'Assembly, C++, Microchip Studio',
+      Used: ['Assembly', 'C++', 'Microchip Studio'],
       Description: 'Programming of an 8-bit AVR microcontroller to operate various smart tasks as highway intersection traffic lights, household appliance moving in empty spaces and house alarm system.',
       Link: 'https://github.com/manosmin/ceid-advanced-microprocessors', 
       Date: '2021/05',

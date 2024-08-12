@@ -17,8 +17,10 @@ function ProjectItem(props) {
         href={props.myInfo.Link}
         className="font-semibold hover:underline">{props.myInfo.Title}</a></li>
         <li >{props.myInfo.Date}</li>
-        <li className=''>{props.myInfo.Description}</li>
-        <li className='italic'>Used {props.myInfo.Used}</li>
+        <li>{props.myInfo.Description}</li>
+        <ul className='mt-2 flex flex-wrap gap-2'>
+          {(props.myInfo.Used).map((item, index) => (<li key={index} className='text-sm border-2 border-gray-900 rounded-full bg-gray-900 text-gray-200 dark:border-gray-200 dark:bg-gray-200 dark:text-gray-900 px-3'>{item}</li>))}
+        </ul>
     </ul>
   )
 }
