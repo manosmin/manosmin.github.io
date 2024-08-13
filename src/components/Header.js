@@ -19,45 +19,45 @@ const Header = () => {
   };
 
   return (
-    <header className="z-40 sticky top-0 bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 shadow p-5">
+    <header className="z-40 sticky top-0 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 shadow p-5">
       <h1 className="max-w-screen-xl mx-auto w-full text-4xl font-bold">
         <a href="/#" className='inline-block animate-slide-in-left opacity-0' style={{ "--delay": 0.2 + "s" }}>Manos Minadakis</a>
         &nbsp;
-        <small className="inline-block animate-slide-in opacity-0 font-semibold text-gray-600 dark:text-gray-400" style={{ "--delay": 0.2 + "s" }}>Computer Engineer</small>
+        <small className="inline-block animate-slide-in opacity-0 font-semibold text-gray-500 dark:text-gray-400" style={{ "--delay": 0.2 + "s" }}>Computer Engineer</small>
       </h1>
       <nav>
         <ul className="max-w-screen-xl mx-auto w-full flex justify-between mt-3 list-none">
           <div className='flex animate-drop-in opacity-0' style={{ "--delay": 0.8 + "s" }}>
-            <li id="github" className="icon-container bg-gray-900 text-white dark:bg-gray-200 dark:text-gray-800 rounded-full p-2 mx-1">
+            <li id="github" className="icon-container bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-800 rounded-full p-2 mx-1">
               <a rel="noopener noreferrer" href="https://www.github.com/manosmin" alt="github" target="_blank"><FaGithub size={20}/></a>
             </li>
-            <li className="icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1">
+            <li className="icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1">
               <a rel="noopener noreferrer" href="https://www.linkedin.com/in/manosmin" target="_blank" alt="linkedin"><FaLinkedinIn size={20}/></a>
             </li>
-            <li className="icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1">
+            <li className="icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1">
               <a rel="noopener noreferrer" href="https://www.discordapp.com/users/270397164209963009" target="_blank" alt="discord" ><FaDiscord size={20}/></a>
             </li>
-            <li className="icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1">
+            <li className="icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1">
               <a rel="noopener noreferrer" href="https://1drv.ms/b/s!AvPPFklWx5YlgcE97gVFyWQmI8Caww?e=hDOobR" target="_blank" alt="CV" ><IoDocument size={20}/></a>
             </li>
-            <li className="icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1">
+            <li className="icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1">
               <a href="mailto:manosmin@hotmail.com" alt="email" ><MdAlternateEmail size={20}/></a>
             </li>
-            <li className="icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1">
+            <li className="icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1">
               <a href="tel:+306947651098" alt="mobile" ><FaPhone size={20}/></a>
             </li>
           </div>
           <div className='flex animate-drop-in opacity-0' style={{ "--delay": 0.8 + "s" }}>
-            <li className="flex icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1">
+            <li className="flex icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1">
               <button alt="darkmode" onClick={()=> darkModeHandler()}>
                 { !dark && <IoMoon size={20}/> }
                 { dark && <IoSunny size={20}/> }
               </button>
             </li>
-            <li className="flex cursor-pointer icon-container bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-900 rounded-full p-2 mx-1" alt='dropdown' onClick={()=> toggleDropdown()}>
+            <li className="flex cursor-pointer icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1" alt='dropdown' onClick={()=> toggleDropdown()}>
               <IoMenu size={20} />
               {dropdownOpen && (
-                <ul className="absolute right-0 mt-10 text-gray-200 bg-gray-900 dark:bg-gray-200 dark:text-gray-900 shadow-xl rounded-lg z-50">
+                <ul className="absolute right-0 mt-10 text-gray-100 bg-gray-900 dark:bg-gray-100 dark:text-gray-900 shadow-xl rounded-lg z-50">
                   <a className="block font-medium px-4 py-2 hover:bg-gray-700 hover:rounded-t-lg dark:hover:bg-gray-100" href="#about">About Me</a>
                   <a className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100" href="#education">Education</a>
                   <a className="block font-medium px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-100" href="#projects">Projects</a>

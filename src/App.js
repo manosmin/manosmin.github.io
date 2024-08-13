@@ -29,7 +29,7 @@ export function useIsVisible(options) {
 
 function App() {
   return (
-    <div className="bg-gray-200 dark:bg-gray-900 flex flex-col min-h-screen">
+    <div className="bg-gray-100 dark:bg-gray-900 flex flex-col min-h-screen">
       <Header />
       <div className="max-w-screen-xl mx-auto w-full">
         <LettersAnimation />
