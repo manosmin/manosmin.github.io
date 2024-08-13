@@ -19,7 +19,7 @@ function ProjectItem(props) {
         <li >{props.myInfo.Date}</li>
         <li>{props.myInfo.Description}</li>
         <ul className='mt-2 flex flex-wrap gap-2'>
-          {(props.myInfo.Used).map((item, index) => (<li key={index} className='text-sm border-2 border-gray-900 rounded-full bg-gray-900 text-gray-100 dark:border-gray-200 dark:bg-gray-100 dark:text-gray-900 px-3'>{item}</li>))}
+          {(props.myInfo.Used).map((item, index) => (<li key={index} className='text-sm font-medium border border-gray-900 rounded-full bg-gray-900 text-gray-100 dark:border-gray-100 dark:bg-gray-100 dark:text-gray-900 px-3'>{item}</li>))}
         </ul>
     </ul>
   )
