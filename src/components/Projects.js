@@ -14,7 +14,7 @@ function Projects() {
     const ProjectInfo1 = {
       Title: 'Virus Contact Tracing Website',
       Used: ['Node.js', 'Express.js', 'Passport.js', 'Leaflet.js', 'Chart.js', 'JavaScript', 'HTML', 'Bootstrap 4', 'MongoDB'],
-      Description: 'A website that helps users track and manage their potential exposure to virus carriers by crowd-sourcing data about their visits to various places in Patras, Greece.',
+      Description: 'Website that helps users track and manage their potential exposure to virus carriers by crowd-sourcing data about their visits to various places in Patras, Greece.',
       Link: 'https://github.com/manosmin/ceid-web',
       Date: '2022/05',
       Team: 'Yes'
@@ -23,16 +23,16 @@ function Projects() {
     const ProjectInfo2 = {
       Title: 'Movie Picker Web App',
       Used: ['React.js', 'Bootstrap 5'],
-      Description: 'A web application that uses a REST API to provide a search engine for movies, games, series etc.',
+      Description: 'Web application that uses a REST API to provide a search engine for movies, games, series etc.',
       Link: 'https://github.com/manosmin/movie-picker-app',
       Date: '2024/02',
       Team: 'No'
     }
 
     const ProjectInfo3 = {
-      Title: 'manosmin.github.io',
+      Title: 'manosm.in',
       Used: ['React.js', 'Tailwind CSS'],
-      Description: 'A fully responsive web page used as a personal portfolio, in order to showcase my education, experience, projects etc.',
+      Description: 'Fully responsive web page used as a personal portfolio, in order to showcase my projects, experience, education etc.',
       Link: 'https://github.com/manosmin/manosmin.github.io',
       Date: '2024/07',
       Team: 'No'
@@ -75,7 +75,16 @@ function Projects() {
       Team: 'Yes'
     }
 
-    const Projects = [ProjectInfo3, ProjectInfo2, ProjectInfo1, ProjectInfo4, ProjectInfo5, ProjectInfo8, ProjectInfo7]
+    const ProjectInfo9 = {
+      Title: `CardFlipMarket`, 
+      Used: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Chart.js', 'Tailwind CSS','node-cron', 'axios'],
+      Description: 'Website used to discover the most recent price spikes in a digital collectible card game, named MTGO. It makes possible to decide whether to invest in the corresponding cards of the tabletop game in the real world, using up-to-date price data from Scryfall API.',
+      Link: 'https://github.com/manosmin/cardflipmarket', 
+      Date: '2024/08',
+      Team: 'No'
+    }
+
+    const Projects = [ProjectInfo3, ProjectInfo2, ProjectInfo1, ProjectInfo4, ProjectInfo5, ProjectInfo8, ProjectInfo7, ProjectInfo9]
 
   return (
     <div id="projects" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-48'>
