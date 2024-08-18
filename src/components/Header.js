@@ -43,9 +43,6 @@ const Header = () => {
             <li className="icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1">
               <a href="mailto:manosmin@hotmail.com" alt="email" ><MdAlternateEmail size={20}/></a>
             </li>
-            <li className="icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1">
-              <a href="tel:+306947651098" alt="mobile" ><FaPhone size={20}/></a>
-            </li>
           </div>
           <div className='flex animate-drop-in opacity-0' style={{ "--delay": 0.8 + "s" }}>
             <li className="flex icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1">

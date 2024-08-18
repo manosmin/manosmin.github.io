@@ -78,7 +78,7 @@ function Projects() {
     const ProjectInfo9 = {
       Title: `CardFlipMarket`, 
       Used: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Chart.js', 'Tailwind CSS','node-cron', 'axios'],
-      Description: 'Website used to discover and show the latest card price spikes in a digital collectible card game, using up-to-date price data from Scryfall API. The users exploiting this information are able to make decisions on whether or not to invest in certain cards at the tabletop version of the game.',
+      Description: 'Website that discovers and shows the latest price spikes in a digital collectible card game, by utilizing data from a REST API and processing them into a database, helping users to make data-driven decisions on investing in the actual market.',
       Link: 'https://github.com/manosmin/cardflipmarket', 
       Date: '2022/09',
       Team: 'No'
