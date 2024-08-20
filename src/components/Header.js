@@ -38,7 +38,7 @@ const Header = () => {
               <a rel="noopener noreferrer" href="https://www.discordapp.com/users/270397164209963009" target="_blank" alt="discord" ><FaDiscord size={20}/></a>
             </li>
             <li className="icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1">
-              <a rel="noopener noreferrer" href="https://1drv.ms/b/s!AvPPFklWx5YlgcE97gVFyWQmI8Caww?e=hDOobR" target="_blank" alt="CV" ><IoDocument size={20}/></a>
+              <a rel="noopener noreferrer" href="https://1drv.ms/b/s!AvPPFklWx5YlgcVK4G_e28UQDwI2oQ?e=e7nrZb" target="_blank" alt="CV" ><IoDocument size={20}/></a>
             </li>
             <li className="icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1">
               <a href="mailto:manosmin@hotmail.com" alt="email" ><MdAlternateEmail size={20}/></a>
