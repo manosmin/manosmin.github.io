@@ -10,10 +10,12 @@ module.exports = {
         "caret": 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
         "drop-in": 'dropIn .6s ease-in-out forwards var(--delay, 0)',
         "fly-in-down": 'flyInDown .6s ease-in-out forwards var(--delay, 0)',
+        "fade-out-down": 'fadeOutDown .6s ease-in-out forwards var(--delay, 0)',
         "fade-in": 'fadeIn .6s ease-in-out forwards var(--delay, 0)',
         "fade-in-down": 'fadeInDown .8s ease-in-out forwards var(--delay, 0)',
         "slide-in": "slideIn .6s ease-in-out forwards var(--delay, 0)",
-        "slide-in-left": "slideInLeft .6s ease-in-out forwards var(--delay, 0)"
+        "slide-in-left": "slideInLeft .6s ease-in-out forwards var(--delay, 0)",
+        "slide-out": 'slideOut .6s ease-in-out forwards var(--delay, 0)',
       },
       keyframes: {
         dropIn: {
@@ -48,6 +50,15 @@ module.exports = {
             opacity: 1
           },
         },
+        fadeOutDown: {
+                    "0%": {
+                        opacity: 1,
+                    },
+                    "100%": {
+                        opacity: 0,
+                        transform: "translate3d(0, 100%, 0)",
+                    },
+                },
         fadeIn: {
           "0%": {
             opacity: 0,
@@ -75,6 +86,16 @@ module.exports = {
             opacity: 1,
             transform: "translate3d(0, 0, 0)"
           }
+        },
+        slideOut: {
+            "0%": {
+                opacity: 1,
+                transform: "translate3d(0, 0, 0)",
+            },
+            "100%": {
+                opacity: 0,
+                transform: "translate3d(100%, 0, 0)",
+            },
         },
         slideInLeft: {
           "0%": {

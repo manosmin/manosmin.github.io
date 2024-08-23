@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { FaGithub, FaLinkedinIn, FaDiscord, FaPhone } from "react-icons/fa";
+import Drawer from './Drawer';
+import { FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
 import { IoMoon, IoSunny, IoDocument, IoMenu } from "react-icons/io5";
 
@@ -8,6 +9,7 @@ const Header = () => {
 
   const [dark, setDark] = React.useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
 
   const darkModeHandler = () => {
       setDark(!dark);
@@ -15,6 +17,7 @@ const Header = () => {
   }
 
   const toggleDropdown = () => {
+    setHasInteracted(true);
     setDropdownOpen(!dropdownOpen);
   };
 
@@ -53,20 +56,11 @@ const Header = () => {
             </li>
             <li className="flex cursor-pointer icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1" alt='dropdown' onClick={()=> toggleDropdown()}>
               <IoMenu size={20} />
-              {dropdownOpen && (
-                <ul className="absolute right-0 mt-10 text-gray-100 bg-gray-900 dark:bg-gray-100 dark:text-gray-900 shadow-xl rounded-lg z-50">
-                  <a className="block font-medium px-4 py-2 hover:bg-gray-800 hover:rounded-t-lg dark:hover:bg-gray-200" href="#about">About Me</a>
-                  <a className="block font-medium px-4 py-2 hover:bg-gray-800 dark:hover:bg-gray-200" href="#education">Education</a>
-                  <a className="block font-medium px-4 py-2 hover:bg-gray-800 dark:hover:bg-gray-200" href="#projects">Projects</a>
-                  <a className="block font-medium px-4 py-2 hover:bg-gray-800 dark:hover:bg-gray-200" href="#skills">Skills</a>
-                  <a className="block font-medium px-4 py-2 hover:bg-gray-800 dark:hover:bg-gray-200" href="#facts">Fun Facts</a>
-                  <a className="block font-medium px-4 py-2 hover:bg-gray-800 hover:rounded-b-lg dark:hover:bg-gray-200" href="#contact">Contact</a>
-                </ul>
-              )}
             </li>
           </div>
         </ul>
       </nav>
+      { hasInteracted && <Drawer toggleDropdown={toggleDropdown} isOpen={dropdownOpen} /> }
     </header>
   );
 };
