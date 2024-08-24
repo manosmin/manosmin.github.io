@@ -9,7 +9,7 @@ const ThreeAnimation = ({ darkMode }) => {
     const mountNode = mountRef.current;
 
     const backgroundColor = darkMode ? 0x111827 : 0xf3f4f6;
-    const cubeColor = darkMode ? 0xf3f4f6 : 0x111827;
+    const cubeColor = 0x1E3A8A;
 
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(backgroundColor);
@@ -26,13 +26,13 @@ const ThreeAnimation = ({ darkMode }) => {
     const cubeCount = 10;
     const geometry = new THREE.BoxGeometry(1, 1, 1);
 
-    const velocityScale = 0.05; 
+    const velocityScale = 0.02; 
 
     for (let i = 0; i < cubeCount; i++) {
       const material = new THREE.MeshBasicMaterial({
         color: cubeColor,
         transparent: true,
-        opacity: 0.1
+        opacity: 0.25
       });
       const cube = new THREE.Mesh(geometry, material);
 

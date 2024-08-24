@@ -8,14 +8,16 @@ module.exports = {
       animation: {
         "typewriter": "typewriter 2s steps(11) forwards",
         "caret": 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
-        "drop-in": 'dropIn .6s ease-in-out forwards var(--delay, 0)',
+        "drop-in": 'dropIn .4s ease-in-out forwards var(--delay, 0)',
         "fly-in-down": 'flyInDown .6s ease-in-out forwards var(--delay, 0)',
-        "fade-out-down": 'fadeOutDown .6s ease-in-out forwards var(--delay, 0)',
+        "fade-out-down": 'fadeOutDown .4s ease-in-out forwards var(--delay, 0)',
         "fade-in": 'fadeIn .6s ease-in-out forwards var(--delay, 0)',
         "fade-in-down": 'fadeInDown .8s ease-in-out forwards var(--delay, 0)',
+        "fade-in-down2": 'fadeInDown .4s ease-in-out forwards var(--delay, 0)',
         "slide-in": "slideIn .6s ease-in-out forwards var(--delay, 0)",
+        "slide-in2": "slideIn .3s ease-in-out forwards var(--delay, 0)",
         "slide-in-left": "slideInLeft .6s ease-in-out forwards var(--delay, 0)",
-        "slide-out": 'slideOut .6s ease-in-out forwards var(--delay, 0)',
+        "slide-out": 'slideOut .3s ease-in-out forwards var(--delay, 0)',
       },
       keyframes: {
         dropIn: {

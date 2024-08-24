@@ -7,7 +7,7 @@ import { IoClose, IoDocument } from "react-icons/io5";
 
 function Drawer({ toggleDropdown, isOpen }) {
   return (
-    <div id="drawer-navigation" className={`opacity-0 ${isOpen ? 'md:animate-slide-in animate-fade-in-down': 'md:animate-slide-out animate-fade-out-down'} fixed top-0 right-0 z-50 h-screen shadow p-4 bg-gray-100 md:w-72 w-screen dark:bg-gray-900`} aria-labelledby="drawer-navigation-label" style={{ "--delay": 0 + "s" }}>
+    <div id="drawer-navigation" className={`opacity-0 ${isOpen ? 'md:animate-slide-in2 animate-fade-in-down2': 'md:animate-slide-out animate-fade-out-down'} fixed top-0 right-0 z-50 h-screen shadow p-4 bg-gray-100 md:w-1/4 w-screen dark:bg-gray-900`} aria-labelledby="drawer-navigation-label" style={{ "--delay": 0 + "s" }}>
       <div className="flex flex-col lg:justify-between h-full">
         <div>
           <h5 id="drawer-navigation-label" className="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Contents</h5>
