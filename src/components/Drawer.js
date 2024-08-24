@@ -7,17 +7,17 @@ import { IoClose, IoDocument } from "react-icons/io5";
 
 function Drawer({ toggleDropdown, isOpen }) {
   return (
-    <div id="drawer-navigation" className={`opacity-0 ${isOpen ? 'md:animate-slide-in2 animate-fade-in-down2': 'md:animate-slide-out animate-fade-out-down'} fixed top-0 right-0 z-50 h-screen shadow p-4 bg-gray-100 md:w-1/4 w-screen dark:bg-gray-900`} aria-labelledby="drawer-navigation-label" style={{ "--delay": 0 + "s" }}>
+    <div id="drawer-navigation" className={`opacity-0 ${isOpen ? 'md:animate-slide-in2 animate-fade-in-down2': 'md:animate-slide-out animate-fade-out-down'} fixed top-0 right-0 z-50 h-screen shadow p-4 bg-gray-100 md:w-64 w-screen dark:bg-gray-900`} aria-labelledby="drawer-navigation-label" style={{ "--delay": 0 + "s" }}>
       <div className="flex flex-col lg:justify-between h-full">
         <div>
           <h5 id="drawer-navigation-label" className="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Contents</h5>
-          <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" className="text-gray-500 dark:text-gray-400 hover:text-gray-900 bg-transparent hover:bg-gray-50 rounded-lg w-8 h-8 absolute top-3 right-3 inline-flex items-center justify-center dark:hover:bg-gray-800 dark:hover:text-gray-100" onClick={toggleDropdown}>
+          <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" className="text-gray-500 dark:text-gray-400 hover:text-gray-900 bg-transparent hover:bg-gray-50 w-8 h-8 absolute top-3 right-3 inline-flex items-center justify-center dark:hover:bg-gray-800 dark:hover:text-gray-100" onClick={toggleDropdown}>
             <IoClose size={20} />
           </button>
           <div className="py-2 overflow-y-auto">
             <ul className="space-y-1 font-medium" onClick={toggleDropdown}>
               <li>
-                <a href="#about" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <a href="#about" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
                   <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                     <FiInfo />
                   </div>
@@ -25,7 +25,7 @@ function Drawer({ toggleDropdown, isOpen }) {
                 </a>
               </li>
               <li>
-                <a href="#education" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <a href="#education" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
                   <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                     <FiBookOpen />
                   </div>
@@ -33,7 +33,7 @@ function Drawer({ toggleDropdown, isOpen }) {
                 </a>
               </li>
               <li>
-                <a href="#projects" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <a href="#projects" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
                   <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                     <MdComputer />
                   </div>
@@ -41,7 +41,7 @@ function Drawer({ toggleDropdown, isOpen }) {
                 </a>
               </li>
               <li>
-                <a href="#skills" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <a href="#skills" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
                   <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                     <GoGear />
                   </div>
@@ -49,7 +49,7 @@ function Drawer({ toggleDropdown, isOpen }) {
                 </a>
               </li>
               <li>
-                <a href="#facts" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <a href="#facts" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
                   <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                     <FaRegGrinStars />
                   </div>
@@ -57,7 +57,7 @@ function Drawer({ toggleDropdown, isOpen }) {
                 </a>
               </li>
               <li>
-                <a href="#contact" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <a href="#contact" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
                   <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                     <FaRegEnvelope />
                   </div>
@@ -71,7 +71,7 @@ function Drawer({ toggleDropdown, isOpen }) {
           <h5 className="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Find me</h5>
           <ul className="py-2 overflow-y-auto space-y-1 font-medium">
             <li>
-              <a rel="noopener noreferrer" href="https://github.com/manosmin" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group" target="_blank" alt="github">
+              <a rel="noopener noreferrer" href="https://github.com/manosmin" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group" target="_blank" alt="github">
                 <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                   <FaGithub />
                 </div>
@@ -79,7 +79,7 @@ function Drawer({ toggleDropdown, isOpen }) {
               </a>
             </li>
             <li>
-              <a rel="noopener noreferrer" href="https://linkedin.com/in/manosmin" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group" target="_blank" alt="linkedin">
+              <a rel="noopener noreferrer" href="https://linkedin.com/in/manosmin" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group" target="_blank" alt="linkedin">
                 <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                   <FaLinkedinIn />
                 </div>
@@ -87,7 +87,7 @@ function Drawer({ toggleDropdown, isOpen }) {
               </a>
             </li>
             <li>
-              <a rel="noopener noreferrer" href="https://www.discordapp.com/users/270397164209963009" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group" target="_blank" alt="discord">
+              <a rel="noopener noreferrer" href="https://www.discordapp.com/users/270397164209963009" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group" target="_blank" alt="discord">
                 <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                   <FaDiscord />
                 </div>
@@ -95,7 +95,7 @@ function Drawer({ toggleDropdown, isOpen }) {
               </a>
             </li>
             <li>
-              <a rel="noopener noreferrer" href="https://1drv.ms/b/s!AvPPFklWx5YlgcVK4G_e28UQDwI2oQ?e=e7nrZb" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group" target="_blank" alt="CV">
+              <a rel="noopener noreferrer" href="https://1drv.ms/b/s!AvPPFklWx5YlgcVK4G_e28UQDwI2oQ?e=e7nrZb" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group" target="_blank" alt="CV">
                 <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                   <IoDocument />
                 </div>
@@ -103,7 +103,7 @@ function Drawer({ toggleDropdown, isOpen }) {
               </a>
             </li>
             <li>
-              <a rel="noopener noreferrer" href="mailto:manosmin@hotmail.com" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group" target="_blank" alt="e-mail">
+              <a rel="noopener noreferrer" href="mailto:manosmin@hotmail.com" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group" target="_blank" alt="e-mail">
                 <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                   <MdAlternateEmail />
                 </div>
