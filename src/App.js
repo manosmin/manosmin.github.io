@@ -8,6 +8,7 @@ import Facts from './components/Facts';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ThreeAnimation from './components/ThreeAnimation';
 import './App.css';
 
 
@@ -27,22 +28,29 @@ export function useIsVisible(options) {
   return [containerRef, isVisible]
   }
 
-function App() {
-  return (
-    <div className="bg-gray-100 dark:bg-gray-900 flex flex-col min-h-screen">
-      <Header />
-      <div className="max-w-screen-xl mx-auto w-full">
+  function App() {
+    const [dark, setDark] = useState(false);
+  
+    const darkModeHandler = () => {
+      setDark(!dark);
+      document.body.classList.toggle("dark");
+    };
+  
+    return (
+      <div className={`bg-gray-100 dark:bg-gray-900 flex flex-col min-h-screen ${dark ? 'dark' : ''}`}>
+        <Header dark={dark} darkModeHandler={darkModeHandler} />
+        <ThreeAnimation darkMode={dark} />
         <LettersAnimation />
-        <About />
-        <Education />
-        <Projects />
-        <Skills />
-        <Facts />
-        <Contact />
+        <div className="max-w-screen-xl mx-auto w-full">
+          <About />
+          <Education />
+          <Projects />
+          <Skills />
+          <Facts />
+          <Contact />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  );
-}
-
+    );
+  }
 export default App;

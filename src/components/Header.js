@@ -1,20 +1,13 @@
+// src/components/Header.js
 import React, { useState } from 'react';
 import Drawer from './Drawer';
 import { FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
 import { IoMoon, IoSunny, IoDocument, IoMenu } from "react-icons/io5";
 
-
-const Header = () => {
-
-  const [dark, setDark] = React.useState(false);
+const Header = ({ dark, darkModeHandler }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
-
-  const darkModeHandler = () => {
-      setDark(!dark);
-      document.body.classList.toggle("dark");
-  }
 
   const toggleDropdown = () => {
     setHasInteracted(true);
@@ -49,12 +42,12 @@ const Header = () => {
           </div>
           <div className='flex animate-drop-in opacity-0' style={{ "--delay": 0.8 + "s" }}>
             <li className="flex icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1">
-              <button alt="darkmode" onClick={()=> darkModeHandler()}>
+              <button alt="darkmode" onClick={darkModeHandler}>
                 { !dark && <IoMoon size={20}/> }
                 { dark && <IoSunny size={20}/> }
               </button>
             </li>
-            <li className="flex cursor-pointer icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1" alt='dropdown' onClick={()=> toggleDropdown()}>
+            <li className="flex cursor-pointer icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1" alt='dropdown' onClick={toggleDropdown}>
               <IoMenu size={20} />
             </li>
           </div>

@@ -31,8 +31,8 @@ function Projects() {
 
     const ProjectInfo3 = {
       Title: 'manosm.in',
-      Used: ['React.js', 'Tailwind CSS'],
-      Description: 'Fully responsive web page used as a personal portfolio, in order to showcase my projects, experience, education etc.',
+      Used: ['React.js', 'Tailwind CSS', 'Three.js'],
+      Description: 'Responsive and animated web page used as a personal portfolio, in order to showcase my projects, experience, education etc.',
       Link: 'https://github.com/manosmin/manosmin.github.io',
       Date: '2024/07',
       Team: 'No'
@@ -77,10 +77,10 @@ function Projects() {
 
     const ProjectInfo9 = {
       Title: `CardFlipMarket`, 
-      Used: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Chart.js', 'Tailwind CSS','node-cron', 'axios'],
+      Used: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Chart.js', 'Tailwind CSS'],
       Description: 'Website that discovers and shows the latest price spikes in a digital collectible card game, by utilizing data from a REST API and processing them into a database, helping users to make data-driven decisions on investing in the actual market.',
       Link: 'https://github.com/manosmin/cardflipmarket', 
-      Date: '2022/09',
+      Date: '2024/08',
       Team: 'No'
     }
 
