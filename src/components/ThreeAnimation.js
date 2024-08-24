@@ -22,11 +22,14 @@ const ThreeAnimation = ({ darkMode }) => {
     mountNode.appendChild(renderer.domElement);
 
     const cubeArray = [];
+    const velocityArray = [];
     const cubeCount = 10;
     const geometry = new THREE.BoxGeometry(1, 1, 1);
 
+    const velocityScale = 0.05; 
+
     for (let i = 0; i < cubeCount; i++) {
-      const material = new THREE.MeshBasicMaterial({ 
+      const material = new THREE.MeshBasicMaterial({
         color: cubeColor,
         transparent: true,
         opacity: 0.1
@@ -42,8 +45,16 @@ const ThreeAnimation = ({ darkMode }) => {
         (Math.random() - 0.5) * 20
       );
 
+      // Adjust velocity with the scale factor
+      const velocity = new THREE.Vector3(
+        (Math.random() - 0.5) * velocityScale,
+        (Math.random() - 0.5) * velocityScale,
+        (Math.random() - 0.5) * velocityScale
+      );
+
       scene.add(cube);
       cubeArray.push(cube);
+      velocityArray.push(velocity);
     }
 
     camera.position.z = 10;
@@ -51,9 +62,21 @@ const ThreeAnimation = ({ darkMode }) => {
     const animate = function () {
       requestAnimationFrame(animate);
 
-      cubeArray.forEach(cube => {
+      cubeArray.forEach((cube, index) => {
+        cube.position.add(velocityArray[index]);
+
         cube.rotation.x += 0.01;
         cube.rotation.y += 0.01;
+
+        if (cube.position.x > window.innerWidth / 100 / 2 || cube.position.x < -window.innerWidth / 100 / 2) {
+          velocityArray[index].x *= -1;
+        }
+        if (cube.position.y > window.innerHeight / 100 / 2 || cube.position.y < -window.innerHeight / 100 / 2) {
+          velocityArray[index].y *= -1;
+        }
+        if (cube.position.z > 10 || cube.position.z < -10) {
+          velocityArray[index].z *= -1;
+        }
       });
 
       renderer.render(scene, camera);
