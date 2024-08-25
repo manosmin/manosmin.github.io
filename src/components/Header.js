@@ -21,11 +21,10 @@ const Header = ({ dark, darkModeHandler }) => {
         <div>
           <ul className="flex list-none">
             <div className='flex animate-drop-in opacity-0' style={{ "--delay": 0.8 + "s" }}>
-              <li className="flex icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1">
-                <button alt="darkmode" onClick={darkModeHandler}>
+              <li className="flex cursor-pointer icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1" alt="darkmode"
+              onClick={darkModeHandler}>
                   { !dark && <IoMoon size={20}/> }
                   { dark && <IoSunny size={20}/> }
-                </button>
               </li>
               <li className="flex cursor-pointer icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2 mx-1" alt='dropdown' onClick={toggleDropdown}>
                 <IoMenu size={20} />
