@@ -15,7 +15,7 @@ function Facts() {
 
 
   return (
-    <div id="facts" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-48'>
+    <div id="facts" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10  py-24'>
       <div  className="flex justify-between cursor-pointer">
         <h2 ref={containerRef1} className={`text-2xl font-semibold opacity-0 ${isVisible1 && "animate-slide-in-left"}`} style={{ "--delay": 0.2 + "s" }}>
         <p className='flex justify-center items-center'><FaGrinStars className='mr-2'/> Fun Facts</p>
