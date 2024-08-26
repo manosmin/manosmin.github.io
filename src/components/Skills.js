@@ -1,7 +1,7 @@
 import React from 'react';
 import { useIsVisible } from '../App';
 import SkillItem from './SkillItem';
-import { GoGear } from "react-icons/go";
+import { FaGear } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaPython, FaHtml5, FaCss3Alt, FaJava, FaDatabase, FaGitAlt, FaDocker  } from "react-icons/fa";
 import { SiKotlin, SiCplusplus, SiMongodb, SiGnubash, SiPhp } from "react-icons/si";
@@ -34,7 +34,7 @@ function Skills() {
     <div id="skills" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-48'>
       <div className="flex justify-between cursor-pointer">
         <h2 ref={containerRef1} className={`${isVisible1 && 'animate-slide-in-left'} opacity-0 text-2xl font-semibold`} style={{ "--delay": 0.2 + "s" }}>
-          <p className='flex justify-center items-center'><GoGear className='mr-2'/> Skills</p>
+          <p className='flex justify-center items-center'><FaGear className='mr-2'/> Skills</p>
         </h2>
       </div>
       <div className='mt-8 cursor-normal'>

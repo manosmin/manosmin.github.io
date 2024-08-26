@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaRegGrinStars } from "react-icons/fa";
+import { FaGrinStars } from "react-icons/fa";
 import { useIsVisible } from '../App';
 
 function Facts() {
@@ -18,7 +18,7 @@ function Facts() {
     <div id="facts" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-48'>
       <div  className="flex justify-between cursor-pointer">
         <h2 ref={containerRef1} className={`text-2xl font-semibold opacity-0 ${isVisible1 && "animate-slide-in-left"}`} style={{ "--delay": 0.2 + "s" }}>
-        <p className='flex justify-center items-center'><FaRegGrinStars className='mr-2'/> Fun Facts</p>
+        <p className='flex justify-center items-center'><FaGrinStars className='mr-2'/> Fun Facts</p>
         </h2>
       </div>
       <ul className="mt-8 cursor-normal list-inside list-disc space-y-2">
