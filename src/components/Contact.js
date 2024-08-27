@@ -55,13 +55,13 @@ const Contact = () => {
 
 
   return (
-    <div id="contact" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-24'>
-      <div  className="flex justify-between cursor-pointer">
-        <h2 ref={containerRef1} className={`opacity-0 text-2xl font-semibold ${isVisible1 && "animate-slide-in-left"}`} style={{ "--delay": 0.2 + "s" }}>
+    <div id="contact" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-24 '>
+      <div  className="flex justify-between cursor-pointer rounded-lg shadow p-6">
+        <h2 ref={containerRef1} className={`opacity-0 text-2xl font-semibold ${isVisible1 && "animate-drop-in"}`} style={{ "--delay": 0.2 + "s" }}>
         <p className='flex justify-center items-center'><FaEnvelope className='mr-2'/> Contact</p>
         </h2>
     </div>
-        <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4" >
+        <form onSubmit={handleSubmit} className="mt-4 cursor-normal space-y-4 rounded-lg shadow p-6" >
           <p ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-slide-in-left"}`} style={{ "--delay":  0.4 + "s" }}>You can also send me a message through this form.</p>
           <div ref={containerRef3} className={`opacity-0 ${isVisible3 && "animate-slide-in"}`} style={{ "--delay":  0.4 + "s" }}>
             <label htmlFor='name' className="block">Name:</label>

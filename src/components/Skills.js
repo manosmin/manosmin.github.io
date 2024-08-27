@@ -32,12 +32,12 @@ function Skills() {
     
   return (
     <div id="skills" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10  py-24'>
-      <div className="flex justify-between cursor-pointer">
-        <h2 ref={containerRef1} className={`${isVisible1 && 'animate-slide-in-left'} opacity-0 text-2xl font-semibold`} style={{ "--delay": 0.2 + "s" }}>
+      <div className="flex justify-between rounded-lg shadow p-6">
+        <h2 ref={containerRef1} className={`${isVisible1 && 'animate-drop-in'} opacity-0 text-2xl font-semibold`} style={{ "--delay": 0.2 + "s" }}>
           <p className='flex justify-center items-center'><FaGear className='mr-2'/> Skills</p>
         </h2>
       </div>
-      <div className='mt-8 cursor-normal'>
+      <div className='mt-4 cursor-normal rounded-lg shadow p-6'>
         {Skills.sort((a, b) => b.Percentage.localeCompare(a.Percentage)).map((item, index) => (<SkillItem myItem={item} index={index+1} key={item.Title}/>))}
       </div>
     </div>

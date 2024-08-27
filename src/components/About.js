@@ -19,13 +19,13 @@ const About = () => {
   const [ containerRef6, isVisible6] = useIsVisible({})
 
   return (
-    <div id="about" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10  py-24'>
-      <div  className="flex justify-between cursor-pointer">
-        <h2 ref={containerRef1} className={`${isVisible1 && 'animate-slide-in-left'} opacity-0 text-2xl font-semibold`} style={{ "--delay": 0.2 + "s" }}>
+    <div id="about" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-24'>
+      <div className={`flex justify-between rounded-lg shadow p-6`}>
+        <h2 ref={containerRef1} className={`${isVisible1 && 'animate-drop-in'} opacity-0 text-2xl font-semibold`} style={{ "--delay": 0.2 + "s" }}>
         <p className='flex justify-center items-center'><FaInfoCircle className='mr-2'/> About Me </p>
         </h2>
       </div>
-        <div className="w-full flex mx-auto max-w-screen-lg flex-col items-center text-center mt-8 cursor-normal space-y-2"  >
+        <div className="w-full flex mx-auto flex-col items-center text-center mt-4 cursor-normal space-y-2 rounded-lg shadow p-6"  >
             <img ref={containerRef2} src="/profile.png" id="profile-pic" alt="Profile" className={`border-2 bg-gray-200 dark:bg-gray-800 ${isVisible2 && 'animate-fade-in-down'} opacity-0 mb-4 border-gray-900 dark:border-gray-100 w-56 h-56 rounded-full shadow-lg`} style={{ "--delay": 0.2 + "s" }}  /> 
               <p ref={containerRef3} className={`${isVisible3 && 'animate-fade-in'} opacity-0`} style={{ "--delay": 0.4 + "s" }}>
               My name is <span className='font-semibold'>Manos Minadakis</span> and I'm a Computer Engineer currently based in Heraklion, Greece.
