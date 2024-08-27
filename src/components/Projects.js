@@ -97,12 +97,12 @@ function Projects() {
 
   return (
     <div id="projects" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10  py-24'>
-      <div className="flex justify-between rounded-lg shadow p-6">
+      <div className="flex justify-between">
         <h2 ref={containerRef1} className={`${isVisible1 && 'animate-drop-in'} opacity-0 text-2xl font-semibold`} style={{ "--delay": 0.2 + "s" }}>
         <p className='flex justify-center items-center'><RiComputerFill className='mr-2'/> Projects</p>
         </h2>
       </div>
-      <div className='mt-4 cursor-normal space-y-8'>
+      <div className='mt-8 cursor-normal space-y-8'>
         {Projects.sort((a, b) => b.Date.localeCompare(a.Date)).map((item, index) => ( <ProjectItem myInfo={item} index={index + 1} key={item.Title} /> ))}
       </div>
     </div>

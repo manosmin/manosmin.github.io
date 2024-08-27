@@ -12,12 +12,12 @@ const Education = () => {
 
   return (
     <div id="education" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10  py-24'>
-      <div className="flex justify-between rounded-lg shadow p-6">
+      <div className="flex justify-between ">
         <h2 ref={containerRef1} className={`${isVisible1 && 'animate-drop-in'} opacity-0 text-2xl font-semibold`} style={{ "--delay": 0.2 + "s" }}>
         <p className='flex justify-center items-center'><FaBookOpen className='mr-2'/> Education</p>
         </h2>
       </div>
-      <div ref={containerRef2} className={`${isVisible2 && 'animate-slide-in'} space-y-2 rounded-lg shadow p-6 mt-4 cursor-normal opacity-0`} style={{ "--delay": 0.4 + "s" }}>
+      <div ref={containerRef2} className={`${isVisible2 && 'animate-slide-in'} mt-8 space-y-2 md:p-6 p-2 cursor-normal opacity-0`} style={{ "--delay": 0.4 + "s" }}>
           <ul className='list-none space-y-1'>
           <li><a
             rel="noopener noreferrer"

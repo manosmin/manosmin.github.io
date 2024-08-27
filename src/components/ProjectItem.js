@@ -11,7 +11,7 @@ function ProjectItem(props) {
       ref={containerRef1}
       className={`${
         isVisible1 && (props.index % 2 !== 0 ? 'animate-slide-in' : 'animate-slide-in-left')
-      } opacity-0 space-y-2 p-6 rounded-lg shadow`}
+      } opacity-0 space-y-2 md:p-6 p-2`}
       style={{ '--delay': 0.4 + 's' }}
     >
       <img
