@@ -17,7 +17,7 @@ function Projects() {
     Image: 'https://github.com/manosmin/ceid-web/raw/master/screenshots/ss2.png'
   };
   const ProjectInfo2 = {
-    Title: 'Movie Picker Web App',
+    Title: 'Movie Picker',
     Used: ['React.js', 'Bootstrap 5'],
     Description: 'Web application that uses a REST API to provide a search engine for movies, games, series etc.',
     Link: 'https://github.com/manosmin/movie-picker-app',
@@ -26,8 +26,18 @@ function Projects() {
     Image: 'https://github.com/manosmin/movie-picker-app/blob/master/screenshots/desktop.png?raw=true',
     LiveDemoLink: 'https://manosmin.github.io/movie-picker-app/'
   };
+  const ProjectInfo3 = {
+    Title: 'manosm.in',
+    Used: ['React.js', 'Tailwind CSS', 'Three.js'],
+    Description: 'Animated and responsive web app used as a personal portfolio, in order to showcase my experience, projects etc.',
+    Link: 'https://github.com/manosmin/manosmin.github.io',
+    Date: '2024/07',
+    Team: 'No',
+    Image: 'https://imgur.com/HJA1ttv.png',
+    LiveDemoLink: 'https://manosm.in'
+  };
   const ProjectInfo4 = {
-    Title: 'Decentralized Systems Implementation',
+    Title: 'Python Implementation of a Decentralized System',
     Used: ['Python'],
     Description: 'Implementation of a decentralized index based on distributed hashing tables (Chord and Pastry DHTs) and its experimental evaluation in lookup operations, using real data sets scraped from the web.',
     Link: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies',
@@ -36,7 +46,7 @@ function Projects() {
     Image: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies/raw/main/screenshots/Figure_1.png'
   };
   const ProjectInfo5 = {
-    Title: 'Multidimensional Data Structures Implementation',
+    Title: 'Python Implementation of Multidimensional Data Structures ',
     Used: ['Python'],
     Description: 'Implementation of several multidimensional data structures (K-D, Range, Quad and R trees) and their experimental evaluation with locality-sensitive hashing method in inserting, deleting, updating and searching operations, using real data sets scraped from the web.',
     Link: 'https://github.com/nikpapage23/Multi-Dimensional-Data-Structures-Project',
@@ -47,7 +57,7 @@ function Projects() {
   const ProjectInfo6 = {
     Title: 'Publishing House Database Management System',
     Used: ['MySQL'],
-    Description: 'Design and implementation of a database system to efficiently manage the operations of a publishing house. It enables the publishing house to handle authors, books, sales, inventory, and other related aspects of the business effectively.',
+    Description: 'Design and implementation of a database system to efficiently manage the operations of a publishing house. It enables the publishing house to handle authors, books, sales, inventory etc.',
     Link: 'https://github.com/manosmin/ceid-dblab',
     Date: '2020/02',
     Team: 'No',
@@ -60,7 +70,7 @@ function Projects() {
     Link: 'https://github.com/manosmin/ceid-advanced-microprocessors',
     Date: '2021/05',
     Team: 'Yes',
-    Image: 'https://www.datocms-assets.com/76605/1659348717-software-arduino-pro-ide.png'
+    Image: 'https://www.dice.com/binaries/medium/content/gallery/dice/insights/2020/08/shutterstock_595866521.jpg'
   };
   const ProjectInfo8 = {
     Title: 'CardFlipMarket',
@@ -73,7 +83,7 @@ function Projects() {
     Image: 'https://github.com/manosmin/cardflipmarket/raw/master/screenshots/ss0.png'
   };
 
-  const Projects = [ProjectInfo1, ProjectInfo2, ProjectInfo4, ProjectInfo5, ProjectInfo6, ProjectInfo7, ProjectInfo8];
+  const Projects = [ProjectInfo1, ProjectInfo2, ProjectInfo3, ProjectInfo4, ProjectInfo5, ProjectInfo6, ProjectInfo7, ProjectInfo8];
 
   return (
     <div id="projects" className="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-24">

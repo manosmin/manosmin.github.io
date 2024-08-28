@@ -38,7 +38,7 @@ function Drawer({ toggleDropdown, isOpen }) {
                   <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                     <FaBookOpen />
                   </div>
-                  <span className="flex-1 ms-3 whitespace-nowrap">Education</span>
+                  <span className="flex-1 ms-3 whitespace-nowrap">Studies</span>
                 </a>
               </li>
               <li>
