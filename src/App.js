@@ -43,8 +43,8 @@ export function useIsVisible(options) {
         <LettersAnimation />
         <div className="max-w-screen-xl mx-auto w-full">
           <About />
-          <Education />
           <Projects />
+          <Education />
           <Skills />
           <Facts />
           <Contact />

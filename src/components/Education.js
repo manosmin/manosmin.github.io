@@ -17,7 +17,7 @@ const Education = () => {
         <p className='flex justify-center items-center'><FaBookOpen className='mr-2'/> Education</p>
         </h2>
       </div>
-      <div ref={containerRef2} className={`${isVisible2 && 'animate-slide-in'} mt-8 space-y-2 md:p-6 p-2 cursor-normal opacity-0`} style={{ "--delay": 0.4 + "s" }}>
+      <div ref={containerRef2} className={`${isVisible2 && 'animate-fade-in'} mt-8 space-y-2 md:p-6 p-2 cursor-normal opacity-0`} style={{ "--delay": 0.4 + "s" }}>
           <ul className='list-none space-y-1'>
           <li><a
             rel="noopener noreferrer"

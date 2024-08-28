@@ -26,19 +26,19 @@ function Drawer({ toggleDropdown, isOpen }) {
                 </a>
               </li>
               <li>
-                <a href="#education" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
-                  <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
-                    <FaBookOpen />
-                  </div>
-                  <span className="flex-1 ms-3 whitespace-nowrap">Education</span>
-                </a>
-              </li>
-              <li>
                 <a href="#projects" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
                   <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                     <RiComputerFill />
                   </div>
                   <span className="flex-1 ms-3 whitespace-nowrap">Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#education" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                  <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
+                    <FaBookOpen />
+                  </div>
+                  <span className="flex-1 ms-3 whitespace-nowrap">Education</span>
                 </a>
               </li>
               <li>
