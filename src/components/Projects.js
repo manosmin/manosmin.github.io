@@ -19,7 +19,7 @@ function Projects() {
   const ProjectInfo2 = {
     Title: 'Movie Picker',
     Used: ['React.js', 'Bootstrap 5'],
-    Description: 'Web application that uses data from a REST API to provide a search engine for movies, games, series etc.',
+    Description: 'Web app that uses data from a REST API to provide a search engine for movies, games, series etc.',
     Link: 'https://github.com/manosmin/movie-picker-app',
     Date: '2024/02',
     Team: 'No',
