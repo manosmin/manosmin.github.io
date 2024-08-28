@@ -10,7 +10,7 @@ function ProjectItem(props) {
     <div
       ref={containerRef1}
       className={`${
-        isVisible1 && (props.index % 2 !== 0 ? 'animate-slide-in md:animate-slide-in ' : 'animate-slide-in-left md:animate-slide-in ')
+        isVisible1 && (props.index % 2 !== 0 ? 'animate-slide-in md:animate-fade-in ' : 'animate-slide-in-left md:animate-fade-in ')
       }  opacity-0 space-y-2 md:p-6 border rounded-lg bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-900 p-6 hover:border-gray-800 dark:hover:border-gray-200`}
       style={{ '--delay': 0.4 + 's' }}
     >
