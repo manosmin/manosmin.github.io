@@ -33,7 +33,7 @@ function ProjectItem(props) {
       </h3>
       <p className='font-medium hidden'>{props.myInfo.Date}</p>
       {props.myInfo.LiveDemoLink && 
-      <div className='flex font-medium hover:underline text-blue-700 dark:text-blue-500'>
+      <div className='flex font-medium underline decoration-dotted decoration-2 underline-offset-2 text-blue-700 dark:text-blue-500'>
         <a rel="noopener noreferrer" target="_blank" href={props.myInfo.LiveDemoLink}>Live Demo</a>
       <span className="ml-2 relative flex h-3 w-3">
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-600 opacity-75"></span>
