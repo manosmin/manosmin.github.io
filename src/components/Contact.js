@@ -62,8 +62,8 @@ const Contact = () => {
         </h2>
     </div>
         <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4 md:p-6 p-2" >
-          <p ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-slide-in-left"}`} style={{ "--delay":  0.4 + "s" }}>Feel free to send me a message through this form.</p>
-          <div ref={containerRef3} className={`opacity-0 ${isVisible3 && "animate-slide-in"}`} style={{ "--delay":  0.4 + "s" }}>
+          <p ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-fade-in"}`} style={{ "--delay":  0.4 + "s" }}>Feel free to send me a message through this form.</p>
+          <div ref={containerRef3} className={`opacity-0 ${isVisible3 && "animate-fade-in"}`} style={{ "--delay":  0.4 + "s" }}>
             <label htmlFor='name' className="block">Name:</label>
             <input 
               id='name'
@@ -75,7 +75,7 @@ const Contact = () => {
               required 
             />
           </div>
-          <div ref={containerRef4} className={`opacity-0 ${isVisible4 && "animate-slide-in-left"}`} style={{ "--delay":  0.4 + "s" }}>
+          <div ref={containerRef4} className={`opacity-0 ${isVisible4 && "animate-fade-in"}`} style={{ "--delay":  0.4 + "s" }}>
             <label htmlFor='email' className="block">Email:</label>
             <input 
               id='email'
@@ -87,7 +87,7 @@ const Contact = () => {
               required 
             />
           </div>
-          <div ref={containerRef5} className={`opacity-0 ${isVisible5 && "animate-slide-in"}`} style={{ "--delay":  0.4 + "s" }}>
+          <div ref={containerRef5} className={`opacity-0 ${isVisible5 && "animate-fade-in"}`} style={{ "--delay":  0.4 + "s" }}>
             <label htmlFor='message' className="block">Message:</label>
             <textarea 
               id="message"
