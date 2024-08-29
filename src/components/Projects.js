@@ -56,13 +56,13 @@ function Projects() {
   };
   // eslint-disable-next-line
   const ProjectInfo6 = {
-    Title: 'Publishing House Database Management System',
-    Used: ['MySQL'],
-    Description: 'Design and implementation of a database system to efficiently manage the operations of a publishing house. It enables the publishing house to handle authors, books, sales, inventory etc.',
+    Title: 'Publishing House DBMS',
+    Used: ['MySQL', 'Java Swing'],
+    Description: 'Design and implementation of a database system to efficiently manage the operations of a publishing house. It enables the publishing house to handle authors, books, sales, inventory and more, through a GUI.',
     Link: 'https://github.com/manosmin/ceid-dblab',
     Date: '2020/02',
     Team: 'No',
-    Image: 'https://github.com/manosmin/ceid-dblab/raw/master/screenshots/er.png'
+    Image: 'https://imgur.com/O3xIFlO.png'
   };
   // eslint-disable-next-line
   const ProjectInfo7 = {
@@ -85,7 +85,7 @@ function Projects() {
     Image: 'https://github.com/manosmin/cardflipmarket/raw/master/screenshots/ss0.png'
   };
 
-  const Projects = [ProjectInfo1, ProjectInfo2, ProjectInfo3, ProjectInfo4, ProjectInfo5, ProjectInfo8];
+  const Projects = [ProjectInfo1, ProjectInfo2, ProjectInfo3, ProjectInfo4, ProjectInfo5, ProjectInfo6, ProjectInfo8];
 
   return (
     <div id="projects" className="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-24">

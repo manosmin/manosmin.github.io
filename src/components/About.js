@@ -28,7 +28,7 @@ const About = () => {
         <div className="w-full flex mx-auto flex-col items-center text-center mt-8 cursor-normal space-y-2 md:p-6 p-2"  >
             <img ref={containerRef2} src="/profile.png" id="profile-pic" alt="Profile" className={`border-2 bg-gray-50 dark:bg-gray-800  ${isVisible2 && 'animate-fade-in-down'} opacity-0 mb-4 border-gray-800 dark:border-gray-50 w-56 h-56 rounded-full shadow-lg`} style={{ "--delay": 0.2 + "s" }}  /> 
               <p ref={containerRef3} className={`${isVisible3 && 'animate-fade-in'} opacity-0`} style={{ "--delay": 0.4 + "s" }}>
-              My name is <span className='font-semibold'>Manos Minadakis</span> and I'm a Computer Engineer currently based in Heraklion, Greece.
+              My name is <span className='font-semibold'>Manos</span> and I'm a Computer Engineer currently based in Heraklion, Greece.
               </p>
               <p ref={containerRef4} className={`${isVisible4 && 'animate-fade-in'} opacity-0`} style={{ "--delay": 0.4 + "s" }}>
                 I recently completed my masters' degree in Computer Engineering and Informatics at University of Patras, where I developed a strong foundation in both hardware and software. Throughout my studies, I found myself constantly drawn to the endless possibilities that computers and technology offer, whether it's solving complex problems or creating innovative solutions.
