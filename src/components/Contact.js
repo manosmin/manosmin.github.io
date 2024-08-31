@@ -61,7 +61,7 @@ const Contact = () => {
         <p className='flex justify-center items-center'><FaEnvelope className='mr-2'/> Contact</p>
         </h2>
     </div>
-        <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4 md:p-6 p-2" >
+        <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4" >
           <p ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-fade-in"}`} style={{ "--delay":  0.4 + "s" }}>Feel free to send me a message through this form.</p>
           <div ref={containerRef3} className={`opacity-0 ${isVisible3 && "animate-fade-in"}`} style={{ "--delay":  0.4 + "s" }}>
             <label htmlFor='name' className="block">Name:</label>
@@ -98,7 +98,7 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <button ref={containerRef6} type="submit" style={{ "--delay":  0.6 + "s" }} className={`${isVisible6 && "animate-fade-in"} opacity-0 bg-blue-700 hover:bg-blue-600 text-gray-100 py-2 px-4 rounded-full`}>Send</button>
+          <button ref={containerRef6} type="submit" style={{ "--delay":  0.4 + "s" }} className={`${isVisible6 && "animate-fade-in"} opacity-0 bg-blue-700 hover:bg-blue-600 text-gray-100 py-2 px-4 rounded-full`}>Send</button>
         </form>
     </div>
   );

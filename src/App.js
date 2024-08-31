@@ -2,9 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
 import LettersAnimation from './components/LettersAnimation';
 import About from './components/About';
-import Education from './components/Education';
 import Skills from './components/Skills';
-import Facts from './components/Facts';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -44,9 +42,7 @@ export function useIsVisible(options) {
         <div className="max-w-screen-xl mx-auto w-full">
           <About />
           <Projects />
-          <Education />
           <Skills />
-          <Facts />
           <Contact />
         </div>
         <Footer />

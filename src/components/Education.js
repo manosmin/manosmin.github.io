@@ -25,11 +25,11 @@ const Education = () => {
             target="_blank"
             className="font-semibold uppercase"
           >
-          MEng in Computer Engineering and Informatics, University of Patras
+          MEng in Computer Engineering and Informatics
           </a></li>
-          <li><p>09/2014 &ndash; 07/2024</p></li>
-          <li><p className="inline font-medium uppercase" >Grade: </p> <p className="inline">6.57/10.0 (2:2)</p></li>
-          <li><p className="inline font-medium uppercase" >Thesis: </p>
+          <li className='font-semibold uppercase'>University of Patras</li>
+          <li><p className="inline font-semibold uppercase" >Grade: </p> <p className="inline">6.57/10.0 (2:2)</p></li>
+          <li><p className="inline font-semibold uppercase" >Thesis: </p>
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -41,7 +41,7 @@ const Education = () => {
           <p className="italic inline">
           (Integration of a data-driven methodology named "process mining" on a liqueur production system in order to reveal, analyze and find ways to improve the production process)
           </p></li>
-          <li><p className="inline font-medium uppercase" >Coursework: </p> <p className="inline">Logic Design, Computer Architecture, Circuit Design, Digital Electronics, Microprocessors, Signal
+          <li><p className="inline font-semibold uppercase" >Coursework: </p> <p className="inline">Logic Design, Computer Architecture, Circuit Design, Digital Electronics, Microprocessors, Signal
 Processing, Computer Networking, Shell Scripting, Object Oriented Programming, Data Structures, Numerical
 Analysis, Database Systems, Distributed Systems</p></li>
           </ul>

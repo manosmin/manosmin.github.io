@@ -26,7 +26,7 @@ const ThreeAnimation = ({ darkMode }) => {
     const cubeCount = 10;
     const geometry = new THREE.BoxGeometry(1, 1, 1);
 
-    const velocityScale = 0.02; 
+    const velocityScale = 0.01; 
 
     for (let i = 0; i < cubeCount; i++) {
       const material = new THREE.MeshBasicMaterial({
@@ -57,7 +57,7 @@ const ThreeAnimation = ({ darkMode }) => {
       velocityArray.push(velocity);
     }
 
-    camera.position.z = 10;
+    camera.position.z = 5;
 
     const animate = function () {
       requestAnimationFrame(animate);

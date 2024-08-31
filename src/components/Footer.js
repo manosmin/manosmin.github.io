@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="mt-auto bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-5 ">
       <div className='max-w-screen-xl mx-auto w-full flex justify-between'>
         <p className='inline'>I built this web page using <a rel="noopener noreferrer" href="https://www.react.dev/" target="_blank"
-        className="underline decoration-dotted decoration-2 underline-offset-2">React.js</a></p>
+        >React.js</a></p>
         <p className='inline'> &copy; 2024 Manos Minadakis</p>
       </div>
     </footer>

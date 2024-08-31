@@ -1,7 +1,7 @@
 import React from 'react'
-import { FaGrinStars, FaInfoCircle } from "react-icons/fa";
+import { FaInfoCircle } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import { FaGear, FaEnvelope, FaBookOpen } from "react-icons/fa6";
+import { FaScrewdriverWrench, FaEnvelope } from "react-icons/fa6";
 import { RiComputerFill } from "react-icons/ri";
 
 
@@ -33,27 +33,11 @@ function Drawer({ toggleDropdown, isOpen }) {
                 </a>
               </li>
               <li>
-                <a href="#education" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
-                  <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
-                    <FaBookOpen />
-                  </div>
-                  <span className="flex-1 ms-3 whitespace-nowrap">Studies</span>
-                </a>
-              </li>
-              <li>
                 <a href="#skills" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
                   <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
-                    <FaGear />
+                    <FaScrewdriverWrench />
                   </div>
-                  <span className="flex-1 ms-3 whitespace-nowrap">Skills</span>
-                </a>
-              </li>
-              <li>
-                <a href="#facts" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
-                  <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
-                    <FaGrinStars />
-                  </div>
-                  <span className="flex-1 ms-3 whitespace-nowrap">Fun Facts</span>
+                  <span className="flex-1 ms-3 whitespace-nowrap">Tech Stack</span>
                 </a>
               </li>
               <li>

@@ -10,7 +10,7 @@ function Projects() {
   const ProjectInfo1 = {
     Title: 'Virus Contact Tracing Website',
     Used: ['Node.js', 'Express.js', 'Passport.js', 'Leaflet.js', 'Chart.js', 'JavaScript', 'HTML', 'Bootstrap 4', 'MongoDB'],
-    Description: 'Website that helps users track and manage their potential exposure to virus carriers by crowd-sourcing data about their visits to various places in Patras, Greece.',
+    Description: 'Website that helps users track and manage their potential exposure to virus carriers by crowd-sourcing data about their visits to various places.',
     Link: 'https://github.com/manosmin/ceid-web',
     Date: '2022/05',
     Team: 'Yes',
@@ -18,26 +18,26 @@ function Projects() {
   };
   const ProjectInfo2 = {
     Title: 'Movie Picker',
-    Used: ['React.js', 'Bootstrap 5'],
-    Description: 'Web app that uses data from a REST API to provide a search engine for movies, games, series etc.',
+    Used: ['React', 'Bootstrap 5'],
+    Description: 'Web app that uses IMDb data from a REST API, to provide a custom search engine for movies, games, series etc.',
     Link: 'https://github.com/manosmin/movie-picker-app',
     Date: '2024/02',
     Team: 'No',
     Image: 'https://github.com/manosmin/movie-picker-app/blob/master/screenshots/desktop.png?raw=true',
     LiveDemoLink: 'https://manosmin.github.io/movie-picker-app/'
   };
+  // eslint-disable-next-line
   const ProjectInfo3 = {
     Title: 'Personal Web Page',
-    Used: ['React.js', 'Tailwind CSS', 'Three.js'],
+    Used: ['React', 'Tailwind CSS', 'Three.js'],
     Description: 'Animated and responsive web app used as a personal portfolio, in order to showcase projects, experience, studies etc.',
     Link: 'https://github.com/manosmin/manosmin.github.io',
     Date: '2024/07',
     Team: 'No',
-    Image: 'https://imgur.com/HJA1ttv.png',
     LiveDemoLink: 'https://manosm.in'
   };
   const ProjectInfo4 = {
-    Title: 'Python Implementation of a Decentralized System',
+    Title: 'Implementation of a Decentralized System',
     Used: ['Python'],
     Description: 'Implementation of a decentralized index based on distributed hashing tables (Chord and Pastry DHTs) and its experimental evaluation in lookup operations, using real data sets scraped from the web.',
     Link: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies',
@@ -46,7 +46,7 @@ function Projects() {
     Image: 'https://github.com/el-maestro78/Decentralized-Systems-Technologies/raw/main/screenshots/Figure_1.png'
   };
   const ProjectInfo5 = {
-    Title: 'Python Implementation of Multidimensional Data Structures ',
+    Title: 'Implementation of Multidimensional Data Structures ',
     Used: ['Python'],
     Description: 'Implementation of several multidimensional data structures (R, Range, K-D, and Quad Trees) and their experimental evaluation with locality-sensitive hashing method in inserting, deleting, updating and searching operations, using real data sets scraped from the web.',
     Link: 'https://github.com/nikpapage23/Multi-Dimensional-Data-Structures-Project',
@@ -62,7 +62,6 @@ function Projects() {
     Link: 'https://github.com/manosmin/ceid-dblab',
     Date: '2020/02',
     Team: 'No',
-    Image: 'https://imgur.com/O3xIFlO.png'
   };
   // eslint-disable-next-line
   const ProjectInfo7 = {
@@ -72,11 +71,10 @@ function Projects() {
     Link: 'https://github.com/manosmin/ceid-advanced-microprocessors',
     Date: '2021/05',
     Team: 'Yes',
-    Image: 'https://www.dice.com/binaries/medium/content/gallery/dice/insights/2020/08/shutterstock_595866521.jpg'
   };
   const ProjectInfo8 = {
     Title: 'Card Price Tracker',
-    Used: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Chart.js', 'Tailwind CSS'],
+    Used: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Chart.js', 'Tailwind CSS'],
     Description: 'Website that discovers and shows the latest price spikes in a digital collectible card game. It utilizes bulk data fetched on a daily basis, processes them into a database and provides a REST API, helping users to make data-driven decisions on investing in the actual card market.',
     Link: 'https://github.com/manosmin/cardflipmarket',
     LiveDemoLink: 'https://cardflipmarket-manosmin.onrender.com/',
@@ -85,7 +83,7 @@ function Projects() {
     Image: 'https://github.com/manosmin/cardflipmarket/raw/master/screenshots/ss0.png'
   };
 
-  const Projects = [ProjectInfo1, ProjectInfo2, ProjectInfo3, ProjectInfo4, ProjectInfo5, ProjectInfo6, ProjectInfo8];
+  const Projects = [ProjectInfo1, ProjectInfo2, ProjectInfo4, ProjectInfo5, ProjectInfo8];
 
   return (
     <div id="projects" className="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-24">
@@ -101,7 +99,7 @@ function Projects() {
         </h2>
       </div>
       <p className={`${isVisible1 && 'animate-fade-in'} opacity-0 mt-8`} style={{ '--delay': 0.4 + 's' }}>These are some of my personal projects, as well as some major assignments that Ι've completed during my studies in collaboration with my fellow students.</p>
-      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 overflow-x-hidden md:overflow-x-visible">
         {Projects.sort((a, b) => b.Date.localeCompare(a.Date)).map((item, index) => (
           <ProjectItem myInfo={item} index={index + 1} key={item.Title} />
         ))}

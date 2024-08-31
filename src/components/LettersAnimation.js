@@ -1,10 +1,17 @@
 import React from 'react'
+import Typewriter from 'typewriter-effect';
+
 
 function LettersAnimation() {
   return (
     <div className="flex justify-center items-center bg-transparent text-gray-900 dark:text-gray-100 h-screen" style={{ position: 'relative', zIndex: 1 }}>
-      <h2 className="bottom-48 text-4xl font-semibold relative w-[max-content] before:absolute before:inset-0 before:animate-typewriter before:bg-gray-100 dark:before:bg-gray-900 after:absolute after:inset-0 after:w-[0.175em] after:animate-caret after:bg-gray-900 dark:after:bg-gray-100">Hello!&nbsp;
-        <p className="inline-block">I'm <span className='font-bold'>Manos</span>.</p>
+      <h2 className="bottom-48 text-4xl font-semibold relative text-center space-y-2"><Typewriter
+                options={{delay: 125, loop: false}}
+                onInit={(typewriter) => {
+                  typewriter.typeString('Hello! I\'m <span class="font-bold">Manos</span>.')
+                  .start()
+                }}
+              />
       </h2>
     </div>
   )
