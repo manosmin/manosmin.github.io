@@ -83,7 +83,17 @@ function Projects() {
     Image: 'https://github.com/manosmin/cardflipmarket/raw/master/screenshots/ss0.png'
   };
 
-  const Projects = [ProjectInfo1, ProjectInfo2, ProjectInfo4, ProjectInfo5, ProjectInfo8];
+  const ProjectInfo9 = {
+    Title: 'Vending Machine API',
+    Used: ['MongoDB', 'Express.js', 'Node.js', 'Postman', 'JavaScript', 'HTML', 'CSS'],
+    Description: 'A REST API for a vending machine that allows sellers and buyers to interact with products and transactions, through CRUD operations. It accepts specific coins and users can perform various actions based on their role. Users can interact with the REST API through a simple web interface.',
+    Link: 'https://github.com/manosmin/vending-machine-api',
+    Date: '2024/09',
+    Team: 'No',
+    Image: 'https://i.imgur.com/EBe0e7G.png'
+  };
+
+  const Projects = [ProjectInfo1, ProjectInfo2, ProjectInfo4, ProjectInfo5, ProjectInfo8, ProjectInfo9];
 
   return (
     <div id="projects" className="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-24">
