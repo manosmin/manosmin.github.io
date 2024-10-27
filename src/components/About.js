@@ -22,7 +22,7 @@ const About = () => {
           <p className='flex justify-center items-center'><FaInfoCircle className='mr-2' /> About Me</p>
         </h2>
       </div>
-      <div className="flex flex-col md:flex-row items-center md:space-x-8 overflow-x-visible">
+      <div className="flex flex-col 2xl:flex-row items-center md:space-x-8 overflow-x-visible">
         <img
           ref={containerRef2}
           src="/profile.png"
@@ -31,7 +31,7 @@ const About = () => {
           className={`border-2 bg-gray-50 dark:bg-gray-800 rounded-full ${isVisible2 && 'animate-fade-in-down md:animate-slide-in-left'} opacity-0 border-gray-200 dark:border-gray-700 w-64 h-64 md:w-96 md:h-96 shadow-lg`}
           style={{ "--delay": 0.2 + "s" }}
         />
-        <div ref={containerRef3} className={`${isVisible3 && 'animate-fade-in md:animate-slide-in'} opacity-0 flex flex-col space-y-4 mt-8 md:mt-0 text-center md:text-left`} style={{ "--delay": 0.2 + "s" }}>
+        <div ref={containerRef3} className={`${isVisible3 && 'animate-fade-in md:animate-slide-in'} opacity-0 flex flex-col space-y-4 mt-8 text-center 2xl:text-left`} style={{ "--delay": 0.2 + "s" }}>
           <p>
             My name is <span className='font-semibold'>Manos</span> and I'm a Computer Engineer currently based in Heraklion, Greece.
           </p>

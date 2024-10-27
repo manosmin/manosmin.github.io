@@ -39,7 +39,7 @@ export function useIsVisible(options) {
         <Header dark={dark} darkModeHandler={darkModeHandler} />
         <ThreeAnimation darkMode={dark} />
         <LettersAnimation />
-        <div className="max-w-screen-xl mx-auto w-full">
+        <div className="2xl:max-w-screen-xl md:max-w-screen-lg mx-auto w-full">
           <About />
           <Skills />
           <Projects />
