@@ -33,13 +33,13 @@ const About = () => {
         />
         <div ref={containerRef3} className={`${isVisible3 && 'animate-fade-in 2xl:animate-slide-in'} opacity-0 flex flex-col space-y-4 mt-8 text-center 2xl:text-left`} style={{ "--delay": 0.2 + "s" }}>
           <p>
-            My name is <span className='font-semibold'>Manos</span> and I'm a Computer Engineer currently based in Heraklion, Greece.
+            I'm a <span className='font-semibold'>Computer Engineer</span> currently based in <span className='underline decoration-dotted underline-offset-4'>Heraklion, Greece</span>.
           </p>
           <p>
             I recently completed my masters' degree in Computer Engineering and Informatics at University of Patras, where I developed a strong foundation in both hardware and software. Throughout my studies, I found myself constantly drawn to the endless possibilities that computers and technology offer, whether it's solving complex problems or creating innovative solutions.
           </p>
           <p>
-            At this moment, I'm mostly interested in software engineering and web development, and I'm eager to bring my skills to a dynamic team where I can continue to learn and grow. If you're looking for someone who's not just skilled, but also passionate about technology, I'd love to connect and explore opportunities together!
+            At this moment, I'm focused on software engineering and web development and I'm eager to apply my skills within a dynamic team that offers opportunities for learning, growth, and meaningful contributions.
           </p>
           <div ref={containerRef4} className={`${isVisible4 && 'animate-fade-in'} opacity-0 flex flex-col space-y-2`} style={{ "--delay": 0.2 + "s" }}>
             <div className="flex">
