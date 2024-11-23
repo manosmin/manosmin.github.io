@@ -85,8 +85,8 @@ function Projects() {
 
   const ProjectInfo9 = {
     Title: 'Vending Machine API',
-    Used: ['MongoDB', 'Express.js', 'Node.js', 'Postman', 'JavaScript', 'HTML', 'CSS'],
-    Description: 'A REST API for a vending machine that allows sellers and buyers to interact with products and transactions, through CRUD operations. It accepts specific coins and users can perform various actions based on their role. Users can interact with the REST API through a simple web interface.',
+    Used: ['MongoDB', 'Express.js', 'Node.js', 'Postman', 'JavaScript', 'HTML', 'CSS', 'JWT', 'RBAC'],
+    Description: 'A REST API for a vending machine that allows sellers and buyers to interact with products and transactions, through CRUD operations. It accepts specific coins and authenticated users can perform various actions based on their role. Users can interact with the REST API through a simple web interface.',
     Link: 'https://github.com/manosmin/vending-machine-api',
     Date: '2024/09',
     Team: 'No',
