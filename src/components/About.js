@@ -29,7 +29,7 @@ const About = () => {
           src="/profile.png"
           id="profile-pic"
           alt="Profile"
-          className={`border-2 bg-gray-50 dark:bg-gray-800 rounded-full ${isVisible2 && 'animate-fade-in 2xl:animate-fade-in'} opacity-0 border-gray-200 dark:border-gray-700 w-64 h-64 xl:w-72 xl:h-72 2xl:w-96 2xl:h-96 shadow-lg`}
+          className={`border-2 bg-gray-50 rounded-full ${isVisible2 && 'animate-fade-in 2xl:animate-fade-in'} opacity-0 border-gray-200 w-64 h-64 xl:w-72 xl:h-72 2xl:w-96 2xl:h-96 shadow-lg`}
           style={{ "--delay": 0.4 + "s" }}
         />
         <div ref={containerRef3} className={`${isVisible3 && 'animate-fade-in 2xl:animate-fade-in'} opacity-0 flex flex-col space-y-4 mt-8 text-center 2xl:text-left`} style={{ "--delay": 0.4 + "s" }}>
