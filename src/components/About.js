@@ -14,6 +14,7 @@ const About = () => {
   const [containerRef2, isVisible2] = useIsVisible({});
   const [containerRef3, isVisible3] = useIsVisible({});
   const [containerRef4, isVisible4] = useIsVisible({});
+  const [containerRef5, isVisible5] = useIsVisible({});
 
   return (
     <div id="about" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-24 '>
@@ -82,7 +83,7 @@ const About = () => {
                 </span>
             </div>
           </div>
-          <div className='text-right text-sm italic'>Last updated: Feb 2025</div>
+          <div ref={containerRef5} className={`${isVisible5 && 'animate-fade-in'} opacity-0 text-right text-sm italic`} style={{ "--delay": 2.2 + "s" }}>Last updated: Feb 2025</div>
           <ul className='flex flex-row items-center space-x-4 md:items-start md:justify-start'>
             <li>
               <a rel="noopener noreferrer" href="https://github.com/manosmin" className="flex items-center text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group" target="_blank" alt="github">
