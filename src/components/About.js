@@ -34,9 +34,9 @@ const About = () => {
         />
         <div ref={containerRef3} className={`${isVisible3 && 'animate-fade-in 2xl:animate-fade-in'} opacity-0 flex flex-col space-y-4 mt-8 text-center 2xl:text-left`} style={{ "--delay": 0.4 + "s" }}>
           <p>
-          <span className='font-semibold'>Junior Software Developer</span> with <span className='font-semibold'>M.Eng. in Computer Engineering and Informatics</span>, currently based in <span className='underline decoration-dotted underline-offset-4'>Heraklion, Greece</span>.
+          I'm a <span className='font-semibold'>Junior Software Developer</span> with <span className='font-semibold'>M.Eng. in Computer Engineering and Informatics</span>, currently based in <span className='underline decoration-dotted underline-offset-4'>Heraklion, Greece</span>.
           </p>
-          <p> Passionate about coding and problem solving, with a strong foundation in computer science gained through my studies. </p> <p> Eager to expand my skills in software engineering, cloud technologies and software architectures.
+          <p>Passionate about coding and problem solving, with a strong foundation in computer science gained through my studies. </p> <p> Eager to expand my skills in software engineering, cloud technologies and software architectures.
           </p>
           <p>Feel free to connect with me for any opportunities, collaborations, or discussions about technology!</p>
           <div ref={containerRef4} className={`${isVisible4 && 'animate-fade-in'} opacity-0 flex flex-col space-y-2`} style={{ "--delay": 0.4 + "s" }}>
