@@ -34,14 +34,11 @@ const About = () => {
         />
         <div ref={containerRef3} className={`${isVisible3 && 'animate-fade-in 2xl:animate-fade-in'} opacity-0 flex flex-col space-y-4 mt-8 text-center 2xl:text-left`} style={{ "--delay": 0.4 + "s" }}>
           <p>
-            I'm a <span className='font-semibold'>Computer Engineer</span> currently based in <span className='underline decoration-dotted underline-offset-4'>Heraklion, Greece</span>.
+          <span className='font-semibold'>Junior Software Developer</span> with <span className='font-semibold'>M.Eng. in Computer Engineering and Informatics</span>, currently based in <span className='underline decoration-dotted underline-offset-4'>Heraklion, Greece</span>.
           </p>
-          <p>
-            I recently completed my masters' degree in Computer Engineering and Informatics at University of Patras, where I developed a strong foundation in both hardware and software. Throughout my studies, I found myself constantly drawn to the endless possibilities that computers and technology offer, whether it's solving complex problems or creating innovative solutions.
+          <p> Passionate about coding and problem solving, with a strong foundation in computer science gained through my studies. </p> <p> Eager to expand my skills in software engineering, cloud technologies and software architectures.
           </p>
-          <p>
-            At this moment, I'm focused on software engineering and web development and I'm eager to apply my skills within a dynamic team that offers opportunities for learning, growth, and meaningful contributions.
-          </p>
+          <p>Feel free to connect with me for any opportunities, collaborations, or discussions about technology!</p>
           <div ref={containerRef4} className={`${isVisible4 && 'animate-fade-in'} opacity-0 flex flex-col space-y-2`} style={{ "--delay": 0.4 + "s" }}>
             <div className="flex">
               <span className="font-semibold uppercase">Name:</span>
