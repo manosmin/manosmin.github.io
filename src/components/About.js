@@ -29,9 +29,9 @@ const About = () => {
           id="profile-pic"
           alt="Profile"
           className={`border-2 bg-gray-50 dark:bg-gray-800 rounded-full ${isVisible2 && 'animate-fade-in 2xl:animate-fade-in'} opacity-0 border-gray-200 dark:border-gray-700 w-64 h-64 xl:w-72 xl:h-72 2xl:w-96 2xl:h-96 shadow-lg`}
-          style={{ "--delay": 0.2 + "s" }}
+          style={{ "--delay": 0.4 + "s" }}
         />
-        <div ref={containerRef3} className={`${isVisible3 && 'animate-fade-in 2xl:animate-fade-in'} opacity-0 flex flex-col space-y-4 mt-8 text-center 2xl:text-left`} style={{ "--delay": 0.2 + "s" }}>
+        <div ref={containerRef3} className={`${isVisible3 && 'animate-fade-in 2xl:animate-fade-in'} opacity-0 flex flex-col space-y-4 mt-8 text-center 2xl:text-left`} style={{ "--delay": 0.4 + "s" }}>
           <p>
             I'm a <span className='font-semibold'>Computer Engineer</span> currently based in <span className='underline decoration-dotted underline-offset-4'>Heraklion, Greece</span>.
           </p>
@@ -41,7 +41,7 @@ const About = () => {
           <p>
             At this moment, I'm focused on software engineering and web development and I'm eager to apply my skills within a dynamic team that offers opportunities for learning, growth, and meaningful contributions.
           </p>
-          <div ref={containerRef4} className={`${isVisible4 && 'animate-fade-in'} opacity-0 flex flex-col space-y-2`} style={{ "--delay": 0.2 + "s" }}>
+          <div ref={containerRef4} className={`${isVisible4 && 'animate-fade-in'} opacity-0 flex flex-col space-y-2`} style={{ "--delay": 0.4 + "s" }}>
             <div className="flex">
               <span className="font-semibold uppercase">Name:</span>
               <span className="ml-4 text-gray-600 dark:text-gray-400">
