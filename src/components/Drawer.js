@@ -3,6 +3,8 @@ import { FaInfoCircle } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { FaScrewdriverWrench, FaEnvelope } from "react-icons/fa6";
 import { RiComputerFill } from "react-icons/ri";
+import { PiCertificateFill } from "react-icons/pi";
+
 
 
 function Drawer({ toggleDropdown, isOpen }) {
@@ -25,6 +27,14 @@ function Drawer({ toggleDropdown, isOpen }) {
                 </a>
               </li>
               <li>
+                <a href="#skills" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                  <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
+                    <FaScrewdriverWrench />
+                  </div>
+                  <span className="flex-1 ms-3 whitespace-nowrap">Tech Stack</span>
+                </a>
+              </li>
+              <li>
                 <a href="#projects" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
                   <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
                     <RiComputerFill />
@@ -33,11 +43,11 @@ function Drawer({ toggleDropdown, isOpen }) {
                 </a>
               </li>
               <li>
-                <a href="#skills" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <a href="#certificates" className="flex items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group">
                   <div className='icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 rounded-full p-2'>
-                    <FaScrewdriverWrench />
+                    <PiCertificateFill />
                   </div>
-                  <span className="flex-1 ms-3 whitespace-nowrap">Tech Stack</span>
+                  <span className="flex-1 ms-3 whitespace-nowrap">Certificates</span>
                 </a>
               </li>
               <li>

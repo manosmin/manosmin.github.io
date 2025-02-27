@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='2xl:max-w-screen-xl md:max-w-screen-lg mx-auto w-full flex justify-between text-sm'>
         <p className='inline'>I built this web page using <a rel="noopener noreferrer" href="https://www.react.dev/" target="_blank"
         >React.js</a></p>
-        <p className='inline'> &copy; 2024 Manos Minadakis</p>
+        <p className='inline'> &copy; {new Date().getFullYear() } Manos Minadakis</p>
       </div>
     </footer>
   );
