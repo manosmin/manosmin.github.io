@@ -34,7 +34,7 @@ const About = () => {
         />
         <div ref={containerRef3} className={`${isVisible3 && 'animate-fade-in 2xl:animate-fade-in'} opacity-0 flex flex-col space-y-4 mt-8 text-center 2xl:text-left`} style={{ "--delay": 0.4 + "s" }}>
           <p>
-          I'm <span className='font-semibold'>Manos</span>, a Junior Software Developer, currently based in <span className='underline decoration-dotted underline-offset-4'>Heraklion, Greece</span>.
+          I'm <span className='font-semibold'>Manos</span>, a Junior Software Developer currently based in <span className='underline decoration-dotted underline-offset-4'>Heraklion, Greece</span>.
           </p>
           <p>Passionate about coding and problem solving, with a strong foundation in computer science, gained through my studies at University of Patras. </p><p> Eager to expand my skills in software development, cloud technologies and software architectures.
           </p>
