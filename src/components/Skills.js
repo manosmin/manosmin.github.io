@@ -19,12 +19,12 @@ function Skills() {
     const Skill6 = { Title: 'SQL', Percentage: '75%', Icon: <FaDatabase className='mb-2 inline' size={25} /> };
     const Skill7 = { Title: 'Python', Percentage: '75%', Icon: <FaPython className='mb-2 inline' size={25} /> };
     const Skill8 = { Title: 'C++', Percentage: '60%', Icon: <SiCplusplus className='mb-2 inline' size={25} /> };
-    const Skill9 = { Title: 'Java', Percentage: '60%', Icon: <FaJava className='mb-2 inline' size={25} /> };
+    const Skill9 = { Title: 'Java', Percentage: '80%', Icon: <FaJava className='mb-2 inline' size={25} /> };
     const Skill10 = { Title: 'Kotlin', Percentage: '50%', Icon: <SiKotlin className='mb-2 inline' size={25} /> };
     const Skill11 = { Title: 'Git', Percentage: '75%', Icon: <FaGitAlt className='mb-2 inline' size={25} /> };
     const Skill12 = { Title: 'Bash', Percentage: '65%', Icon: <SiGnubash className='mb-2 inline' size={25} /> };
     const Skill13 = { Title: 'Docker', Percentage: '50%', Icon: <FaDocker className='mb-2 inline' size={25} /> };
-    const Skills = [Skill1, Skill2, Skill3, Skill4, Skill5, Skill6, Skill7, Skill8, Skill9, Skill10, Skill11, Skill12, Skill13];
+    const Skills = [Skill1, Skill2, Skill3, Skill5, Skill6, Skill7, Skill9, Skill11, Skill12, Skill13];
 
     return (
         <div id="skills" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-24'>

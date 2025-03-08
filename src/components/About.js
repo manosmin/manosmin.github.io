@@ -14,6 +14,7 @@ const About = () => {
   const [containerRef2, isVisible2] = useIsVisible({});
   const [containerRef3, isVisible3] = useIsVisible({});
   const [containerRef4, isVisible4] = useIsVisible({});
+  const [containerRef5, isVisible5] = useIsVisible({});
 
   return (
     <div id="about" className='bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-24 '>
@@ -28,20 +29,17 @@ const About = () => {
           src="/profile.png"
           id="profile-pic"
           alt="Profile"
-          className={`border-2 bg-gray-50 dark:bg-gray-800 rounded-full ${isVisible2 && 'animate-fade-in-down 2xl:animate-slide-in-left'} opacity-0 border-gray-200 dark:border-gray-700 w-64 h-64 xl:w-72 xl:h-72 2xl:w-96 2xl:h-96 shadow-lg`}
-          style={{ "--delay": 0.2 + "s" }}
+          className={`border-2 bg-gray-50 dark:bg-gray-700 rounded-full ${isVisible2 && 'animate-fade-in 2xl:animate-fade-in'} opacity-0 border-gray-200 dark:border-gray-800 w-64 h-64 xl:w-72 xl:h-72 2xl:w-96 2xl:h-96 shadow-lg`}
+          style={{ "--delay": 0.4 + "s" }}
         />
-        <div ref={containerRef3} className={`${isVisible3 && 'animate-fade-in 2xl:animate-slide-in'} opacity-0 flex flex-col space-y-4 mt-8 text-center 2xl:text-left`} style={{ "--delay": 0.2 + "s" }}>
+        <div ref={containerRef3} className={`${isVisible3 && 'animate-fade-in 2xl:animate-fade-in'} opacity-0 flex flex-col space-y-2 mt-8 text-center 2xl:text-left`} style={{ "--delay": 0.4 + "s" }}>
           <p>
-            I'm a <span className='font-semibold'>Computer Engineer</span> currently based in <span className='underline decoration-dotted underline-offset-4'>Heraklion, Greece</span>.
+          I'm <span className='font-semibold'>Manos</span>, a Junior Software Developer currently based in <span className='underline decoration-dotted underline-offset-4'>Heraklion, Greece</span>.
           </p>
-          <p>
-            I recently completed my masters' degree in Computer Engineering and Informatics at University of Patras, where I developed a strong foundation in both hardware and software. Throughout my studies, I found myself constantly drawn to the endless possibilities that computers and technology offer, whether it's solving complex problems or creating innovative solutions.
+          <p>Passionate about coding and problem solving, with a strong foundation in computer science, gained through my studies at University of Patras. </p><p> Eager to expand my skills in software development, cloud technologies and software architectures.
           </p>
-          <p>
-            At this moment, I'm focused on software engineering and web development and I'm eager to apply my skills within a dynamic team that offers opportunities for learning, growth, and meaningful contributions.
-          </p>
-          <div ref={containerRef4} className={`${isVisible4 && 'animate-fade-in'} opacity-0 flex flex-col space-y-2`} style={{ "--delay": 0.2 + "s" }}>
+          <p>Feel free to connect with me for any opportunities, collaborations, or discussions about technology!</p>
+          <div ref={containerRef4} className={`${isVisible4 && 'animate-fade-in'} opacity-0 flex flex-col space-y-2`} style={{ "--delay": 0.4 + "s" }}>
             <div className="flex">
               <span className="font-semibold uppercase">Name:</span>
               <span className="ml-4 text-gray-600 dark:text-gray-400">

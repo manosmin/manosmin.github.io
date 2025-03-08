@@ -23,6 +23,7 @@ const ThreeAnimation = ({ darkMode }) => {
 
     const cubeArray = [];
     const velocityArray = [];
+    const rotationArray = [];
     const cubeCount = 10;
     const geometry = new THREE.BoxGeometry(1, 1, 1);
 
@@ -45,16 +46,22 @@ const ThreeAnimation = ({ darkMode }) => {
         (Math.random() - 0.5) * 20
       );
 
-      // Adjust velocity with the scale factor
       const velocity = new THREE.Vector3(
         (Math.random() - 0.5) * velocityScale,
         (Math.random() - 0.5) * velocityScale,
         (Math.random() - 0.5) * velocityScale
       );
 
+      const rotationSpeed = new THREE.Vector3(
+        Math.random() * 0.02 - 0.01,
+        Math.random() * 0.02 - 0.01,
+        Math.random() * 0.02 - 0.01
+      );
+
       scene.add(cube);
       cubeArray.push(cube);
       velocityArray.push(velocity);
+      rotationArray.push(rotationSpeed);
     }
 
     camera.position.z = 5;
@@ -65,8 +72,9 @@ const ThreeAnimation = ({ darkMode }) => {
       cubeArray.forEach((cube, index) => {
         cube.position.add(velocityArray[index]);
 
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
+        cube.rotation.x += rotationArray[index].x;
+        cube.rotation.y += rotationArray[index].y;
+        cube.rotation.z += rotationArray[index].z;
 
         if (cube.position.x > window.innerWidth / 100 / 2 || cube.position.x < -window.innerWidth / 100 / 2) {
           velocityArray[index].x *= -1;

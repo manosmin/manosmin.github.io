@@ -4,6 +4,7 @@ import LettersAnimation from './components/LettersAnimation';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Certificates from './components/Certificates';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ThreeAnimation from './components/ThreeAnimation';
@@ -43,6 +44,7 @@ export function useIsVisible(options) {
           <About />
           <Skills />
           <Projects />
+          <Certificates />
           <Contact />
         </div>
         <Footer />
