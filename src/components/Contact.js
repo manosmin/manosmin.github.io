@@ -10,12 +10,6 @@ const Contact = () => {
     message: "",
   });
 
-  useEffect(() => {
-    console.log(process.env.REACT_APP_EMAIL_SERVICE_ID);
-    console.log(process.env.REACT_APP_EMAIL_TEMPLATE_ID);
-    console.log(process.env.REACT_APP_EMAIL_USER_ID);
-  }, []);
-
   const handleChange = (e) => {
     setFormData({
       ...formData,
