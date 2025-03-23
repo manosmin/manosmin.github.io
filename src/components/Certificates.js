@@ -24,7 +24,16 @@ const Certificates = () => {
     Link: 'https://github.com/manosmin/fullstackopen/tree/master/part9'
   }
 
-  const Certificates = [Certificate1, Certificate2];
+  const Certificate3 = {
+    Title: 'FSO GraphQL (p. 8)',
+    Used: ['GraphQL', 'MongoDB', 'React'],
+    Description: 'An extension of the FSO Core course, utilizing GraphQL for efficient data fetching in frontend and backend development, enhancing flexibility and performance.',
+    Image: 'https://camo.githubusercontent.com/5a7ea33d54766c6ac758fd9b8268557b943dc03937f53ed821eb750c80288d04/68747470733a2f2f7777772e68656c73696e6b692e66692f6173736574732f64727570616c2f7374796c65732f31365f31305f786c2f73332f6d656469612d696d6167652f66756c6c737461636b5f737461636b5f3138343278313038302e706e672e776562703f69746f6b3d7944446445504456',
+    Date: '2025/04',
+    Link: 'https://github.com/manosmin/fullstackopen/tree/master/part8'
+  }
+
+  const Certificates = [Certificate1, Certificate2, Certificate3];
 
 
   return (
