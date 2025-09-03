@@ -18,8 +18,13 @@ const ThreeAnimation = ({ darkMode }) => {
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
+    
+    renderer.domElement.style.pointerEvents = 'auto';
 
     mountNode.appendChild(renderer.domElement);
+
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
 
     const cubeArray = [];
     const velocityArray = [];
@@ -102,6 +107,29 @@ const ThreeAnimation = ({ darkMode }) => {
 
     animate();
 
+    const handleClick = (event) => {
+      const rect = renderer.domElement.getBoundingClientRect();
+      mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+      mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+
+      raycaster.setFromCamera(mouse, camera);
+      const intersects = raycaster.intersectObjects(cubeArray, true);
+
+      if (intersects.length > 0) {
+        const clickedObject = intersects[0].object;
+        let cubeIndex = cubeArray.indexOf(clickedObject);
+        if (cubeIndex === -1) {
+          cubeIndex = cubeArray.indexOf(clickedObject.parent);
+        }
+        
+        if (cubeIndex !== -1) {
+          velocityArray[cubeIndex].x *= -2;
+          velocityArray[cubeIndex].y *= -2;
+          velocityArray[cubeIndex].z *= -2;
+        }
+      }
+    };
+
     const handleResize = () => {
       const width = window.innerWidth;
       const height = window.innerHeight;
@@ -110,9 +138,11 @@ const ThreeAnimation = ({ darkMode }) => {
       camera.updateProjectionMatrix();
     };
 
+    renderer.domElement.addEventListener('click', handleClick);
     window.addEventListener('resize', handleResize);
 
     return () => {
+      renderer.domElement.removeEventListener('click', handleClick);
       window.removeEventListener('resize', handleResize);
       if (mountNode) {
         mountNode.removeChild(renderer.domElement);

@@ -8,7 +8,7 @@ function LettersAnimation() {
   return (
     <div
       className="flex flex-col justify-around items-center bg-transparent text-gray-900 dark:text-gray-100 h-screen"
-      style={{ position: "relative", zIndex: 1 }}
+      style={{ position: "relative", zIndex: 1, pointerEvents: "none" }}
     >
       <h2 className="text-4xl font-semibold relative text-center space-y-2">
         <Typewriter
