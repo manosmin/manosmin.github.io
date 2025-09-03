@@ -1,8 +1,7 @@
 import React from 'react'
 import { FaInfoCircle } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import { FaScrewdriverWrench, FaEnvelope } from "react-icons/fa6";
-import { RiComputerFill } from "react-icons/ri";
+import { FaEnvelope } from "react-icons/fa6";
 
 
 

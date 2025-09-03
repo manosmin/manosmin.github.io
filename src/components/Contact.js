@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { FaEnvelope } from "react-icons/fa6";
 import { useIsVisible } from "../App";
@@ -8,6 +8,12 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
+  });
+
+  const [modal, setModal] = useState({
+    isOpen: false,
+    type: '', // 'success' or 'error'
+    message: ''
   });
 
   const handleChange = (e) => {
@@ -33,10 +39,18 @@ const Contact = () => {
           email: "",
           message: "",
         });
-        alert("Message sent successfully :D");
+        setModal({
+          isOpen: true,
+          type: 'success',
+          message: 'Message sent successfully!'
+        });
       })
       .catch((error) => {
-        alert("Failed to send message :(");
+        setModal({
+          isOpen: true,
+          type: 'error',
+          message: 'Failed to send message. Please try again.'
+        });
       });
   };
 
@@ -142,6 +156,40 @@ const Contact = () => {
           Send
         </button>
       </form>
+
+      {/* Modal */}
+      {modal.isOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-sm mx-4 shadow-2xl">
+            <div className="flex items-center mb-4">
+              {modal.type === 'success' ? (
+                <div className="flex items-center text-green-600 dark:text-green-400">
+                  <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <h3 className="text-lg font-semibold">Success</h3>
+                </div>
+              ) : (
+                <div className="flex items-center text-red-600 dark:text-red-400">
+                  <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  <h3 className="text-lg font-semibold">Error</h3>
+                </div>
+              )}
+            </div>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
+              {modal.message}
+            </p>
+            <button
+              onClick={() => setModal({ isOpen: false, type: '', message: '' })}
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

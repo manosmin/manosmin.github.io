@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Header from './components/Header';
 import LettersAnimation from './components/LettersAnimation';
 import About from './components/About';
@@ -11,19 +11,20 @@ import './App.css';
 export function useIsVisible(options) {
   const containerRef = useRef(null)
   const [isVisible, setIsVisible ] = useState(false)
-  const callbackFunction = (entries) => { 
+  const callbackFunction = useCallback((entries) => { 
     const [entry] = entries
     if (entry.isIntersecting && !isVisible) {
       setIsVisible(true)
     }
-  }
+  }, [isVisible])
   useEffect(() => {
   const observer = new IntersectionObserver (callbackFunction, options) 
-  if (containerRef.current) observer.observe (containerRef.current)
+  const currentRef = containerRef.current
+  if (currentRef) observer.observe (currentRef)
   return () => {
-    if(containerRef.current) observer.unobserve (containerRef.current)
+    if(currentRef) observer.unobserve (currentRef)
   }
-  }, [containerRef, options])
+  }, [callbackFunction, options])
   return [containerRef, isVisible]
   }
 
