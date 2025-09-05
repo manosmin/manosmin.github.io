@@ -41,7 +41,7 @@ const About = () => {
           ref={containerRef3}
           className={`${
             isVisible3 && "animate-fade-in 2xl:animate-fade-in"
-          } opacity-0 flex flex-col space-y-4 mt-8 text-center 2xl:text-left`}
+          } opacity-0 flex flex-col space-y-4 text-center 2xl:text-left`}
           style={{ "--delay": 0.4 + "s" }}
         >
           <p>
