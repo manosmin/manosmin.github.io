@@ -6,7 +6,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ThreeAnimation from './components/ThreeAnimation';
 import './App.css';
-
+import ReactGA from 'react-ga4';
 
 export function useIsVisible(options) {
   const containerRef = useRef(null)
@@ -36,6 +36,11 @@ export function useIsVisible(options) {
       setDark(!dark);
       document.body.classList.toggle("dark");
     };
+
+    useEffect(() => {
+      ReactGA.initialize('G-CZYL3VKDGW');
+      ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+    }, []);
 
     useEffect(() => {
       // Set dark mode by default

@@ -55,7 +55,7 @@ const About = () => {
           </p>
           <p>
             I have a background in computer engineering and professional
-            experience in full stack development, and I’m always eager to keep
+            experience in full stack development, and I'm always eager to keep
             growing my skills across both frontend and backend technologies.
           </p>
           <p>
@@ -64,7 +64,7 @@ const About = () => {
             applications.
           </p>
           <p>
-            Always open to new opportunities and ideas, so feel free to reach
+            I'm always open to new opportunities and ideas, so feel free to reach
             out!
           </p>
           <div>
