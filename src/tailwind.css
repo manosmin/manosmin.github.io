@@ -3,6 +3,32 @@
 @tailwind utilities;
 
 @layer base {
+    :root {
+      --color-primary-bg: #f3f4f6;
+      --color-primary-text: #111827;
+      --color-secondary-text: #4b5563;
+      --color-muted-text: #6b7280;
+      --color-accent-bg: #111827;
+      --color-accent-text: #f3f4f6;
+      --color-input-bg: #e5e7eb;
+      --color-input-border: #d1d5db;
+      --color-button-primary: #1d4ed8;
+      --color-button-primary-hover: #2563eb;
+    }
+    
+    .dark {
+      --color-primary-bg: #111827;
+      --color-primary-text: #f3f4f6;
+      --color-secondary-text: #9ca3af;
+      --color-muted-text: #9ca3af;
+      --color-accent-bg: #f3f4f6;
+      --color-accent-text: #111827;
+      --color-input-bg: #1f2937;
+      --color-input-border: #374151;
+      --color-button-primary: #1d4ed8;
+      --color-button-primary-hover: #2563eb;
+    }
+
     html {
       @apply scroll-smooth;
       font-family: Poppins, sans-serif;
@@ -10,21 +36,46 @@
   }
 
   @layer utilities {
-    .cursor-custom {
-      cursor: url('/public/cursor-default.svg') 12 12, auto;
+    .bg-primary {
+      background-color: var(--color-primary-bg);
     }
     
-    .cursor-custom-click {
-      cursor: url('/public/cursor-click.svg') 12 12, auto;
+    .text-primary {
+      color: var(--color-primary-text);
     }
     
-    .dark .cursor-custom {
-      cursor: url('/public/cursor-default-white.svg') 12 12, auto;
+    .text-secondary {
+      color: var(--color-secondary-text);
     }
     
-    .dark .cursor-custom-click {
-      cursor: url('/public/cursor-click-white.svg') 12 12, auto;
+    .text-muted {
+      color: var(--color-muted-text);
     }
+    
+    .bg-accent {
+      background-color: var(--color-accent-bg);
+    }
+    
+    .text-accent {
+      color: var(--color-accent-text);
+    }
+    
+    .bg-input {
+      background-color: var(--color-input-bg);
+    }
+    
+    .border-input {
+      border-color: var(--color-input-border);
+    }
+    
+    .bg-button-primary {
+      background-color: var(--color-button-primary);
+    }
+    
+    .bg-button-primary:hover {
+      background-color: var(--color-button-primary-hover);
+    }
+
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');

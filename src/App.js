@@ -30,7 +30,6 @@ export function useIsVisible(options) {
 
   function App() {
     const [dark, setDark] = useState(true);
-    const [isClicking, setIsClicking] = useState(false);
   
     const darkModeHandler = () => {
       setDark(!dark);
@@ -45,26 +44,10 @@ export function useIsVisible(options) {
     useEffect(() => {
       // Set dark mode by default
       document.body.classList.add("dark");
-      
-      const handleMouseDown = () => {
-        setIsClicking(true);
-      };
-
-      const handleMouseUp = () => {
-        setIsClicking(false);
-      };
-
-      document.addEventListener('mousedown', handleMouseDown);
-      document.addEventListener('mouseup', handleMouseUp);
-
-      return () => {
-        document.removeEventListener('mousedown', handleMouseDown);
-        document.removeEventListener('mouseup', handleMouseUp);
-      };
     }, []);
   
     return (
-      <div className={`bg-gray-100 dark:bg-gray-900 flex flex-col min-h-screen ${isClicking ? 'cursor-custom-click' : 'cursor-custom'} ${dark ? 'dark' : ''}`}>
+      <div className={`bg-primary flex flex-col min-h-screen ${dark ? 'dark' : ''}`}>
         <Header dark={dark} darkModeHandler={darkModeHandler} />
         <ThreeAnimation darkMode={dark} />
         <LettersAnimation />

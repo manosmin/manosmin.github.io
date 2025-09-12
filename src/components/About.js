@@ -20,7 +20,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-24 "
+      className="bg-primary text-primary p-10 py-24 "
     >
       <div className="flex justify-between mb-8">
         <h2
@@ -77,7 +77,7 @@ const About = () => {
             >
               <div className="flex items-center min-h-[2.5rem]">
                 <span className="font-semibold uppercase">Name:</span>
-                <span className="ml-4 text-gray-600 dark:text-gray-400">
+                <span className="ml-4 text-secondary">
                   {isVisible4 && (
                     <Typewriter
                       options={{ delay: 20, loop: false }}
@@ -93,7 +93,7 @@ const About = () => {
               </div>
               <div className="flex items-center min-h-[2.5rem]">
                 <span className="font-semibold uppercase">Location:</span>
-                <span className="ml-4 text-gray-600 dark:text-gray-400">
+                <span className="ml-4 text-secondary">
                   {isVisible4 && (
                     <Typewriter
                       options={{ delay: 20, loop: false }}
@@ -110,7 +110,7 @@ const About = () => {
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between min-h-[2.5rem]">
                 <div className="flex items-center min-h-[2.5rem]">
                   <span className="font-semibold uppercase">Email:</span>
-                  <span className="ml-4 text-gray-600 dark:text-gray-400">
+                  <span className="ml-4 text-secondary">
                     {isVisible4 && (
                       <Typewriter
                         options={{ delay: 20, loop: false }}
@@ -129,11 +129,11 @@ const About = () => {
                     <a
                       rel="noopener noreferrer"
                       href="https://github.com/manosmin"
-                      className="flex items-center text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group"
+                      className="flex items-center text-primary rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 group"
                       target="_blank"
                       alt="github"
                     >
-                      <div className="icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900  rounded-full p-2">
+                      <div className="icon-container bg-accent text-accent rounded-full p-2">
                         <FaGithub size={20} />
                       </div>
                     </a>
@@ -142,11 +142,11 @@ const About = () => {
                     <a
                       rel="noopener noreferrer"
                       href="https://linkedin.com/in/manosmin"
-                      className="flex items-center text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group"
+                      className="flex items-center text-primary rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 group"
                       target="_blank"
                       alt="linkedin"
                     >
-                      <div className="icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900  rounded-full p-2">
+                      <div className="icon-container bg-accent text-accent rounded-full p-2">
                         <FaLinkedinIn size={20} />
                       </div>
                     </a>
@@ -155,11 +155,11 @@ const About = () => {
                     <a
                       rel="noopener noreferrer"
                       href="https://www.discordapp.com/users/270397164209963009"
-                      className="flex items-center text-gray-900 rounded-full dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 group"
+                      className="flex items-center text-primary rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 group"
                       target="_blank"
                       alt="discord"
                     >
-                      <div className="icon-container bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900  rounded-full p-2">
+                      <div className="icon-container bg-accent text-accent rounded-full p-2">
                         <FaDiscord size={20} />
                       </div>
                     </a>

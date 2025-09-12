@@ -69,7 +69,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-10 py-24 "
+      className="bg-primary text-primary p-10 py-24 "
     >
       <div className="flex justify-between">
         <h2
@@ -84,7 +84,7 @@ const Contact = () => {
           </p>
         </h2>
       </div>
-      <form onSubmit={handleSubmit} className="mt-8 cursor-normal space-y-4">
+      <form onSubmit={handleSubmit} className="mt-8 space-y-4">
         <p
           ref={containerRef2}
           className={`opacity-0 ${isVisible2 && "animate-fade-in"}`}
@@ -106,7 +106,7 @@ const Contact = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded bg-gray-200 dark:bg-gray-800 dark:border-gray-700"
+            className="w-full p-2 border border-input rounded bg-input"
             required
           />
         </div>
@@ -124,7 +124,7 @@ const Contact = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded bg-gray-200 dark:bg-gray-800 dark:border-gray-700"
+            className="w-full p-2 border border-input rounded bg-input"
             required
           />
         </div>
@@ -141,7 +141,7 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded bg-gray-200 dark:bg-gray-800 dark:border-gray-700"
+            className="w-full p-2 border border-input rounded bg-input"
             required
           ></textarea>
         </div>
@@ -151,7 +151,7 @@ const Contact = () => {
           style={{ "--delay": 0.4 + "s" }}
           className={`${
             isVisible6 && "animate-fade-in"
-          } opacity-0 bg-blue-700 hover:bg-blue-600 text-gray-100 py-2 px-4 rounded-full`}
+          } opacity-0 bg-button-primary hover:bg-button-primary text-accent py-2 px-4 rounded-full`}
         >
           Send
         </button>
