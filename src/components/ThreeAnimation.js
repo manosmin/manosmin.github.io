@@ -1,4 +1,3 @@
-// src/components/ThreeAnimation.js
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
@@ -10,8 +9,6 @@ const ThreeAnimation = ({ darkMode }) => {
 
     const backgroundColor = darkMode ? 0x111827 : 0xf3f4f6;
     const primaryColor = darkMode ? 0x3b82f6 : 0x1e40af;
-    const secondaryColor = darkMode ? 0x8b5cf6 : 0x7c3aed;
-    const accentColor = darkMode ? 0x06b6d4 : 0x0891b2;
 
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(backgroundColor);
@@ -24,25 +21,27 @@ const ThreeAnimation = ({ darkMode }) => {
     renderer.domElement.style.pointerEvents = 'auto';
     mountNode.appendChild(renderer.domElement);
 
-
-    // Add ambient particles for subtle background animation
     const particleGeometry = new THREE.BufferGeometry();
     const particleCount = 150;
     const positions = new Float32Array(particleCount * 3);
+    const colors = new Float32Array(particleCount * 3);
+    const sizes = new Float32Array(particleCount);
     const particleData = [];
 
+
     for (let i = 0; i < particleCount; i++) {
-      // Create circular motion parameters
-      const radius = 20 + Math.random() * 30;
+      const radius = 15 + Math.random() * 40;
       const angle = Math.random() * Math.PI * 2;
       const speed = 0.0001 + Math.random() * 0.0004;
-      const centerX = (Math.random() - 0.5) * 60;
-      const centerY = (Math.random() - 0.5) * 60;
-      const centerZ = (Math.random() - 0.5) * 40;
+      const centerX = (Math.random() - 0.5) * 80;
+      const centerY = (Math.random() - 0.5) * 80;
+      const centerZ = (Math.random() - 0.5) * 60;
       
       positions[i * 3] = centerX + Math.cos(angle) * radius;
       positions[i * 3 + 1] = centerY + Math.sin(angle) * radius;
       positions[i * 3 + 2] = centerZ;
+      
+      sizes[i] = 0.5 + Math.random() * 1.5;
       
       particleData.push({
         radius,
@@ -50,19 +49,24 @@ const ThreeAnimation = ({ darkMode }) => {
         speed,
         centerX,
         centerY,
-        centerZ
+        centerZ,
+        baseOpacity: 0.3 + Math.random() * 0.4,
+        pulsePhase: Math.random() * Math.PI * 2,
+        pulseSpeed: 0.01 + Math.random() * 0.02
       });
     }
 
     particleGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    particleGeometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+    particleGeometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
     
     const particleMaterial = new THREE.PointsMaterial({
       color: primaryColor,
-      size: 0.8,
       transparent: true,
       opacity: 0.4,
       map: createCircleTexture(),
-      alphaTest: 0.1
+      alphaTest: 0.1,
+      sizeAttenuation: true
     });
 
     function createCircleTexture() {
@@ -88,28 +92,29 @@ const ThreeAnimation = ({ darkMode }) => {
 
     camera.position.z = 8;
 
-    let animationTime = 0;
-
     const animate = function () {
       requestAnimationFrame(animate);
-      animationTime += 0.01;
 
-      // Animate particles in circular motion
       const positions = particleGeometry.attributes.position.array;
+      const sizes = particleGeometry.attributes.size.array;
+      
       for (let i = 0; i < particleCount; i++) {
         const data = particleData[i];
         
-        // Update angle for circular motion
         data.angle += data.speed;
+        data.pulsePhase += data.pulseSpeed;
         
-        // Calculate new position on circle
         positions[i * 3] = data.centerX + Math.cos(data.angle) * data.radius;
         positions[i * 3 + 1] = data.centerY + Math.sin(data.angle) * data.radius;
-        positions[i * 3 + 2] = data.centerZ + Math.sin(data.angle * 0.5) * 5;
+        positions[i * 3 + 2] = data.centerZ + Math.sin(data.angle * 0.3) * 8;
+        
+        const sizePulse = Math.sin(data.pulsePhase * 0.7) * 0.2 + 1;
+        sizes[i] = (0.5 + Math.random() * 1.5) * sizePulse;
       }
+      
       particleGeometry.attributes.position.needsUpdate = true;
+      particleGeometry.attributes.size.needsUpdate = true;
 
-      // Gentle rotation of particle field
       particles.rotation.x += 0.0005;
       particles.rotation.y += 0.001;
 
