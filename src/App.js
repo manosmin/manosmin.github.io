@@ -29,7 +29,7 @@ export function useIsVisible(options) {
   }
 
   function App() {
-    const [dark, setDark] = useState(true);
+    const [dark, setDark] = useState(false);
   
     const darkModeHandler = () => {
       setDark(!dark);
@@ -39,11 +39,6 @@ export function useIsVisible(options) {
     useEffect(() => {
       ReactGA.initialize('G-CZYL3VKDGW');
       ReactGA.send({ hitType: "pageview", page: window.location.pathname });
-    }, []);
-
-    useEffect(() => {
-      // Set dark mode by default
-      document.body.classList.add("dark");
     }, []);
   
     return (
