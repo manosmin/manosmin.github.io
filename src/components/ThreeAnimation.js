@@ -9,7 +9,9 @@ const ThreeAnimation = ({ darkMode }) => {
     const mountNode = mountRef.current;
 
     const backgroundColor = darkMode ? 0x111827 : 0xf3f4f6;
-    const cubeColor = 0x1E3A8A;
+    const primaryColor = darkMode ? 0x3b82f6 : 0x1e40af;
+    const secondaryColor = darkMode ? 0x8b5cf6 : 0x7c3aed;
+    const accentColor = darkMode ? 0x06b6d4 : 0x0891b2;
 
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(backgroundColor);
@@ -20,115 +22,102 @@ const ThreeAnimation = ({ darkMode }) => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     
     renderer.domElement.style.pointerEvents = 'auto';
-
     mountNode.appendChild(renderer.domElement);
 
-    const raycaster = new THREE.Raycaster();
-    const mouse = new THREE.Vector2();
 
-    const cubeArray = [];
-    const velocityArray = [];
-    const rotationArray = [];
-    const cubeCount = 10;
-    const geometry = new THREE.BoxGeometry(1, 1, 1);
+    // Add ambient particles for subtle background animation
+    const particleGeometry = new THREE.BufferGeometry();
+    const particleCount = 150;
+    const positions = new Float32Array(particleCount * 3);
+    const particleData = [];
 
-    const velocityScale = 0.01; 
-
-    for (let i = 0; i < cubeCount; i++) {
-      const material = new THREE.MeshBasicMaterial({
-        color: cubeColor,
-        transparent: true,
-        opacity: 0.25
+    for (let i = 0; i < particleCount; i++) {
+      // Create circular motion parameters
+      const radius = 20 + Math.random() * 30;
+      const angle = Math.random() * Math.PI * 2;
+      const speed = 0.0001 + Math.random() * 0.0004;
+      const centerX = (Math.random() - 0.5) * 60;
+      const centerY = (Math.random() - 0.5) * 60;
+      const centerZ = (Math.random() - 0.5) * 40;
+      
+      positions[i * 3] = centerX + Math.cos(angle) * radius;
+      positions[i * 3 + 1] = centerY + Math.sin(angle) * radius;
+      positions[i * 3 + 2] = centerZ;
+      
+      particleData.push({
+        radius,
+        angle,
+        speed,
+        centerX,
+        centerY,
+        centerZ
       });
-      const cube = new THREE.Mesh(geometry, material);
-
-      // Create outline
-      const edges = new THREE.EdgesGeometry(geometry);
-      const outlineMaterial = new THREE.LineBasicMaterial({
-        color: cubeColor,
-        transparent: true,
-        opacity: 0.8
-      });
-      const outline = new THREE.LineSegments(edges, outlineMaterial);
-      cube.add(outline);
-
-      const maxX = window.innerWidth / 100;
-      const maxY = window.innerHeight / 100;
-
-      cube.position.set(
-        (Math.random() * maxX) - maxX / 2,
-        (Math.random() * maxY) - maxY / 2,
-        (Math.random() - 0.5) * 20
-      );
-
-      const velocity = new THREE.Vector3(
-        (Math.random() - 0.5) * velocityScale,
-        (Math.random() - 0.5) * velocityScale,
-        (Math.random() - 0.5) * velocityScale
-      );
-
-      const rotationSpeed = new THREE.Vector3(
-        Math.random() * 0.02 - 0.01,
-        Math.random() * 0.02 - 0.01,
-        Math.random() * 0.02 - 0.01
-      );
-
-      scene.add(cube);
-      cubeArray.push(cube);
-      velocityArray.push(velocity);
-      rotationArray.push(rotationSpeed);
     }
 
-    camera.position.z = 5;
+    particleGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    
+    const particleMaterial = new THREE.PointsMaterial({
+      color: primaryColor,
+      size: 0.8,
+      transparent: true,
+      opacity: 0.4,
+      map: createCircleTexture(),
+      alphaTest: 0.1
+    });
+
+    function createCircleTexture() {
+      const canvas = document.createElement('canvas');
+      canvas.width = 32;
+      canvas.height = 32;
+      const context = canvas.getContext('2d');
+      
+      const gradient = context.createRadialGradient(16, 16, 0, 16, 16, 16);
+      gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
+      gradient.addColorStop(0.7, 'rgba(255, 255, 255, 0.8)');
+      gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+      
+      context.fillStyle = gradient;
+      context.fillRect(0, 0, 32, 32);
+      
+      const texture = new THREE.CanvasTexture(canvas);
+      return texture;
+    }
+
+    const particles = new THREE.Points(particleGeometry, particleMaterial);
+    scene.add(particles);
+
+    camera.position.z = 8;
+
+    let animationTime = 0;
 
     const animate = function () {
       requestAnimationFrame(animate);
+      animationTime += 0.01;
 
-      cubeArray.forEach((cube, index) => {
-        cube.position.add(velocityArray[index]);
+      // Animate particles in circular motion
+      const positions = particleGeometry.attributes.position.array;
+      for (let i = 0; i < particleCount; i++) {
+        const data = particleData[i];
+        
+        // Update angle for circular motion
+        data.angle += data.speed;
+        
+        // Calculate new position on circle
+        positions[i * 3] = data.centerX + Math.cos(data.angle) * data.radius;
+        positions[i * 3 + 1] = data.centerY + Math.sin(data.angle) * data.radius;
+        positions[i * 3 + 2] = data.centerZ + Math.sin(data.angle * 0.5) * 5;
+      }
+      particleGeometry.attributes.position.needsUpdate = true;
 
-        cube.rotation.x += rotationArray[index].x;
-        cube.rotation.y += rotationArray[index].y;
-        cube.rotation.z += rotationArray[index].z;
-
-        if (cube.position.x > window.innerWidth / 100 / 2 || cube.position.x < -window.innerWidth / 100 / 2) {
-          velocityArray[index].x *= -1;
-        }
-        if (cube.position.y > window.innerHeight / 100 / 2 || cube.position.y < -window.innerHeight / 100 / 2) {
-          velocityArray[index].y *= -1;
-        }
-        if (cube.position.z > 10 || cube.position.z < -10) {
-          velocityArray[index].z *= -1;
-        }
-      });
+      // Gentle rotation of particle field
+      particles.rotation.x += 0.0005;
+      particles.rotation.y += 0.001;
 
       renderer.render(scene, camera);
     };
 
     animate();
 
-    const handleClick = (event) => {
-      const rect = renderer.domElement.getBoundingClientRect();
-      mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
-      mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
-
-      raycaster.setFromCamera(mouse, camera);
-      const intersects = raycaster.intersectObjects(cubeArray, true);
-
-      if (intersects.length > 0) {
-        const clickedObject = intersects[0].object;
-        let cubeIndex = cubeArray.indexOf(clickedObject);
-        if (cubeIndex === -1) {
-          cubeIndex = cubeArray.indexOf(clickedObject.parent);
-        }
-        
-        if (cubeIndex !== -1) {
-          velocityArray[cubeIndex].x *= -2;
-          velocityArray[cubeIndex].y *= -2;
-          velocityArray[cubeIndex].z *= -2;
-        }
-      }
-    };
 
     const handleResize = () => {
       const width = window.innerWidth;
@@ -138,16 +127,16 @@ const ThreeAnimation = ({ darkMode }) => {
       camera.updateProjectionMatrix();
     };
 
-    renderer.domElement.addEventListener('click', handleClick);
     window.addEventListener('resize', handleResize);
 
     return () => {
-      renderer.domElement.removeEventListener('click', handleClick);
       window.removeEventListener('resize', handleResize);
-      if (mountNode) {
+      if (mountNode && mountNode.contains(renderer.domElement)) {
         mountNode.removeChild(renderer.domElement);
       }
       renderer.dispose();
+      particleGeometry.dispose();
+      particleMaterial.dispose();
     };
   }, [darkMode]);
 
