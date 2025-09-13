@@ -151,7 +151,7 @@ const Contact = () => {
           style={{ "--delay": 0.4 + "s" }}
           className={`${
             isVisible6 && "animate-fade-in"
-          } opacity-0 bg-button-primary hover:bg-button-primary text-accent py-2 px-4 rounded-full`}
+          } opacity-0 bg-button-primary hover:bg-button-primary text-button-primary py-2 px-4 rounded-full`}
         >
           Send
         </button>

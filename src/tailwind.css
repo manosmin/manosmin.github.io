@@ -13,6 +13,7 @@
       --color-input-bg: #e5e7eb;
       --color-input-border: #d1d5db;
       --color-button-primary: #1d4ed8;
+      --color-button-primary-text: #f3f4f6;
       --color-button-primary-hover: #2563eb;
     }
     
@@ -26,6 +27,7 @@
       --color-input-bg: #1f2937;
       --color-input-border: #374151;
       --color-button-primary: #1d4ed8;
+      --color-button-primary-text: #f3f4f6;
       --color-button-primary-hover: #2563eb;
     }
 
@@ -50,6 +52,10 @@
     
     .text-muted {
       color: var(--color-muted-text);
+    }
+
+    .text-button-primary {
+      color: var(--color-button-primary-text);
     }
     
     .bg-accent {
