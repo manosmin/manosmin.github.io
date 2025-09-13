@@ -57,15 +57,8 @@ const Contact = () => {
   const [containerRef1, isVisible1] = useIsVisible({});
 
   const [containerRef2, isVisible2] = useIsVisible({});
-
-  const [containerRef3, isVisible3] = useIsVisible({});
-
-  const [containerRef4, isVisible4] = useIsVisible({});
-
-  const [containerRef5, isVisible5] = useIsVisible({});
-
+  
   const [containerRef6, isVisible6] = useIsVisible({});
-
   return (
     <div
       id="contact"
@@ -84,19 +77,11 @@ const Contact = () => {
           </p>
         </h2>
       </div>
-      <form onSubmit={handleSubmit} className="mt-8 space-y-4">
-        <p
-          ref={containerRef2}
-          className={`opacity-0 ${isVisible2 && "animate-fade-in"}`}
-          style={{ "--delay": 0.4 + "s" }}
-        >
-          You can send me a message through this form.
+      <form onSubmit={handleSubmit} ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-fade-in"} mt-8 space-y-4`} style={{ "--delay": 0.6 + "s" }}>
+        <p>
+          Alternatively, you can use this form to send me a message.
         </p>
-        <div
-          ref={containerRef3}
-          className={`opacity-0 ${isVisible3 && "animate-fade-in"}`}
-          style={{ "--delay": 0.4 + "s" }}
-        >
+        <div>
           <label htmlFor="name" className="block">
             Name:
           </label>
@@ -110,11 +95,7 @@ const Contact = () => {
             required
           />
         </div>
-        <div
-          ref={containerRef4}
-          className={`opacity-0 ${isVisible4 && "animate-fade-in"}`}
-          style={{ "--delay": 0.4 + "s" }}
-        >
+        <div>
           <label htmlFor="email" className="block">
             Email:
           </label>
@@ -128,11 +109,7 @@ const Contact = () => {
             required
           />
         </div>
-        <div
-          ref={containerRef5}
-          className={`opacity-0 ${isVisible5 && "animate-fade-in"}`}
-          style={{ "--delay": 0.4 + "s" }}
-        >
+        <div>
           <label htmlFor="message" className="block">
             Message:
           </label>
@@ -148,9 +125,9 @@ const Contact = () => {
         <button
           ref={containerRef6}
           type="submit"
-          style={{ "--delay": 0.4 + "s" }}
+          style={{ "--delay": 1 + "s" }}
           className={`${
-            isVisible6 && "animate-fade-in"
+            isVisible6 && "animate-drop-in"
           } opacity-0 bg-button-primary hover:bg-button-primary text-button-primary py-2 px-4 rounded-full`}
         >
           Send

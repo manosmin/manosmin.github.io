@@ -40,9 +40,9 @@ const About = () => {
         <div
           ref={containerRef3}
           className={`${
-            isVisible3 && "animate-fade-in 2xl:animate-fade-in"
+            isVisible3 && "animate-fade-in"
           } opacity-0 flex flex-col space-y-4 text-center 2xl:text-left`}
-          style={{ "--delay": 0.4 + "s" }}
+          style={{ "--delay": 0.6 + "s" }}
         >
           <p>
             I'm a{" "}
@@ -55,17 +55,16 @@ const About = () => {
           </p>
           <p>
             I have a background in computer engineering and professional
-            experience in full stack development, and I'm always eager to keep
-            growing my skills across both frontend and backend technologies.
+            experience in full stack web development, and I'm eager to keep
+            growing my skills across frontend, backend and cloud technologies.
           </p>
           <p>
-            I'm especially excited about using AI tools to
+            I'm also excited about using AI tools to
             streamline development workflows and create smarter, more efficient
             applications.
           </p>
           <p>
-            I'm always open to new opportunities and ideas, so feel free to reach
-            out!
+            Feel free to reach out for any opportunities or ideas!
           </p>
           <div>
             <div
@@ -73,17 +72,17 @@ const About = () => {
               className={`${
                 isVisible4 && "animate-fade-in"
               } opacity-0 flex flex-col`}
-              style={{ "--delay": 0.4 + "s" }}
+              style={{ "--delay": 0.6 + "s" }}
             >
               <div className="flex items-center min-h-[2.5rem]">
                 <span className="font-semibold uppercase">Name:</span>
                 <span className="ml-4 text-secondary">
                   {isVisible4 && (
                     <Typewriter
-                      options={{ delay: 20, loop: false }}
+                      options={{ delay: 30, loop: false }}
                       onInit={(typewriter) => {
                         typewriter
-                          .pauseFor(500)
+                          .pauseFor(700)
                           .typeString("Manos Minadakis")
                           .start();
                       }}
@@ -96,10 +95,10 @@ const About = () => {
                 <span className="ml-4 text-secondary">
                   {isVisible4 && (
                     <Typewriter
-                      options={{ delay: 20, loop: false }}
+                      options={{ delay: 30, loop: false }}
                       onInit={(typewriter) => {
                         typewriter
-                          .pauseFor(1000)
+                          .pauseFor(1200)
                           .typeString("Heraklion, Greece")
                           .start();
                       }}
@@ -113,10 +112,10 @@ const About = () => {
                   <span className="ml-4 text-secondary">
                     {isVisible4 && (
                       <Typewriter
-                        options={{ delay: 20, loop: false }}
+                        options={{ delay: 30, loop: false }}
                         onInit={(typewriter) => {
                           typewriter
-                            .pauseFor(1500)
+                            .pauseFor(1700)
                             .typeString("manosmin@hotmail.com")
                             .start();
                         }}
