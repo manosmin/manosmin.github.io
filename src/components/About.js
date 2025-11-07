@@ -18,10 +18,7 @@ const About = () => {
   const [containerRef4, isVisible4] = useIsVisible({});
 
   return (
-    <div
-      id="about"
-      className="bg-primary text-primary p-10 py-24 "
-    >
+    <div id="about" className="bg-primary text-primary p-10 py-24  ">
       <div className="flex justify-between mb-8">
         <h2
           ref={containerRef1}
@@ -36,7 +33,6 @@ const About = () => {
         </h2>
       </div>
       <div className="flex flex-col 2xl:flex-row items-center md:space-x-8 overflow-x-visible">
-
         <div
           ref={containerRef3}
           className={`${
@@ -46,26 +42,19 @@ const About = () => {
         >
           <p>
             I'm a{" "}
-            <span className="font-semibold">Junior Software Developer</span>{" "}
-            based in{" "}
-            <span className="underline decoration-dotted underline-offset-4">
-              Heraklion, Greece
-            </span>
-            .
+            <span className="font-semibold">Software Developer</span>{" "}
+            based in Greece, with 1+ year of experience in full stack
+            development for enterprise and mission critical systems.
           </p>
           <p>
-            I have a background in computer engineering and professional
-            experience in full stack web development, and I'm eager to keep
-            growing my skills across frontend, backend and cloud technologies.
+            I have a background in computer engineering and enjoy working across
+            both frontend and backend components to deliver reliable,
+            high quality software.
           </p>
           <p>
-            I'm also excited about using AI tools to
-            streamline development workflows and create smarter, more efficient
-            applications.
+            I'm continuously expanding my skills in cloud technologies and modern software architecture, and I'm open to professional opportunities where I can apply my expertise and contribute to impactful projects.
           </p>
-          <p>
-            Feel free to reach out for any opportunities or ideas!
-          </p>
+          <p>Feel free to contact me.</p>
           <div>
             <div
               ref={containerRef4}

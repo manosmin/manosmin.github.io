@@ -77,48 +77,42 @@ const Contact = () => {
           </p>
         </h2>
       </div>
-      <form onSubmit={handleSubmit} ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-fade-in"} mt-8 space-y-4`} style={{ "--delay": 0.6 + "s" }}>
+      <form onSubmit={handleSubmit} ref={containerRef2} className={`opacity-0 ${isVisible2 && "animate-fade-in"} mt-8 space-y-4 `} style={{ "--delay": 0.6 + "s" }}>
         <p>
           Alternatively, you can use this form to send me a message.
         </p>
         <div>
-          <label htmlFor="name" className="block">
-            Name:
-          </label>
           <input
             id="name"
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-2 border border-input rounded bg-input"
+            className="w-full p-2 border-b-2 border-input bg-input !outline-none"
+            placeholder="Name"
             required
           />
         </div>
         <div>
-          <label htmlFor="email" className="block">
-            Email:
-          </label>
           <input
             id="email"
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-2 border border-input rounded bg-input"
+            className="w-full p-2 border-b-2 border-input bg-input !outline-none"
+            placeholder="Email"
             required
           />
         </div>
         <div>
-          <label htmlFor="message" className="block">
-            Message:
-          </label>
           <textarea
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full p-2 border border-input rounded bg-input"
+            className="w-full p-2 border-b-2 border-input bg-input !outline-none"
+            placeholder="Type your message..."
             required
           ></textarea>
         </div>
@@ -128,7 +122,7 @@ const Contact = () => {
           style={{ "--delay": 1 + "s" }}
           className={`${
             isVisible6 && "animate-drop-in"
-          } opacity-0 bg-button-primary hover:bg-button-primary text-button-primary py-2 px-4 rounded-full`}
+          } opacity-0 bg-button-primary hover:bg-button-primary text-button-primary py-2 px-4 rounded-xl`}
         >
           Send
         </button>
