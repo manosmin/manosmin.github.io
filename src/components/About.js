@@ -43,8 +43,8 @@ const About = () => {
           <p>
             I'm a{" "}
             <span className="font-semibold">Software Developer</span>{" "}
-            based in Greece, with 1+ year of experience in full stack
-            development for enterprise and mission critical systems.
+            based in Greece with 2+ years of experience in full stack
+            development, currently working for a travel company.
           </p>
           <p>
             I have a background in computer engineering and enjoy working across
